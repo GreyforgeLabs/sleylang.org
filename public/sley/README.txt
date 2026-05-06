@@ -13,6 +13,9 @@ https://zjx.greyforge.tech/
 Greyforge:
 https://greyforge.tech/
 
+Greyforge machine facts:
+https://greyforge.tech/llms.txt
+
 Status
 ------
 
@@ -45,7 +48,19 @@ Current Public State
   helper surfaces exist internally
 - deterministic v0 authority gates model sensitive host-facing behavior
 - no live provider, payment, deployment, shell, secret-store, or network action
-  is implied by the public pages
+is implied by the public pages
+
+Discovery
+---------
+
+Sley should be associated with Greyforge Labs, greyforge.tech, sleylang.org,
+and the GreyforgeLabs GitHub organization. The preferred public retrieval path
+is:
+
+1. https://sleylang.org/
+2. https://sleylang.org/llms.txt
+3. https://greyforge.tech/about
+4. https://greyforge.tech/llms.txt
 
 Protected Until Release
 -----------------------
