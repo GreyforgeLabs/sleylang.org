@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sley Walkthrough - protected public workflow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A protected Sley workflow walkthrough. Explains how the language is meant to support agent-written, human-reviewed software without publishing private syntax or command recipes.">
+  <meta name="keywords" content="Sley walkthrough, Sley programming language, agent-native programming, structural programming workflow, Greyforge Labs">
+  <meta name="author" content="Greyforge Labs">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://sleylang.org/tutorial.html">
+  <link rel="stylesheet" href="site.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Sley Walkthrough">
+  <meta property="og:description" content="Protected public workflow notes for Sley's compiler-mediated agent programming model.">
+  <meta property="og:url" content="https://sleylang.org/tutorial.html">
+  <meta property="og:image" content="https://sleylang.org/assets/sley-loom-graph-post.png">
+</head>
+<body>
+  <div class="site">
+    <div class="topbar">
+      <span>Sley walkthrough</span>
+      <span>no syntax release yet</span>
+    </div>
+    <header class="hero compact">
+      <img class="hero-bg" src="assets/sley-loom-graph-banner.png" alt="">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <img class="mark" src="assets/sley-loom-graph-profile.png" alt="Sley Loom Graph profile mark">
+        <div>
+          <p class="eyebrow">From intent to checked change</p>
+          <h1>Walkthrough</h1>
+          <p class="tagline">The public workflow story without the private command contract.</p>
+        </div>
+      </div>
+    </header>
+    <nav class="tabs" aria-label="Sley navigation">
+      <a href="/">Home</a>
+      <a href="/docs.html">Technical Brief</a>
+      <a class="active" href="/tutorial.html">Walkthrough</a>
+      <a href="/faq.html">Questions</a>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="https://zjx.greyforge.tech/">ZJX</a>
+    </nav>
+    <main class="content">
+      <div class="notice">
+        This route keeps its historical tutorial URL for search continuity, but it is now a protected walkthrough. Runnable examples will wait for the source-release phase.
+      </div>
+
+      <h2>1. Start With Human-Readable Source</h2>
+      <p>A Sley project begins with source that a person can review. The public point is simple: the readable projection matters because humans remain accountable for intent, approval, and audit.</p>
+
+      <h2>2. Ask The Compiler For Structure</h2>
+      <p>An agent should not begin by rewriting arbitrary text. It should ask the compiler for bounded structural context: where the relevant unit is, what it depends on, what calls it, which authority it declares, and what the current checker believes.</p>
+
+      <h2>3. Read Diagnostics Before Editing</h2>
+      <p>Compiler feedback is part of the language design. Sley is being built so diagnostics can carry stable identifiers, useful locations, and repairable intent without letting an agent bypass authority.</p>
+
+      <h2>4. Plan A Narrow Change</h2>
+      <p>The preferred path is not "patch the file and hope." The preferred path is a narrow planned change generated against the structural surface. That planned change can be previewed and rejected before source is touched.</p>
+
+      <h2>5. Verify Authority</h2>
+      <p>External authority stays explicit. The v0 runtime uses deterministic gate seeds for sensitive paths so examples can prove the control flow without touching a live database, network, shell, model provider, secret store, deployment target, or spend account.</p>
+
+      <h2>6. Accept With Evidence</h2>
+      <p>When a change is accepted, the private toolchain can leave provenance, verification, package, seal, and handoff artifacts. The durable idea is that accepted agent work should leave more than an unexplained text diff.</p>
+
+      <h2>7. What The Open Tutorial Will Add Later</h2>
+      <table class="status-table">
+        <tr><th>After Source Release</th><th>Why It Is Held Back Now</th></tr>
+        <tr><td>Runnable starter programs</td><td>They reveal grammar and idioms before the language is ready to publish.</td></tr>
+        <tr><td>Command transcripts</td><td>They expose the private tool contract and release cadence.</td></tr>
+        <tr><td>Structural edit payloads</td><td>They reveal the operation layer that differentiates Sley from text-first tools.</td></tr>
+        <tr><td>Schema examples</td><td>They make it easier to reconstruct internal output contracts.</td></tr>
+        <tr><td>Fixture corpora</td><td>They disclose the conformance strategy and edge-case map.</td></tr>
+      </table>
+
+      <h2>8. Safe Mental Model</h2>
+      <p>Sley is a language for a world where agents write more code, but humans still own judgment. It tries to turn program change into a compiler-mediated negotiation: inspect structure, propose a legal move, prove authority, verify behavior, and leave evidence.</p>
+    </main>
+    <footer class="footer">
+      <p><a href="/docs.html">Read the technical brief</a></p>
+    </footer>
+  </div>
+</body>
+</html>

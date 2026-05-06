@@ -1,0 +1,22 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/docs", "destination": "/docs.html" },
+    { "source": "/tutorial", "destination": "/tutorial.html" },
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/readme", "destination": "/README.txt" },
+    { "source": "/sley/docs", "destination": "/sley/docs.html" },
+    { "source": "/sley/tutorial", "destination": "/sley/tutorial.html" },
+    { "source": "/sley/faq", "destination": "/sley/faq.html" },
+    { "source": "/sley/readme", "destination": "/sley/README.txt" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}

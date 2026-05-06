@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sley Technical Brief - protected public documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A protected public technical brief for Sley, Greyforge Labs' agent-native structural programming language. Explains architecture posture without releasing private implementation details.">
+  <meta name="keywords" content="Sley technical brief, Sley documentation, agent-native programming, structural programming, compiler mediated editing, Greyforge Labs">
+  <meta name="author" content="Greyforge Labs">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://sleylang.org/docs.html">
+  <link rel="stylesheet" href="site.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Sley Technical Brief">
+  <meta property="og:description" content="Protected public documentation for Sley's compiler-mediated agent programming model.">
+  <meta property="og:url" content="https://sleylang.org/docs.html">
+  <meta property="og:image" content="https://sleylang.org/assets/sley-loom-graph-post.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Sley Technical Brief",
+    "description": "Protected public documentation for Sley's compiler-mediated agent programming model.",
+    "author": {"@type": "Organization", "name": "Greyforge Labs", "url": "https://greyforge.tech"},
+    "dateModified": "2026-05-06",
+    "mainEntityOfPage": "https://sleylang.org/docs.html"
+  }
+  </script>
+</head>
+<body>
+  <div class="site">
+    <div class="topbar">
+      <span>Sley technical brief</span>
+      <span>public, scrubbed, non-spec</span>
+    </div>
+    <header class="hero compact">
+      <img class="hero-bg" src="assets/sley-loom-graph-banner.png" alt="">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <img class="mark" src="assets/sley-loom-graph-profile.png" alt="Sley Loom Graph profile mark">
+        <div>
+          <p class="eyebrow">Architecture posture</p>
+          <h1>Technical Brief</h1>
+          <p class="tagline">Enough detail to understand the product, not enough detail to clone the language.</p>
+        </div>
+      </div>
+    </header>
+    <nav class="tabs" aria-label="Sley navigation">
+      <a href="/">Home</a>
+      <a class="active" href="/docs.html">Technical Brief</a>
+      <a href="/tutorial.html">Walkthrough</a>
+      <a href="/faq.html">Questions</a>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="https://zjx.greyforge.tech/">ZJX</a>
+    </nav>
+    <main class="content">
+      <div class="notice">
+        This is not the Sley language specification. The full spec, grammar, command contract, schema files, operation payloads, examples, and compiler internals remain private until Greyforge chooses an open-source release path.
+      </div>
+
+      <h2>1. Thesis</h2>
+      <p>Sley is designed for the programming workflow that coding agents actually need: compact source for people, typed structure for tools, deterministic authority checks, compiler-rejected illegal edits, and evidence after accepted change.</p>
+      <p>The bootstrap implementation is deliberately strict. Its job is to teach the language in context, expose bounded structure, reject unsafe assumptions, and keep the human-readable projection coherent.</p>
+
+      <h2>2. Public System Model</h2>
+      <table class="status-table">
+        <tr><th>Layer</th><th>Public Description</th></tr>
+        <tr><td>Source projection</td><td>The readable file form humans review. It is not the only surface agents should rely on.</td></tr>
+        <tr><td>Compiler oracle</td><td>The strict bootstrap implementation that checks syntax, structure, type, authority, and accepted change candidates.</td></tr>
+        <tr><td>Structural work surface</td><td>Compiler-produced views that let tools inspect bounded program regions, declarations, calls, diagnostics, and readiness state.</td></tr>
+        <tr><td>Planned edit surface</td><td>A private operation layer where candidate changes can be generated and checked before mutation.</td></tr>
+        <tr><td>Runtime gate surface</td><td>Deterministic v0 authority gates for testing host-facing behavior without calling live external systems.</td></tr>
+        <tr><td>Evidence surface</td><td>Provenance, verification, package, and handoff artifacts for accepted changes when review history matters.</td></tr>
+      </table>
+
+      <h2>3. Current Internal Breadth</h2>
+      <p>The private v0 tree has moved beyond a tiny parser demo. It now includes a compiler/runtime slice, project form, structural inspection, lint and readiness reporting, planned change previews, deterministic host gates, local package evidence, trace and seal artifacts, and a first handoff path toward ZJX.</p>
+      <section class="columns">
+        <div class="note">
+          <h3>Language Surface</h3>
+          <p>Modules, declarations, task boundaries, typed values, explicit authority, structured expressions, and controlled mutation are part of the current internal work.</p>
+        </div>
+        <div class="note">
+          <h3>Tool Surface</h3>
+          <p>Agents can use compiler-produced structural, diagnostic, query, hygiene, planning, and verification reports inside the private toolchain.</p>
+        </div>
+        <div class="note">
+          <h3>Evidence Surface</h3>
+          <p>Internal contract fixtures, smoke manifests, schema snapshots, local CI helpers, and contract validation helpers track the moving v0 surface.</p>
+        </div>
+      </section>
+
+      <h2>4. Evidence Posture</h2>
+      <table class="status-table">
+        <tr><th>Evidence Class</th><th>Publicly Safe Summary</th></tr>
+        <tr><td>Integration coverage</td><td>The current internal suite tracks 210 integration cases across compiler, runtime, structural edit, reporting, packaging, and handoff behavior.</td></tr>
+        <tr><td>Contract fixtures</td><td>Machine-readable outputs are guarded by fixture snapshots and schema-backed checks, but the exact schemas are not public.</td></tr>
+        <tr><td>Smoke manifests</td><td>CLI and workflow behavior is tracked through manifest-backed internal smoke cases, not ad hoc manual testing.</td></tr>
+        <tr><td>Generated starters</td><td>Private starter projects are tested through deterministic first-run paths so agent and deploy-like workflows remain reproducible without live integrations.</td></tr>
+        <tr><td>Local package evidence</td><td>Deployment-like paths remain dry-run and evidence-oriented until explicit operator approval and a later release path.</td></tr>
+      </table>
+
+      <h2>5. Authority Model</h2>
+      <p>Sley treats external authority as a first-class language concern. File access, data access, network text, shell output, model completion, secrets, deploy-like actions, and spend-like actions are not hidden incidental side effects in the public design story.</p>
+      <p>In v0, these paths are deterministic testing gates. They do not execute live shell commands, call model providers, read real secret stores, move money, place market orders, deploy infrastructure, or perform live network operations.</p>
+
+      <h2>6. Agent Workflow</h2>
+      <ol>
+        <li>Read the compact project context and current compiler reports.</li>
+        <li>Inspect the relevant bounded structural surface instead of loading the whole project as raw text.</li>
+        <li>Use diagnostics and hygiene reports to understand what is wrong or risky.</li>
+        <li>Generate a narrow candidate change through the compiler-mediated edit layer.</li>
+        <li>Preview the change without mutation and let the compiler reject illegal structure.</li>
+        <li>Run strict checks and deterministic gates before acceptance.</li>
+        <li>Leave provenance, verification, and handoff artifacts when the change is accepted.</li>
+      </ol>
+
+      <h2>7. What Is Deliberately Missing</h2>
+      <p>The public site does not include a starter program, command transcript, payload example, operation catalog, schema root inventory, grammar section, parser rule, type-checking algorithm, graph format, module resolution recipe, fixture corpus, or self-hosting design map.</p>
+      <p>Those details are useful to users after source release. Before release, they are also useful to anyone trying to reproduce the language from the outside.</p>
+
+      <h2>8. Current Limits</h2>
+      <ul>
+        <li>Sley is not production-stable.</li>
+        <li>The public site is a protected brief, not a user manual.</li>
+        <li>The private implementation is moving quickly, so exact public examples would become stale and expose unnecessary IP.</li>
+        <li>The source release path will require a separate scrub, license decision, documentation pass, and public contract review.</li>
+      </ul>
+
+      <h2>9. Release Direction</h2>
+      <p>When Greyforge opens Sley, the public site can become a real manual: grammar, examples, command references, schema contracts, fixtures, runnable walkthroughs, and contribution docs. Until then, the correct public posture is high-signal and non-reconstructive.</p>
+    </main>
+    <footer class="footer">
+      <p><a href="/">Return to Sley home</a></p>
+    </footer>
+  </div>
+</body>
+</html>

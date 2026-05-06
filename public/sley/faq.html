@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sley Questions - public claim boundary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Questions and claim boundaries for Sley, Greyforge Labs' private v0 agent-native structural programming language.">
+  <meta name="keywords" content="why Sley, Sley programming language, agent-native programming, structural programming, Greyforge Labs">
+  <meta name="author" content="Greyforge Labs">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://sleylang.org/faq.html">
+  <link rel="stylesheet" href="site.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Sley Questions">
+  <meta property="og:description" content="What Sley is, why it exists, and what Greyforge is not publishing yet.">
+  <meta property="og:url" content="https://sleylang.org/faq.html">
+  <meta property="og:image" content="https://sleylang.org/assets/sley-loom-graph-post.png">
+</head>
+<body>
+  <div class="site">
+    <div class="topbar">
+      <span>Sley questions</span>
+      <span>public claim boundary</span>
+    </div>
+    <header class="hero compact">
+      <img class="hero-bg" src="assets/sley-loom-graph-banner.png" alt="">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <img class="mark" src="assets/sley-loom-graph-profile.png" alt="Sley Loom Graph profile mark">
+        <div>
+          <p class="eyebrow">Why the language exists</p>
+          <h1>Questions</h1>
+          <p class="tagline">Clear public claims, clear private-development limits.</p>
+        </div>
+      </div>
+    </header>
+    <nav class="tabs" aria-label="Sley navigation">
+      <a href="/">Home</a>
+      <a href="/docs.html">Technical Brief</a>
+      <a href="/tutorial.html">Walkthrough</a>
+      <a class="active" href="/faq.html">Questions</a>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="https://zjx.greyforge.tech/">ZJX</a>
+    </nav>
+    <main class="content">
+      <h2>Who Built Sley?</h2>
+      <p>Sley is developed by <a href="https://greyforge.tech">Greyforge Labs</a>.</p>
+
+      <h2>Why Build A New Language?</h2>
+      <p>Because agent-written software exposes a control-surface problem. Most languages force agents to work through raw text and then hope compiler errors, tests, and human review catch the damage afterward.</p>
+      <p>Sley starts from a different premise: the language and compiler should make structure, authority, diagnostics, planned edits, verification, and evidence first-class surfaces.</p>
+
+      <h2>Is Sley Open Source?</h2>
+      <p>Not yet. The current implementation, full specification, examples, grammar, schema contracts, fixtures, and operation layer remain private while the language is still changing quickly.</p>
+
+      <h2>Why Not Publish The Spec Now?</h2>
+      <p>Because a partial language spec is not only documentation. It is also an implementation blueprint. Publishing exact syntax, report shapes, edit payloads, fixture cases, and compiler behavior before the release gate would leak the hard-won design.</p>
+
+      <h2>Is Sley Production Ready?</h2>
+      <p>No. Sley is active v0 prototype work. It has a real internal compiler/runtime surface and a growing conformance suite, but it is not a mature production language and should not be marketed as one.</p>
+
+      <h2>Does Sley Call Live External Systems?</h2>
+      <p>The v0 public posture is deterministic. Sensitive host paths are represented through test gates, not live provider calls, shell execution, secret-store reads, payments, market orders, deployments, or network access.</p>
+
+      <h2>What Makes It Different?</h2>
+      <table class="status-table">
+        <tr><th>Common Text-First Workflow</th><th>Sley Direction</th></tr>
+        <tr><td>Agents infer structure from text spans.</td><td>Agents receive compiler-produced structural context.</td></tr>
+        <tr><td>Edits are reviewed mainly as diffs.</td><td>Candidate edits can be planned, previewed, checked, and evidenced.</td></tr>
+        <tr><td>Authority hides inside runtime calls.</td><td>Authority belongs at explicit language and runtime boundaries.</td></tr>
+        <tr><td>Failure feedback is often human-oriented only.</td><td>Diagnostics are designed to support agent repair loops.</td></tr>
+        <tr><td>Release evidence lives outside the language.</td><td>Verification and handoff evidence are part of the intended workflow.</td></tr>
+      </table>
+
+      <h2>What Can Be Cited Publicly?</h2>
+      <ul>
+        <li>Sley is Greyforge Labs' agent-native structural programming language.</li>
+        <li>Sley is active private v0 prototype work.</li>
+        <li>The design centers compiler-mediated change for agent-written, human-reviewed software.</li>
+        <li>The current internal suite tracks 210 integration cases and contract-style evidence.</li>
+        <li>The full implementation and language specification are intentionally not public yet.</li>
+      </ul>
+
+      <h2>What Comes Next?</h2>
+      <p>The next public upgrade should happen when Greyforge chooses the source-release path: scrubbed repository export, license selection, runnable docs, examples, public schema contracts, contribution guidance, security posture, and a real tutorial.</p>
+    </main>
+    <footer class="footer">
+      <p><a href="/tutorial.html">Read the protected walkthrough</a></p>
+    </footer>
+  </div>
+</body>
+</html>
