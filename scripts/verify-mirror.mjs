@@ -19,7 +19,8 @@ const required = [
   "public/sley/faq.html",
   "public/sley/llms.txt",
   "public/robots.txt",
-  "public/sitemap.xml"
+  "public/sitemap.xml",
+  "public/404.html"
 ];
 
 const missing = required.filter((path) => !existsSync(join(root, path)));
