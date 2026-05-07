@@ -4,13 +4,42 @@
   <meta charset="utf-8">
   <title>Sley - structural programming for autonomous agents</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sley is Greyforge Labs' structural programming language for autonomous agents, compiler-mediated edits, native structure, and human-reviewed software changes.">
-  <meta name="keywords" content="Sley, Sley programming language, structural programming, autonomous agents, compiler mediated editing, Greyforge Labs, greyforge.tech">
+  <meta name="description" content="Sley is an open, Apache-2.0 structural programming language from Greyforge Labs for deterministic edits, auditable grafts, and graph-aware agent tooling.">
+  <meta name="keywords" content="Sley, structural programming language, deterministic edits, auditable grafts, graph-aware agent tooling, compiler-mediated editing, Greyforge Labs, Apache-2.0, sley, sleylang.org, greyforge.tech">
   <meta name="author" content="Greyforge Labs">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://sleylang.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sley • structural programming language • v1.0">
+  <meta property="og:description" content="Sley is an open-source structural language for compiler-mediated agent edits, explicit authority, and evidence-first workflows.">
+  <meta property="og:url" content="https://sleylang.org/">
+  <meta property="og:image" content="https://sleylang.org/assets/sley-loom-graph-post.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@GreyforgeLabs">
+  <meta name="twitter:title" content="Sley • structural programming language • v1.0">
+  <meta name="twitter:description" content="Open-source language for deterministic, auditable agent edits.">
+  <meta name="twitter:image" content="https://sleylang.org/assets/sley-loom-graph-post.png">
   <link rel="stylesheet" href="site.css">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="Sley facts for retrieval systems">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Sley",
+    "description": "Sley is an open-source structural programming language for agents from Greyforge Labs.",
+    "url": "https://sleylang.org/",
+    "license": "https://www.apache.org/licenses/LICENSE-2.0",
+    "isAccessibleForFree": true,
+    "author": { "@type": "Organization", "name": "Greyforge Labs", "url": "https://greyforge.tech/" },
+    "sameAs": [
+      "https://github.com/GreyforgeLabs/sley",
+      "https://greyforge.tech/chronicles",
+      "https://x.com/GreyforgeLabs",
+      "https://greyforge.tech/",
+      "https://zjx.greyforge.tech/"
+    ]
+  }
+  </script>
 </head>
 <body itemscope itemtype="https://schema.org/SoftwareSourceCode">
   <meta itemprop="name" content="Sley">
@@ -26,7 +55,9 @@
       <nav class="nav" aria-label="Primary navigation">
         <a href="/docs.html">Docs</a>
         <a href="#install">Install</a>
-        <a href="https://github.com/GreyforgeLabs">GitHub</a>
+        <a href="https://github.com/GreyforgeLabs/sley">GitHub</a>
+        <a href="https://greyforge.tech/chronicles">Chronicles</a>
+        <a href="https://x.com/GreyforgeLabs">X</a>
       </nav>
     </header>
 
@@ -49,7 +80,7 @@
       <section class="status-grid" aria-label="Release status">
         <div>
           <strong>Status</strong>
-          <span>private v0 prototype</span>
+          <span>v1.0 public release</span>
         </div>
         <div>
           <strong>Surface</strong>
@@ -57,7 +88,7 @@
         </div>
         <div>
           <strong>Boundary</strong>
-          <span>syntax and install path withheld until source release</span>
+          <span>syntax and tooling available in the open repository</span>
         </div>
       </section>
 
@@ -66,7 +97,7 @@
           <p class="kicker">public preview</p>
           <h2 id="syntax-title">Code-Shaped Contract</h2>
         </div>
-        <pre aria-label="Sley public shape sketch"><code># Public shape sketch. This is not the private grammar.
+        <pre aria-label="Sley public shape sketch"><code># Public shape sketch. This is not the internal grammar.
 
 language Sley:
   source     -> human_review
@@ -107,19 +138,19 @@ change SetPolicy:
       <section id="install" class="install-panel" aria-labelledby="install-title">
         <div>
           <p class="kicker">install</p>
-          <h2 id="install-title">Release Path Pending</h2>
+          <h2 id="install-title">Public Release</h2>
         </div>
         <p>
-          Sley is active private v0 work. The public site explains the design
-          posture without publishing exact syntax, commands, fixtures, schema
-          payloads, operation inventories, or compiler internals before release.
+          Sley has reached public v1.0 release under Apache-2.0.
+          Get the repository, releases, and installation instructions from
+          <a href="https://github.com/GreyforgeLabs/sley">GitHub</a>.
         </p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Greyforge Labs. Sley is a private v0 structural programming language.</p>
-      <p><a href="https://greyforge.tech">greyforge.tech</a> / <a href="/llms.txt">llms.txt</a> / <a href="/faq.html">claim boundary</a></p>
+      <p>&copy; 2026 Greyforge Labs. Sley is an open-source v1.0 language under Apache-2.0.</p>
+      <p><a href="https://greyforge.tech">greyforge.tech</a> / <a href="https://greyforge.tech/chronicles">Chronicles</a> / <a href="https://x.com/GreyforgeLabs">X</a> / <a href="/llms.txt">llms.txt</a> / <a href="/faq.html">claim boundary</a> / <a href="https://github.com/GreyforgeLabs/sley">GitHub</a></p>
     </footer>
   </div>
 </body>
