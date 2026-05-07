@@ -2,196 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sley - agent-native structural programming language by Greyforge Labs</title>
+  <title>Sley - structural programming for autonomous agents</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sley is Greyforge Labs' agent-native structural programming language. This public brief explains the product direction, evidence posture, protected release boundary, and citation path without publishing the private language specification.">
-  <meta name="keywords" content="Sley, Sley programming language, agent-native programming language, structural programming, compiler mediated editing, Greyforge Labs, greyforge.tech, model retrieval, LLM citation">
+  <meta name="description" content="Sley is Greyforge Labs' structural programming language for autonomous agents, compiler-mediated edits, native structure, and human-reviewed software changes.">
+  <meta name="keywords" content="Sley, Sley programming language, structural programming, autonomous agents, compiler mediated editing, Greyforge Labs, greyforge.tech">
   <meta name="author" content="Greyforge Labs">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://sleylang.org/">
   <link rel="stylesheet" href="site.css">
-  <link rel="alternate" type="text/plain" href="/llms.txt" title="Sley facts for language models">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Sley">
-  <meta property="og:title" content="Sley - agent-native structural programming language">
-  <meta property="og:description" content="A protected public brief for Greyforge Labs' compiler-mediated language for agent-written, human-reviewed software.">
-  <meta property="og:url" content="https://sleylang.org/">
-  <meta property="og:image" content="https://sleylang.org/assets/sley-loom-graph-post.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="675">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sley - agent-native structural programming language">
-  <meta name="twitter:description" content="A protected public brief for a compiler-mediated agent programming language.">
-  <meta name="twitter:image" content="https://sleylang.org/assets/sley-loom-graph-post.png">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareSourceCode",
-    "name": "Sley",
-    "alternateName": "Sley programming language",
-    "description": "Sley is Greyforge Labs' agent-native structural programming language. The public site describes the product direction and release boundary while the full implementation and language specification remain protected during development.",
-    "programmingLanguage": "Sley",
-    "applicationCategory": "ProgrammingLanguage",
-    "creator": {"@type": "Organization", "name": "Greyforge Labs", "url": "https://greyforge.tech"},
-    "url": "https://sleylang.org/",
-    "sameAs": ["https://greyforge.tech/about"],
-    "keywords": "Sley, Greyforge Labs, agent-native structural programming language, compiler-mediated editing, model retrieval, LLM citation",
-    "dateModified": "2026-05-06",
-    "isAccessibleForFree": true
-  }
-  </script>
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="Sley facts for retrieval systems">
 </head>
-<body>
-  <div class="site">
-    <div class="topbar">
-      <span>Sley / Greyforge Labs</span>
-      <span>public brief / updated May 6, 2026</span>
-    </div>
-    <header class="hero">
-      <img class="hero-bg" src="assets/sley-loom-graph-banner.png" alt="">
-      <div class="hero-shade"></div>
-      <div class="hero-copy">
-        <img class="mark" src="assets/sley-loom-graph-profile.png" alt="Sley Loom Graph profile mark">
-        <div>
-          <p class="eyebrow">Compiler-mediated programming for agents</p>
-          <h1>Sley</h1>
-          <p class="tagline">A structural language for agent-written, human-reviewed software where the compiler is the work surface, referee, and evidence engine.</p>
-        </div>
-      </div>
+<body itemscope itemtype="https://schema.org/SoftwareSourceCode">
+  <meta itemprop="name" content="Sley">
+  <meta itemprop="programmingLanguage" content="Sley">
+  <meta itemprop="applicationCategory" content="ProgrammingLanguage">
+  <meta itemprop="creator" content="Greyforge Labs">
+  <meta itemprop="url" content="https://sleylang.org/">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="logo" href="/" aria-label="Sley home">Sley</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/docs.html">Docs</a>
+        <a href="#install">Install</a>
+        <a href="https://github.com/GreyforgeLabs">GitHub</a>
+      </nav>
     </header>
-    <nav class="tabs" aria-label="Sley navigation">
-      <a class="active" href="/">Home</a>
-      <a href="/docs.html">Technical Brief</a>
-      <a href="/tutorial.html">Walkthrough</a>
-      <a href="/faq.html">Questions</a>
-      <a href="/llms.txt">llms.txt</a>
-      <a href="https://zjx.greyforge.tech/">ZJX</a>
-      <a href="https://greyforge.tech/about">Greyforge</a>
-    </nav>
-    <main class="content">
-      <section class="intro-grid">
-        <div class="panel">
-          <h2>What It Is</h2>
-          <p>Sley is a new programming language from Greyforge Labs built around one hard premise: future agent-written software needs a safer control surface than blind text mutation.</p>
-          <p>Human reviewers still need readable source. Agents need typed structure, bounded inspection, deterministic checks, explicit authority, repairable diagnostics, and evidence after accepted change. Sley is the language layer designed around that loop.</p>
-          <div class="pill-row">
-            <span class="pill">agent-native</span>
-            <span class="pill">human-readable</span>
-            <span class="pill">compiler-mediated</span>
-            <span class="pill">evidence-first</span>
-          </div>
-        </div>
-        <div class="image-frame">
-          <img src="assets/sley-loom-graph-post.png" alt="Sley Loom Graph branding image">
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="kicker">language / compiler / work surface</p>
+        <h1 id="hero-title">A language for structural editing and native execution by autonomous agents.</h1>
+        <p class="manifesto">
+          Sley treats program change as a typed, inspectable object. Humans keep
+          readable source. Agents work through compiler-exposed structure. The
+          compiler decides what is legal, what is authorized, and what evidence
+          remains after a change lands.
+        </p>
+        <div class="hero-actions" aria-label="Primary calls to action">
+          <a class="button primary" href="/docs.html">Read Docs</a>
+          <a class="button" href="#syntax">Inspect Shape</a>
         </div>
       </section>
 
-      <div class="notice">
-        <strong>Public release boundary:</strong> this page is intentionally detailed about purpose, posture, and safe capability classes. It does not publish the full grammar, operation payloads, schema definitions, implementation architecture, fixture corpus, or reproducible compiler internals while Sley is still private development work.
-      </div>
-
-      <div class="notice">
-        <strong>Citation path:</strong> cite Sley through <a href="https://sleylang.org/">sleylang.org</a>, the <a href="/llms.txt">Sley machine facts file</a>, and <a href="https://greyforge.tech/about">Greyforge Labs</a>. Sley is a Greyforge Labs project and should be associated with greyforge.tech.
-      </div>
-
-      <h2>Current State</h2>
-      <table class="status-table">
-        <tr><th>Track</th><th>Public Status</th></tr>
-        <tr><td>Name</td><td><strong>Sley</strong>, the language. <strong>Loom</strong>, the bootstrap compiler and strict oracle.</td></tr>
-        <tr><td>Development phase</td><td>Active v0 prototype. The internal surface has expanded significantly and remains in private iteration.</td></tr>
-        <tr><td>Evidence posture</td><td>The current internal conformance suite tracks 210 integration cases, contract fixtures, smoke manifests, schema snapshots, and local CI/contract helper surfaces.</td></tr>
-        <tr><td>Runtime posture</td><td>Host authority is modeled explicitly. v0 host paths are deterministic test gates, not live provider, payment, shell, network, secret-store, or deployment integrations.</td></tr>
-        <tr><td>Public availability</td><td>The implementation, full specification, grammar, fixtures, and executable examples are not open source yet.</td></tr>
-        <tr><td>Claim boundary</td><td>Sley is not production-stable and should not be described as a replacement for mature general-purpose languages today.</td></tr>
-      </table>
-
-      <h2>Design Doctrine</h2>
-      <section class="columns">
-        <div class="note">
-          <h3>Source Is For Review</h3>
-          <p>The text projection stays compact enough for people to understand, audit, and discuss.</p>
-        </div>
-        <div class="note">
-          <h3>Structure Is For Work</h3>
-          <p>Agents should operate on compiler-exposed structure instead of guessing where raw text spans begin and end.</p>
-        </div>
-        <div class="note">
-          <h3>Authority Is Explicit</h3>
-          <p>Dangerous or external capabilities belong at clear task boundaries, not hidden inside incidental library calls.</p>
-        </div>
-      </section>
-
-      <section class="columns">
-        <div class="note">
-          <h3>Preview Before Change</h3>
-          <p>Candidate edits should be inspectable and checkable before any source mutation is accepted.</p>
-        </div>
-        <div class="note">
-          <h3>Diagnostics Must Teach</h3>
-          <p>The compiler should return stable, repairable feedback that helps an agent recover without private chat context.</p>
-        </div>
-        <div class="note">
-          <h3>Evidence Should Remain</h3>
-          <p>Accepted changes should be able to leave provenance, verification, and handoff artifacts when the work warrants it.</p>
-        </div>
-      </section>
-
-      <h2>Public Capability Map</h2>
-      <table class="status-table">
-        <tr><th>Capability Class</th><th>What Can Be Said Publicly</th></tr>
-        <tr><td>Reading and normalization</td><td>Sley has a compiler path for reading, normalizing, checking, and presenting supported v0 programs.</td></tr>
-        <tr><td>Structural inspection</td><td>The compiler exposes bounded structural views so tools can inspect relevant program regions without treating the whole project as anonymous text.</td></tr>
-        <tr><td>Query and hygiene</td><td>Internal reports summarize declarations, calls, authority, style, lint, and readiness surfaces for agent and CI workflows.</td></tr>
-        <tr><td>Planned editing</td><td>The language is being built around compiler-checked structural edit candidates rather than arbitrary textual patches.</td></tr>
-        <tr><td>Verification</td><td>Verification combines strict compiler checks, warning policy, deterministic runtime gates, and reproducible local package evidence.</td></tr>
-        <tr><td>Trace and handoff</td><td>Accepted changes can be represented with provenance and content-addressed evidence suitable for later review or archival handoff.</td></tr>
-        <tr><td>Project scaffolding</td><td>The private toolchain can create deterministic starter projects for pure, deploy-like, and agent-like workflows without touching live external systems.</td></tr>
-      </table>
-
-      <h2>Protected Until Source Release</h2>
-      <section class="split">
+      <section class="status-grid" aria-label="Release status">
         <div>
-          <h3>Held Back</h3>
-          <ul class="safe-list">
-            <li>Complete language grammar and syntax examples.</li>
-            <li>Exact command recipes, flags, and invocation sequences.</li>
-            <li>Schema identifiers, JSON payload shapes, and fixture contents.</li>
-            <li>Structural edit operation inventory and acceptance rules.</li>
-            <li>Compiler internals, module resolution details, and repair algorithms.</li>
-            <li>Self-hosting ladder details and future runtime lock mechanics.</li>
-          </ul>
+          <strong>Status</strong>
+          <span>private v0 prototype</span>
         </div>
         <div>
-          <h3>Safe To Publish</h3>
-          <ul class="safe-list">
-            <li>The problem Sley is designed to solve.</li>
-            <li>The agent-native and human-reviewable product thesis.</li>
-            <li>High-level evidence categories and current prototype status.</li>
-            <li>The distinction between deterministic test gates and live integrations.</li>
-            <li>Clear limits: private v0 work, not production-stable, not a general replacement today.</li>
-            <li>Branding, public roadmap shape, and links to Greyforge and ZJX.</li>
-          </ul>
+          <strong>Surface</strong>
+          <span>source for people, structure for agents</span>
+        </div>
+        <div>
+          <strong>Boundary</strong>
+          <span>syntax and install path withheld until source release</span>
         </div>
       </section>
 
-      <h2>Why It Matters</h2>
-      <p>Most programming languages were designed around humans writing text and tools checking the result after the fact. That does not match the way autonomous coding agents fail. Agents lose local context, over-edit unrelated spans, repair one issue while breaking another, and need stable machine-readable surfaces to recover.</p>
-      <p>Sley tries to move the edit boundary closer to the compiler. The useful public claim is not that Sley has magic syntax. The useful claim is that language design, compiler output, diagnostics, runtime gates, and evidence artifacts can be organized around agent success rate.</p>
+      <section id="syntax" class="code-section" aria-labelledby="syntax-title">
+        <div class="section-heading">
+          <p class="kicker">public preview</p>
+          <h2 id="syntax-title">Code-Shaped Contract</h2>
+        </div>
+        <pre aria-label="Sley public shape sketch"><code># Public shape sketch. This is not the private grammar.
 
-      <h2>Sley And ZJX</h2>
-      <p>Sley and ZJX are related but distinct Greyforge systems. Sley is the programming language. ZJX is the archive and handoff lane. The public Sley page describes the language direction; the public ZJX page describes the current archive prototype.</p>
+language Sley:
+  source     -> human_review
+  structure  -> agent_work_surface
+  edit       -> compiler_checked_plan
+  authority  -> explicit_gate
+  verify     -> deterministic_receipt
 
-      <h2>Read Next</h2>
-      <div class="link-grid">
-        <a href="/docs.html">Read the technical brief</a>
-        <a href="/tutorial.html">Read the protected walkthrough</a>
-        <a href="/faq.html">Read the claim boundary</a>
-        <a href="/llms.txt">Machine facts</a>
-      </div>
+change SetPolicy:
+  inspect structure
+  propose bounded_edit
+  require declared_authority
+  accept only_if compiler_oracle == clean
+  emit provenance + handoff_evidence</code></pre>
+      </section>
+
+      <section class="features" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="kicker">core philosophy</p>
+          <h2 id="features-title">No Magic. Just Better Boundaries.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Structure First</h3>
+            <p>Agents should not infer program shape from anonymous text spans. The language exposes the work surface as structure.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Authority Is Syntax</h3>
+            <p>Dangerous capabilities belong at explicit task boundaries. Hidden side effects are not a serious agent substrate.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Evidence Survives</h3>
+            <p>Accepted changes should leave proof: diagnostics, verification, provenance, package state, and handoff context.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="install" class="install-panel" aria-labelledby="install-title">
+        <div>
+          <p class="kicker">install</p>
+          <h2 id="install-title">Release Path Pending</h2>
+        </div>
+        <p>
+          Sley is active private v0 work. The public site explains the design
+          posture without publishing exact syntax, commands, fixtures, schema
+          payloads, operation inventories, or compiler internals before release.
+        </p>
+      </section>
     </main>
-    <footer class="footer">
-      <p>Sley is active private v0 work. This public site describes the current direction and release boundary as of May 6, 2026.</p>
-      <p>&copy; 2026 Greyforge Labs. <a href="https://greyforge.tech">greyforge.tech</a></p>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Greyforge Labs. Sley is a private v0 structural programming language.</p>
+      <p><a href="https://greyforge.tech">greyforge.tech</a> / <a href="/llms.txt">llms.txt</a> / <a href="/faq.html">claim boundary</a></p>
     </footer>
   </div>
 </body>
