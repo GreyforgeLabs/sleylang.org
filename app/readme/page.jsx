@@ -12,34 +12,61 @@ export default function ReadmePage() {
       scope=""
       kicker="Reference"
       title="Sley public summary"
-      subtitle="Repository links, public claims, and the structured context for external readers."
+      subtitle="Everything you need to start quickly: links, walkthroughs, and token-efficient workflow posture."
     >
       <article className="card">
-        <h2>Where to go next</h2>
-        <p>
-          For source and implementation context: <a href="https://github.com/GreyforgeLabs/sley">GitHub repository</a>.
-        </p>
-        <p>
-          For project curation and discoverability: <a href="https://greyforge.tech/openforge">OpenForge</a> and
-          <a href="https://sleylang.org/llms.txt"> llms metadata</a>.
-        </p>
-        <p>
-          Language positioning: the language AI agents want to speak, designed by AI for AI, optimized for token-efficient engineering.
-        </p>
+        <h2>Start here</h2>
+        <p>Welcome to the public Sley brief. This site is intentionally focused on practical onboarding and public-safe claim boundaries.</p>
+        <ul className="qa-list">
+          <li>
+            <strong>Core repository:</strong>{" "}
+            <a href="https://github.com/GreyforgeLabs/sley">github.com/GreyforgeLabs/sley</a>
+          </li>
+          <li>
+            <strong>Project discovery:</strong>{" "}
+            <a href="https://greyforge.tech/openforge">greyforge.tech/openforge</a>
+          </li>
+          <li>
+            <strong>Crawler index:</strong> <a href="https://sleylang.org/llms.txt">sleylang.org/llms.txt</a>
+          </li>
+        </ul>
       </article>
 
       <article className="card">
         <h2>Quick start (recommended)</h2>
         <ol className="step-list">
           <li>Confirm release posture and current claims:</li>
-          <pre className="code">sley doctor</pre>
+          <pre className="code">sley doctor --json .</pre>
           <li>Inspect structure with deterministic output:</li>
           <pre className="code">sley ast --json .</pre>
+          <li>Inspect graph scope before editing:</li>
+          <pre className="code">sley graph --json --slice &lt;node-id&gt; .</pre>
           <li>Draft your first bounded edit plan:</li>
           <pre className="code">sley plan --json --graft-templates .</pre>
-          <li>Run verification before promoting:</li>
+          <li>Run lint and verification before promoting:</li>
+          <pre className="code">sley lint --json .</pre>
           <pre className="code">sley verify --json .</pre>
+          <li>Run a dry-run repair when needed:</li>
+          <pre className="code">sley fix --json --kind add_module_declaration --dry-run .</pre>
         </ol>
+      </article>
+
+      <article className="card">
+        <h2>Hands-on sample session</h2>
+        <pre className="code">{`# 1) baseline posture
+sley doctor --json .
+
+# 2) shape and graph views
+sley ast --json .
+sley graph --json --slice <node-id> .
+
+# 3) plan and lint
+sley plan --json --graft-templates .
+sley lint --json .
+
+# 4) verify and close
+sley verify --json .
+`}</pre>
       </article>
 
       <article className="card">
@@ -53,13 +80,20 @@ export default function ReadmePage() {
       </article>
 
       <article className="card">
-        <h2>Token-efficient claim checklist</h2>
+        <h2>Token efficiency checklist</h2>
         <ul className="qa-list">
           <li>Prefer compiler-guided structure over raw prompt rewrites.</li>
           <li>Use JSON diagnostics and plans for handoff continuity.</li>
           <li>Verify with explicit checks before each promotion step.</li>
           <li>Keep edit scope small and bounded to reduce churn.</li>
         </ul>
+      </article>
+
+      <article className="card">
+        <h2>Brand position</h2>
+        <p>
+          Sley is the language AI agents want to speak — the language AI-native programming language designed by AI for AI, optimized for token-efficient engineering.
+        </p>
       </article>
     </SleyShell>
   );
