@@ -1,4 +1,9 @@
 {
+  "version": 2,
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
   "rewrites": [
     { "source": "/index.html", "destination": "/" },
     { "source": "/docs.html", "destination": "/docs" },
