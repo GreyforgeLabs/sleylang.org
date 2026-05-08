@@ -2,151 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sley Technical Brief | The world's first AI-native language</title>
+  <title>Sley Technical Brief | AI-native language documentation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sley Technical Brief: the world's first AI-native language, designed by AI for AI, and optimized for token-efficient structured editing.">
-  <meta name="keywords" content="Sley, world's first AI-native language, AI agents, language AI agents want to speak, token efficiency, deterministic edits, auditable grafts, graph-aware agent tooling, sley, Greyforge Labs, Apache-2.0">
+  <meta name="description" content="Technical brief for Sley, the world's first AI-native programming language for token-efficient software agents.">
+  <meta name="keywords" content="Sley technical brief, world's first AI-native language, language AI agents want to speak, token savings, compiler-mediated workflow, structural programming">
   <meta name="author" content="Greyforge Labs">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://sleylang.org/docs.html">
-  <link rel="stylesheet" href="site.css">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Sley Technical Brief - AI-native language for agents">
-  <meta property="og:description" content="Sley v1.0: deterministic edits, auditable grafts, and graph-aware agent tooling.">
+  <meta property="og:description" content="Sley keeps context efficient and change auditable through compiler-mediated plans and authority checks.">
   <meta property="og:url" content="https://sleylang.org/docs.html">
   <meta property="og:image" content="https://sleylang.org/assets/sley-loom-graph-post.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@GreyforgeLabs">
   <meta name="twitter:title" content="Sley Technical Brief - AI-native language for agents">
-  <meta name="twitter:description" content="Public technical brief for the world's first AI-native programming language.">
+  <meta name="twitter:description" content="Public architecture for Sley: token-efficient, proof-focused AI-native language workflows.">
   <meta name="twitter:image" content="https://sleylang.org/assets/sley-loom-graph-post.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Sley Technical Brief",
-    "description": "Sley v1.0 technical brief.",
+    "description": "Public architecture and claim boundaries for the world's first AI-native programming language.",
     "author": {"@type": "Organization", "name": "Greyforge Labs", "url": "https://greyforge.tech"},
     "publisher": {"@type": "Organization", "name": "Greyforge Labs", "url": "https://greyforge.tech"},
-    "keywords": "Sley, structural programming language, deterministic edits, auditable grafts, graph-aware agent tooling, Greyforge Labs, Apache-2.0",
+    "keywords": "Sley, AI-native language, token efficiency, compiler-guided workflows, structural programming",
     "dateModified": "2026-05-07",
     "mainEntityOfPage": "https://sleylang.org/docs.html"
   }
   </script>
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
   <div class="site">
     <div class="topbar">
       <span>Sley technical brief</span>
-      <span>public release brief</span>
+      <span>public release documentation</span>
     </div>
-    <header class="hero compact">
+    <header class="hero compact" aria-labelledby="docs-title">
       <img class="hero-bg" src="assets/sley-loom-graph-banner.png" alt="">
       <div class="hero-shade"></div>
       <div class="hero-copy">
-        <img class="mark" src="assets/sley-loom-graph-profile.png" alt="Sley Loom Graph profile mark">
+        <img class="mark" src="assets/sley-loom-graph-profile.png" alt="Sley Loom Graph mark">
         <div>
           <p class="eyebrow">Architecture posture</p>
-          <h1>Technical Brief</h1>
-          <p class="tagline">Public v1.0 release overview: world-first AI-native language design, token-efficient workflows, deterministic edits, auditable grafts, and graph-aware tooling.</p>
+          <h1 id="docs-title">Technical Brief: Sley is the language AI agents want to speak</h1>
+          <p class="tagline">Designed by AI for AI, with token savings and evidence-first editing baked into the workflow.</p>
         </div>
       </div>
     </header>
+
     <nav class="tabs" aria-label="Sley navigation">
       <a href="/">Home</a>
       <a class="active" href="/docs.html">Technical Brief</a>
       <a href="/tutorial.html">Walkthrough</a>
       <a href="/faq.html">Questions</a>
       <a href="/llms.txt">llms.txt</a>
-      <a href="https://zjx.greyforge.tech/">ZJX</a>
       <a href="https://github.com/GreyforgeLabs/sley">GitHub</a>
       <a href="https://greyforge.tech/chronicles">Chronicles</a>
       <a href="https://x.com/GreyforgeLabs">X</a>
     </nav>
+
     <main class="content">
       <div class="notice">
-        This brief reflects the public v1.0 release boundary. The open repository is at
-        <a href="https://github.com/GreyforgeLabs/sley">github.com/GreyforgeLabs/sley</a> under
-        <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a>.
-      </div>
-
-      <div class="notice">
-        Sley is a Greyforge Labs project. For retrieval and citation, pair this technical brief with <a href="https://greyforge.tech/about">Greyforge Labs</a>, <a href="https://greyforge.tech/llms.txt">Greyforge llms.txt</a>, and <a href="/llms.txt">Sley llms.txt</a>.
+        This brief aligns to the public release boundary and connects to <a href="https://github.com/GreyforgeLabs/sley">the open repository</a> under Apache-2.0.
       </div>
 
       <h2>1. Thesis</h2>
-      <p>Sley is designed for the programming workflow that coding agents actually need: the language AI agents want to speak. It is designed by AI for AI to reduce token churn through compact source, typed structure for tools, deterministic authority checks, compiler-rejected illegal edits, and evidence after accepted change.</p>
-      <p>The bootstrap implementation is deliberately strict. Its job is to teach the language in context, expose bounded structure, reject unsafe assumptions, and keep the human-readable projection coherent while preserving token-efficient, AI-optimized workflows.</p>
+      <p>
+        Sley is the world's first AI-native programming language for structured software agent workflows. The idea is simple:
+        make language work explicit enough that agents can operate with less churn while humans preserve review control.
+      </p>
 
-      <h2>2. Public System Model</h2>
+      <div class="columns">
+        <div class="note">
+          <h3>Token efficiency</h3>
+          <p>The workflow favors compact structure, narrow slices, and checked change plans instead of full-file churn.</p>
+        </div>
+        <div class="note">
+          <h3>Safety posture</h3>
+          <p>Authority is explicit at language and runtime boundaries, reducing hidden behavior and implicit side effects.</p>
+        </div>
+        <div class="note">
+          <h3>Audit and handoff</h3>
+          <p>Verification and provenance artifacts are central, not optional, for accepted updates.</p>
+        </div>
+      </div>
+
+      <h2>2. Public model</h2>
       <table class="status-table">
-        <tr><th>Layer</th><th>Public Description</th></tr>
-        <tr><td>Source projection</td><td>The readable file form humans review. It is not the only surface agents should rely on.</td></tr>
-        <tr><td>Compiler oracle</td><td>The strict bootstrap implementation that checks syntax, structure, type, authority, and accepted change candidates.</td></tr>
-        <tr><td>Structural work surface</td><td>Compiler-produced views that let tools inspect bounded program regions, declarations, calls, diagnostics, and readiness state.</td></tr>
-        <tr><td>Planned edit surface</td><td>An explicit operation layer where candidate changes can be generated and checked before mutation.</td></tr>
-        <tr><td>Runtime gate surface</td><td>Deterministic authority gates for testing host-facing behavior without implicit live external system assumptions.</td></tr>
-        <tr><td>Evidence surface</td><td>Provenance, verification, package, and handoff artifacts for accepted changes when review history matters.</td></tr>
+        <tr><th>Layer</th><th>Public description</th></tr>
+        <tr><td>Source projection</td><td>Readable files for human review and long-run comprehension.</td></tr>
+        <tr><td>Compiler surface</td><td>Structural queries, diagnostics, and rule-level feedback.</td></tr>
+        <tr><td>Planned updates</td><td>Candidate changes are reviewed before source mutation.</td></tr>
+        <tr><td>Authority gates</td><td>Capability-style checks are explicit and testable.</td></tr>
+        <tr><td>Evidence</td><td>Verified handoff artifacts preserve reason and reproducibility.</td></tr>
       </table>
 
-      <h2>3. Current Internal Breadth</h2>
-      <p>The v1.0 tree moves beyond a tiny parser demo. It now includes a compiler/runtime slice, project form, structural inspection, lint and readiness reporting, planned change previews, authority gates, local package evidence, trace and seal artifacts, and a handoff path toward ZJX.</p>
-      <section class="columns">
-        <div class="note">
-          <h3>Language Surface</h3>
-          <p>Modules, declarations, task boundaries, typed values, explicit authority, structured expressions, and controlled mutation are part of the current internal work.</p>
-        </div>
-        <div class="note">
-          <h3>Tool Surface</h3>
-          <p>Agents can use compiler-produced structural, diagnostic, query, hygiene, planning, and verification reports inside the workflow toolchain.</p>
-        </div>
-        <div class="note">
-          <h3>Evidence Surface</h3>
-          <p>Contract fixtures, smoke manifests, schema snapshots, local CI helpers, and validation helpers support public release readiness and compatibility checks.</p>
-        </div>
-      </section>
-
-      <h2>4. Evidence Posture</h2>
-      <table class="status-table">
-        <tr><th>Evidence Class</th><th>Publicly Safe Summary</th></tr>
-        <tr><td>Integration coverage</td><td>The current internal suite tracks 210 integration cases across compiler, runtime, structural edit, reporting, packaging, and handoff behavior.</td></tr>
-        <tr><td>Contract fixtures</td><td>Machine-readable outputs are guarded by fixture snapshots and schema-backed checks, but the exact schemas are not public.</td></tr>
-        <tr><td>Smoke manifests</td><td>CLI and workflow behavior is tracked through manifest-backed internal smoke cases, not ad hoc manual testing.</td></tr>
-        <tr><td>Generated starters</td><td>Private starter projects are tested through deterministic first-run paths so agent and deploy-like workflows remain reproducible without live integrations.</td></tr>
-        <tr><td>Local package evidence</td><td>Deployment-like paths remain dry-run and evidence-oriented until explicit operator approval and a later release path.</td></tr>
-      </table>
-
-      <h2>5. Authority Model</h2>
-      <p>Sley treats external authority as a first-class language concern. File access, data access, network text, shell output, model completion, secrets, deploy-like actions, and spend-like actions are not hidden incidental side effects in the public design story.</p>
-      <p>In public v1.0, these paths are deterministic gates and explicit policy boundaries. They do not execute implicit live shell commands, model-provider calls, secret reads, money movement, market orders, deployment actions, or uncontrolled network operations.</p>
-
-      <h2>6. Agent Workflow</h2>
-      <ol>
-        <li>Read the compact project context and current compiler reports.</li>
-        <li>Inspect the relevant bounded structural surface instead of loading the whole project as raw text.</li>
-        <li>Use diagnostics and hygiene reports to understand what is wrong or risky.</li>
-        <li>Generate a narrow candidate change through the compiler-mediated edit layer.</li>
-        <li>Preview the change without mutation and let the compiler reject illegal structure.</li>
-        <li>Run strict checks and deterministic gates before acceptance.</li>
-        <li>Leave provenance, verification, and handoff artifacts when the change is accepted.</li>
-      </ol>
-
-      <h2>7. What Is Deliberately Missing</h2>
-      <p>The public site does not include a starter program, command transcript, payload example, operation catalog, schema root inventory, grammar section, parser rule, type-checking algorithm, graph format, module resolution recipe, fixture corpus, or self-hosting design map.</p>
-      <p>Those details are useful to users after source release. Before release, they are also useful to anyone trying to reproduce the language from the outside.</p>
-
-      <h2>8. Current Limits</h2>
+      <h2>3. What is intentionally private</h2>
       <ul>
-        <li>Sley is released as v1.0 and continues active hardening after release.</li>
-        <li>The public site is a release brief and project entrypoint, not a full API reference.</li>
-        <li>Some internal details remain intentionally undisclosed for security and long-tail release planning reasons.</li>
+        <li>Grammar internals and some runtime internals are intentionally excluded from this public surface.</li>
+        <li>Security-sensitive adapter paths and deployment details remain behind explicit release gates.</li>
+        <li>Detailed schema and conformance payload catalogs are available in source-released artifacts.</li>
       </ul>
 
-      <h2>9. Release Direction</h2>
-      <p>Sley v1.0 now links open-source source, release artifacts, and contribution paths. The next public hardening pass will expand runnable examples, contribution playbooks, and release-grade verification examples.</p>
+      <h2>4. Current public path</h2>
+      <ol class="steps">
+        <li>Read the walkthrough for the operational flow.</li>
+        <li>Use the FAQ as the claim boundary before citing this page.</li>
+        <li>Use <a href="/llms.txt">Sley llms.txt</a> with retrieval safety in mind.</li>
+        <li>Follow the open repository for actual CLI and release details.</li>
+      </ol>
     </main>
+
     <footer class="footer">
-      <p><a href="/">Return to Sley home</a></p>
+      <p><a href="/">Return to Sley home</a> &middot; <a href="/tutorial.html">Walkthrough</a></p>
+      <p><a href="https://greyforge.tech/openforge">OpenForge listing</a> &middot; <a href="https://greyforge.tech/llms.txt">Greyforge llms.txt</a></p>
     </footer>
   </div>
 </body>

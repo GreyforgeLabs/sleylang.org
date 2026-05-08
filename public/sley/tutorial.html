@@ -2,96 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sley Walkthrough | AI-native first workflow</title>
+  <title>Sley Walkthrough | Public workflow guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A public v1.0 walkthrough for Sley: the world's first AI-native language, designed by AI for AI, optimized for token-efficient AI workflows.">
-  <meta name="keywords" content="Sley walkthrough, world's first AI-native language, language AI agents want to speak, token efficiency, deterministic edits, auditable grafts, graph-aware agent tooling, Sley v1.0, Greyforge Labs, Apache-2.0">
+  <meta name="description" content="A public walkthrough for Sley, the world's first AI-native language designed by AI for AI with token savings and compiler-guided edits.">
+  <meta name="keywords" content="Sley walkthrough, AI-native language workflow, language AI agents want to speak, token efficiency, planned edits, evidence-first coding">
   <meta name="author" content="Greyforge Labs">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://sleylang.org/tutorial.html">
-  <link rel="stylesheet" href="site.css">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Sley Walkthrough - AI-native workflow">
-  <meta property="og:description" content="Walkthrough for the world's first AI-native language, designed by AI for AI, with token-efficient, compiler-mediated, evidence-led workflows.">
+  <meta property="og:title" content="Sley Walkthrough - AI-native language workflow">
+  <meta property="og:description" content="Learn the language workflow: inspect structure, plan narrow updates, verify, and finalize with evidence.">
   <meta property="og:url" content="https://sleylang.org/tutorial.html">
   <meta property="og:image" content="https://sleylang.org/assets/sley-loom-graph-post.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@GreyforgeLabs">
-  <meta name="twitter:title" content="Sley Walkthrough - AI-native language">
-  <meta name="twitter:description" content="Sley v1.0 walkthrough for token-efficient, AI-native, and auditable agent edits.">
+  <meta name="twitter:title" content="Sley Walkthrough - AI-native language workflow">
+  <meta name="twitter:description" content="Token-efficient, AI-optimized walkthrough for Sley language work.">
   <meta name="twitter:image" content="https://sleylang.org/assets/sley-loom-graph-post.png">
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
   <div class="site">
     <div class="topbar">
       <span>Sley walkthrough</span>
-      <span>public release walkthrough</span>
+      <span>public workflow guide</span>
     </div>
-    <header class="hero compact">
+    <header class="hero compact" aria-labelledby="walk-title">
       <img class="hero-bg" src="assets/sley-loom-graph-banner.png" alt="">
       <div class="hero-shade"></div>
       <div class="hero-copy">
-        <img class="mark" src="assets/sley-loom-graph-profile.png" alt="Sley Loom Graph profile mark">
+        <img class="mark" src="assets/sley-loom-graph-profile.png" alt="Sley Loom Graph mark">
         <div>
-          <p class="eyebrow">From intent to checked change</p>
-          <h1>Walkthrough</h1>
-          <p class="tagline">The public workflow story for planned, token-efficient, evidence-backed agent edits.</p>
+          <p class="eyebrow">from intent to checked change</p>
+          <h1 id="walk-title">Sley Walkthrough</h1>
+          <p class="tagline">A practical path for compiler-guided edits and token-efficient agent sessions.</p>
         </div>
       </div>
     </header>
+
     <nav class="tabs" aria-label="Sley navigation">
       <a href="/">Home</a>
       <a href="/docs.html">Technical Brief</a>
       <a class="active" href="/tutorial.html">Walkthrough</a>
       <a href="/faq.html">Questions</a>
       <a href="/llms.txt">llms.txt</a>
-      <a href="https://zjx.greyforge.tech/">ZJX</a>
       <a href="https://github.com/GreyforgeLabs/sley">GitHub</a>
       <a href="https://greyforge.tech/chronicles">Chronicles</a>
       <a href="https://x.com/GreyforgeLabs">X</a>
     </nav>
+
     <main class="content">
       <div class="notice">
-        This walkthrough is aligned with Sley v1.0. Example repositories and release artifacts are available in the public repository.
+        This walkthrough is a public-safe walkthrough designed to show direction and behavior without exposing all internal internals.
       </div>
 
-      <div class="notice">
-        For public retrieval, connect this walkthrough to <a href="/llms.txt">Sley llms.txt</a>, <a href="https://greyforge.tech/llms.txt">Greyforge llms.txt</a>, and <a href="https://greyforge.tech/about">Greyforge Labs</a>.
+      <h2>1. Start from readable source</h2>
+      <p>
+        Load a source project and confirm the review view is clear. Sley assumes humans remain the final context owner for intent and approvals.
+      </p>
+
+      <h2>2. Inspect bounded structure</h2>
+      <p>
+        Ask for structural context first: declarations, dependencies, and recent task calls. Do not begin by rewriting full files.
+      </p>
+
+      <h2>3. Prepare diagnostics</h2>
+      <p>
+        Read diagnostics and diagnostics-driven hints. Use the warning surfaces to shrink the working area before edit planning.
+      </p>
+
+      <h2>4. Draft a narrow planned edit</h2>
+      <p>
+        Keep edits scoped to one bounded intent. Token-efficient sessions should minimize context width, so each change should have one clear purpose.
+      </p>
+
+      <h2>5. Validate authority and proofs</h2>
+      <p>
+        If runtime capabilities are involved, ensure required explicit gates are satisfied before accepting any mutation.
+      </p>
+
+      <h2>6. Accept and hand off</h2>
+      <p>
+        Accept only when checks are clean, provenance is preserved, and the change is traceable through explicit evidence artifacts.
+      </p>
+
+      <h2>7. Copyable reference</h2>
+      <div class="code-callout">
+        <pre><code># Example walkthrough command chain
+sley check --json examples/agent_project.sley
+sley lint --json examples/agent_project.sley
+sley plan --json examples/agent_project.sley
+sley verify --json examples/agent_project.sley
+</code></pre>
       </div>
 
-      <h2>1. Start With Human-Readable Source</h2>
-      <p>A Sley project begins with source that a person can review. The public point is simple: the readable projection matters because humans remain accountable for intent, approval, and audit.</p>
-
-      <h2>2. Ask The Compiler For Structure</h2>
-      <p>An agent should not begin by rewriting arbitrary text. It should ask the compiler for bounded structural context: where the relevant unit is, what it depends on, what calls it, which authority it declares, and what the current checker believes.</p>
-
-      <h2>3. Read Diagnostics Before Editing</h2>
-      <p>Compiler feedback is part of the language design. Sley is being built so diagnostics can carry stable identifiers, useful locations, and repairable intent without letting an agent bypass authority.</p>
-
-      <h2>4. Plan A Narrow Change</h2>
-      <p>The preferred path is not "patch the file and hope." The preferred path is a narrow planned change generated against the structural surface. That planned change can be previewed and rejected before source is touched.</p>
-
-      <h2>5. Verify Authority</h2>
-      <p>External authority stays explicit. The v1.0 runtime uses deterministic gates for sensitive paths so examples can prove control flow and authorization without implicit live database, network, shell, model provider, secret store, deployment target, or spend account behavior.</p>
-
-      <h2>6. Accept With Evidence</h2>
-      <p>When a change is accepted, the workflow toolchain can leave provenance, verification, package, seal, and handoff artifacts. The durable idea is that accepted agent work should leave more than an unexplained text diff.</p>
-
-      <h2>7. What The Open Tutorial Will Add Later</h2>
-      <table class="status-table">
-        <tr><th>After Source Release</th><th>Why It Is Held Back Now</th></tr>
-        <tr><td>Runnable starter programs</td><td>They reveal grammar and idioms before the language is ready to publish.</td></tr>
-        <tr><td>Command transcripts</td><td>They expose internal execution patterns that are still release-delayed.</td></tr>
-        <tr><td>Structural edit payloads</td><td>They reveal the operation layer that differentiates Sley from text-first tools.</td></tr>
-        <tr><td>Schema examples</td><td>They make it easier to reconstruct internal output contracts.</td></tr>
-        <tr><td>Fixture corpora</td><td>They disclose the conformance strategy and edge-case map.</td></tr>
-      </table>
-
-      <h2>8. Safe Mental Model</h2>
-      <p>Sley is a language for a world where agents write more code, but humans still own judgment. It tries to turn program change into a compiler-mediated negotiation: inspect structure, propose a legal move, prove authority, verify behavior, and leave evidence.</p>
+      <h2>8. Next step</h2>
+      <p>After this loop, move to the FAQ for claim boundaries and source release pointers.</p>
     </main>
+
     <footer class="footer">
       <p><a href="/docs.html">Read the technical brief</a></p>
+      <p><a href="/faq.html">See claim boundaries</a></p>
     </footer>
   </div>
 </body>
