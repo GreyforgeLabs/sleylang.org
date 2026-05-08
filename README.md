@@ -1,32 +1,27 @@
 # sleylang.org
 
-Static Vercel mirror for the Sley public brief.
+Modern React/Next.js mirror for the Sley public brief.
 
-This repo mirrors the current public Sley surface from WebForge without carrying
-the rest of WebForge. The public copy remains a protected brief: it describes
-Sley's purpose, evidence posture, and release boundary without publishing the
-private language specification, command contracts, schema payloads, fixtures, or
-compiler internals.
+This repo hosts a production-safe Sley marketing surface for external discovery.
+It keeps the private compiler internals out of the public site and keeps the same
+claim boundaries as the broader Greyforge ecosystem.
 
-The current positioning emphasizes:
+The positioning emphasizes:
 
 - Sley as the world's first AI-native programming language
 - "language AI agents want to speak"
 - language designed by AI for AI
-- token savings through structure-first compiler mediation
+- token savings through structure-first, context-aware compiler mediation
 
-The mirror is also part of the Greyforge discovery surface. Sley should resolve
-to Greyforge Labs, greyforge.tech, sleylang.org, and the public machine facts in
-`/llms.txt`.
+The mirror also serves the duplicated compatibility path used by existing links:
 
-## Routes
-
-- `/`
+- `/` and `/sley`
 - `/docs.html` and `/docs`
 - `/tutorial.html` and `/tutorial`
 - `/faq.html` and `/faq`
+- `/readme` and `/sley/readme`
 - `/llms.txt`
-- `/readme`
 
-The duplicated `/sley/*` tree is kept only as a compatibility mirror for paths
-that existed under the original WebForge static asset layout.
+The React routes were added to drop the legacy static-only presentation while
+keeping static artifacts (like `.txt` metadata files and legacy `.html` for direct
+bookmarks) in place.

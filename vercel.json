@@ -1,15 +1,18 @@
 {
-  "trailingSlash": false,
   "rewrites": [
-    { "source": "/docs", "destination": "/docs.html" },
-    { "source": "/tutorial", "destination": "/tutorial.html" },
-    { "source": "/faq", "destination": "/faq.html" },
-    { "source": "/readme", "destination": "/README.txt" },
-    { "source": "/sley/docs", "destination": "/sley/docs.html" },
-    { "source": "/sley/tutorial", "destination": "/sley/tutorial.html" },
-    { "source": "/sley/faq", "destination": "/sley/faq.html" },
-    { "source": "/sley/readme", "destination": "/sley/README.txt" }
+    { "source": "/index.html", "destination": "/" },
+    { "source": "/docs.html", "destination": "/docs" },
+    { "source": "/tutorial.html", "destination": "/tutorial" },
+    { "source": "/faq.html", "destination": "/faq" },
+    { "source": "/readme.html", "destination": "/readme" },
+    { "source": "/sley", "destination": "/sley" },
+    { "source": "/sley/index.html", "destination": "/sley" },
+    { "source": "/sley/docs.html", "destination": "/sley/docs" },
+    { "source": "/sley/tutorial.html", "destination": "/sley/tutorial" },
+    { "source": "/sley/faq.html", "destination": "/sley/faq" },
+    { "source": "/sley/readme.html", "destination": "/sley/readme" }
   ],
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",

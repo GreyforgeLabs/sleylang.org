@@ -1,0 +1,217 @@
+:root {
+  --bg: #040910;
+  --panel: rgba(11, 18, 37, 0.88);
+  --panel-soft: rgba(20, 30, 54, 0.8);
+  --text: #e6f0ff;
+  --muted: #a2b3ca;
+  --line: rgba(148, 163, 184, 0.2);
+  --accent: #22d3ee;
+  --accent-strong: #06b6d4;
+  --font-body: Inter, "Inter var", "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-code: "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.1), transparent 35%),
+    radial-gradient(circle at 80% -5%, rgba(34, 211, 238, 0.12), transparent 40%),
+    linear-gradient(160deg, #020617, #07112c);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+.site-shell {
+  width: min(1160px, calc(100% - 2rem));
+  margin: 1.2rem auto 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(13, 23, 42, 0.82), rgba(7, 14, 30, 0.92));
+  overflow: hidden;
+  box-shadow: 0 25px 80px rgba(2, 6, 23, 0.55);
+  backdrop-filter: blur(8px);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  background: rgba(2, 8, 23, 0.9);
+}
+
+.brand {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--accent);
+  outline: none;
+}
+
+.content-shell {
+  padding: 1.5rem;
+}
+
+.hero {
+  border-radius: 16px;
+  border: 1px solid rgba(34, 211, 238, 0.16);
+  padding: 2rem;
+  margin-bottom: 1.4rem;
+  background: radial-gradient(circle at 20% 12%, rgba(8, 145, 178, 0.18), transparent 55%), rgba(11, 22, 39, 0.85);
+}
+
+.kicker {
+  color: var(--accent);
+  font-size: 0.875rem;
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #f8fcff;
+}
+
+.subtitle {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  max-width: 65ch;
+}
+
+.hero-actions {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.button-primary,
+.button-ghost {
+  padding: 0.6rem 0.95rem;
+  border-radius: 10px;
+  display: inline-flex;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.button-primary {
+  background: var(--accent);
+  color: #020617;
+}
+
+.button-ghost {
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  color: #b9f6ff;
+}
+
+.section-grid {
+  display: grid;
+  gap: 0.95rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  background: var(--panel-soft);
+  border-radius: 14px;
+  padding: 1.05rem;
+}
+
+h2 {
+  margin: 0 0 0.6rem;
+  color: #f0f9ff;
+  font-size: 1.2rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 1rem 1.25rem 1.25rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.footer a {
+  color: #7dd3fc;
+  text-decoration: none;
+  margin: 0 0.4rem;
+}
+
+.step-list,
+.qa-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text);
+}
+
+.code {
+  margin: 0.8rem 0;
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  background: rgba(2, 6, 23, 0.9);
+  overflow: auto;
+  font-family: var(--font-code);
+  color: #d9f8ff;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+.card + .card {
+  margin-top: 0;
+}
+
+@media (max-width: 720px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    padding: 1.3rem;
+  }
+}
