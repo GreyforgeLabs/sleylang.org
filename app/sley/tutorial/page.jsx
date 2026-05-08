@@ -21,6 +21,20 @@ export default function SleyScopedTutorialPage() {
           <li>Run checks where possible, then promote proven edits.</li>
         </ol>
       </article>
+      <article className="card">
+        <h2>Legacy-path quickstart</h2>
+        <pre className="code">
+{`# Read public surface
+sley doctor
+
+# View structure
+sley ast
+
+# Confirm policy and safety
+sley lint
+sley verify`}
+        </pre>
+      </article>
     </SleyShell>
   );
 }

@@ -2,19 +2,34 @@ import { SleyShell } from "../components/SleyShell";
 
 const sections = [
   {
-    title: "Core posture",
+    title: "What Sley is for",
     body:
-      "Sley is built around explicit structure, deterministic plan outputs, and explicit authority gates. The project is intentionally constrained to keep private internals off the public mirror while preserving useful discovery surfaces.",
+      "Sley is a language surface for people and agents who want edits to be auditable at the same time they are fast. The public project shows what is intentionally shared, with heavy emphasis on structured intent over prompt-only workflows.",
   },
   {
-    title: "Quick entry",
+    title: "Quick start",
     body:
-      "Start with public examples, inspect diagnostics, and move through deterministic readiness signals before each mutation. This is the model for agent-safe, review-safe language workflows.",
+      "If you want the shortest path, install the public binary, run `sley doctor`, and then open `docs/AgentQuickstart.md` from the source repo for a practical first edit flow.",
+    code: `# 1) Sanity-check the language surface
+sley doctor
+
+# 2) Open the public docs and walkthrough
+sley tutorial`,
   },
   {
-    title: "Evidence and boundaries",
+    title: "Language-first workflow",
     body:
-      "Sley surfaces intent and handoff artifacts at each transition so context is carried forward with less churn and fewer repeated assumptions.",
+      "Sley prefers explicit task declarations, typed task calls, schema-linked JSON reports, and deterministic plan outputs. This keeps token pressure low by preserving edit structure instead of re-explaining intent on every cycle.",
+  },
+  {
+    title: "Evidence and safety boundaries",
+    body:
+      "Every public-facing route points to bounded claims and open references only. Internal runtime specifics remain intentionally omitted from the public mirror until release posture and doctrine allow a wider public reveal.",
+  },
+  {
+    title: "Operational references",
+    body:
+      "Public release posture, benchmark posture, and release notes are surfaced through Greyforge OpenForge and Greyforge Chronicles. Those are the stable sources for claims and public links.",
   },
 ];
 
@@ -36,6 +51,7 @@ export default function DocsPage() {
         <article key={section.title} className="card">
           <h2>{section.title}</h2>
           <p>{section.body}</p>
+          {section.code && <pre className="code">{section.code}</pre>}
         </article>
       ))}
 

@@ -15,14 +15,26 @@ export default function SleyScopedDocsPage() {
     >
       <article className="card">
         <h2>Navigation</h2>
-        <p>From this route, you can open tutorial and FAQ under the same compatibility path.</p>
+        <p>
+          Use this compatibility surface exactly as you did before:
+          <a href="/sley/tutorial"> tutorial</a>, <a href="/sley/faq"> FAQ</a>.
+        </p>
       </article>
       <article className="card">
-        <h2>Core posture</h2>
-        <p>
-          Sley is structured for explicit intent, deterministic planning, and explicit authority gates. This remains the same
-          contract across both root and /sley routes.
-        </p>
+        <h2>Public claim summary</h2>
+        <ul className="qa-list">
+          <li>Engineered for AI-assisted execution with reduced token rework.</li>
+          <li>Deterministic plan surfaces and reviewable edit handoffs.</li>
+          <li>Bounded public claims with controlled private boundaries.</li>
+        </ul>
+      </article>
+      <article className="card">
+        <h2>Suggested first steps</h2>
+        <ol className="step-list">
+          <li>Read the docs brief and release boundary.</li>
+          <li>Run `sley doctor` for readiness.</li>
+          <li>Follow the full tutorial and verify checks before promotion.</li>
+        </ol>
       </article>
     </SleyShell>
   );

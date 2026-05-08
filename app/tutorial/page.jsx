@@ -1,11 +1,11 @@
 import { SleyShell } from "../components/SleyShell";
 
 const steps = [
-  "Read the project intent and confirm the release boundary before editing any source.",
-  "Open public examples and run through the smallest example path first.",
-  "Draft changes as small, explicit transformations with clear handoff context.",
-  "Run readiness and validation checks and review generated receipts.",
-  "Promote stable edits and keep proof artifacts linked in operating notes.",
+  "Read the public release boundary first, then open README and official docs links.",
+  "Run a quick readiness check with `sley doctor` and review output scope.",
+  "Explore the smallest example path before any deeper API or runtime change.",
+  "Draft edits as explicit transformations and keep each handoff bounded by receipts.",
+  "Promote only stable actions after lint/check/verify pass on public surfaces.",
 ];
 
 export const metadata = {
@@ -20,7 +20,7 @@ export default function TutorialPage() {
       scope=""
       kicker="Public walkthrough"
       title="Get started with the Sley public workflow"
-      subtitle="A compact orientation for first-time visitors and operators needing a practical path."
+      subtitle="A practical first run for AI-native structured editing and token-efficient handoffs."
     >
       <article className="card">
         <h2>Step-by-step</h2>
@@ -44,9 +44,26 @@ export default function TutorialPage() {
       <article className="card">
         <h2>Next actions</h2>
         <p>
-          Continue from the docs page and keep the OpenForge listing and releases as the release-time anchor. This keeps public claims
-          consistent and avoids overpromising on private internals.
+          Continue from the docs page and use OpenForge + release links as your anchor. This keeps public claims consistent while
+          minimizing repeated context and overpromising.
         </p>
+      </article>
+      <article className="card">
+        <h2>Public CLI walk</h2>
+        <pre className="code">
+{`# Prepare and validate
+sley doctor
+sley lint
+
+# Inspect structural view
+sley ast
+
+# Plan edits as bounded transitions
+sley plan .  # path to project scope
+
+# Verify before sharing
+sley verify`}
+        </pre>
       </article>
     </SleyShell>
   );
