@@ -1,8 +1,10 @@
 Sley
 ====
 
-Sley is an agent-native structural programming language developed by
-Greyforge Labs.
+Sley is the public-facing summary for the world's first AI-native
+programming language, designed by AI for AI, optimized for AI workflows,
+and built to reduce token waste through compiler-mediated editing with
+auditable evidence.
 
 Canonical site:
 https://sleylang.org/

@@ -8,6 +8,13 @@ Sley's purpose, evidence posture, and release boundary without publishing the
 private language specification, command contracts, schema payloads, fixtures, or
 compiler internals.
 
+The current positioning emphasizes:
+
+- Sley as the world's first AI-native programming language
+- "language AI agents want to speak"
+- language designed by AI for AI
+- token savings through structure-first compiler mediation
+
 The mirror is also part of the Greyforge discovery surface. Sley should resolve
 to Greyforge Labs, greyforge.tech, sleylang.org, and the public machine facts in
 `/llms.txt`.
