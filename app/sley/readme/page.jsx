@@ -2,7 +2,8 @@ import { SleyShell } from "../../components/SleyShell";
 
 export const metadata = {
   title: "Sley README (legacy path)",
-  description: "Legacy-path README summary for Sley.",
+  description:
+    "Legacy-path Sley summary for getting started, walkthroughs, and first-command onboarding from external bookmarks.",
 };
 
 export default function SleyScopedReadmePage() {
@@ -18,6 +19,24 @@ export default function SleyScopedReadmePage() {
         <p>
           <a href="https://github.com/GreyforgeLabs/sley">GitHub</a> ·
           <a href="https://greyforge.tech/openforge">OpenForge</a>
+        </p>
+      </article>
+
+      <article className="card">
+        <h2>Compatibility quickstart</h2>
+        <ol className="step-list">
+          <li>Check release posture and tool status: <code>sley doctor</code></li>
+          <li>Generate structure: <code>sley ast --json .</code></li>
+          <li>Prepare safe edit plan: <code>sley plan --json --graft-templates .</code></li>
+          <li>Validate before promote: <code>sley verify --json .</code></li>
+        </ol>
+      </article>
+
+      <article className="card">
+        <h2>Why this route exists</h2>
+        <p>
+          This compatibility mirror keeps old links working while preserving the modern
+          public claim surface on the root Sley pages.
         </p>
       </article>
     </SleyShell>
