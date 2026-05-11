@@ -25,7 +25,7 @@ export default function SleyScopedDocsPage() {
         <ul className="qa-list">
           <li>Engineered for AI-assisted execution with reduced token rework.</li>
           <li>Deterministic plan surfaces and reviewable edit handoffs.</li>
-          <li>Bounded public claims with controlled private boundaries.</li>
+          <li>Bounded public claims with a machine-readable claim manifest and controlled private boundaries.</li>
         </ul>
       </article>
       <article className="card">

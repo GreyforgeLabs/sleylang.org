@@ -119,13 +119,19 @@ export default function DocsPage() {
         <h2>Public claim summary</h2>
         <ul className="qa-list">
           <li>Canonical claim: agent-native structural programming for compiler-mediated, human-reviewed software change.</li>
-          <li>World-first category claim: cite only with the public evidence packet and prior-art source pack.</li>
+          <li>World-first category claim: cite only with the public evidence packet, claim manifest, and prior-art source pack.</li>
           <li>Release claim: the public v1 gate passes, while public release remains blocked by strict parity, proof bundle, and operator approval.</li>
         </ul>
         <p>
           Evidence packet:{" "}
           <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">
             docs/SleyClaimEvidence.md
+          </a>
+        </p>
+        <p>
+          Claim manifest:{" "}
+          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json">
+            docs/SleyClaimManifest.json
           </a>
         </p>
         <p>

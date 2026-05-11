@@ -11,7 +11,7 @@ const capabilities = [
   },
   {
     title: "Auditable claim evidence",
-    body: "The public repository carries the claim criteria, evidence map, prior-art source pack, and current release blockers for independent review.",
+    body: "The public repository carries the claim criteria, evidence map, machine-readable claim manifest, prior-art source pack, and current release blockers for independent review.",
   },
 ];
 

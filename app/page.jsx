@@ -7,7 +7,7 @@ const capabilities = [
   },
   {
     title: "Auditable claim evidence",
-    body: "The world-first AI-native category claim is treated as a criteria-bound claim. The public repository now carries claim evidence and a primary-source prior-art packet for independent review.",
+    body: "The world-first AI-native category claim is treated as a criteria-bound claim. The public repository now carries claim evidence, a machine-readable claim manifest, and a primary-source prior-art packet for independent review.",
   },
   {
     title: "Proof-first editing",
@@ -117,7 +117,11 @@ export default function HomePage() {
           <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">
             Sley Claim Evidence
           </a>
-          {" "}and{" "}
+          {", "}
+          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json">
+            Sley Claim Manifest
+          </a>
+          {", and "}
           <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md">
             Sley Prior-Art Source Pack
           </a>

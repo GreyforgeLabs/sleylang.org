@@ -34,6 +34,10 @@ export default function ReadmePage() {
             <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">docs/SleyClaimEvidence.md</a>
           </li>
           <li>
+            <strong>Claim manifest:</strong>{" "}
+            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json">docs/SleyClaimManifest.json</a>
+          </li>
+          <li>
             <strong>Prior-art source pack:</strong>{" "}
             <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md">docs/SleyPriorArtSourcePack.md</a>
           </li>
