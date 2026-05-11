@@ -11,11 +11,11 @@ const faq = [
   },
   {
     q: "Where are standards and claims maintained?",
-    a: "Public surface links and llms metadata are maintained on this site. The auditable claim map lives in the public Sley repository at docs/SleyClaimEvidence.md.",
+    a: "Public surface links and llms metadata are maintained on this site. The auditable claim map lives in the public Sley repository at docs/SleyClaimEvidence.md, with official-source comparison in docs/SleyPriorArtSourcePack.md.",
   },
   {
     q: "Can I cite the world-first AI-native language claim?",
-    a: "Only with the evidence packet. Sley's canonical public claim is agent-native structural programming for compiler-mediated, human-reviewed software change. The stronger world-first phrase is criteria-bound and should not be used as a bare slogan.",
+    a: "Only with the evidence packet and prior-art source pack. Sley's canonical public claim is agent-native structural programming for compiler-mediated, human-reviewed software change. The stronger world-first phrase is criteria-bound and should not be used as a bare slogan.",
   },
   {
     q: "Is Sley strictly self-hosted?",

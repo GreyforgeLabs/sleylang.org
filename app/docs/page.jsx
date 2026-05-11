@@ -76,7 +76,7 @@ sley verify --json .`,
   {
     title: "Operational references",
     body:
-      "Public release posture, benchmark posture, and release notes are surfaced through Greyforge OpenForge and Greyforge Chronicles. Those are the stable sources for claims and public links.",
+      "Public release posture, comparison posture, benchmark posture, and release notes are surfaced through the Sley source pack, Greyforge OpenForge, and Greyforge Chronicles. Those are the stable sources for claims and public links.",
     bullets: [
       "Read `/chronicles/sley-zjx-agent-native-stack` on greyforge.tech",
       "Track OpenForge repo posture from the same source chain",
@@ -119,13 +119,19 @@ export default function DocsPage() {
         <h2>Public claim summary</h2>
         <ul className="qa-list">
           <li>Canonical claim: agent-native structural programming for compiler-mediated, human-reviewed software change.</li>
-          <li>World-first category claim: cite only with the public evidence packet.</li>
+          <li>World-first category claim: cite only with the public evidence packet and prior-art source pack.</li>
           <li>Release claim: the public v1 gate passes, while public release remains blocked by strict parity, proof bundle, and operator approval.</li>
         </ul>
         <p>
           Evidence packet:{" "}
           <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">
             docs/SleyClaimEvidence.md
+          </a>
+        </p>
+        <p>
+          Prior-art source pack:{" "}
+          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md">
+            docs/SleyPriorArtSourcePack.md
           </a>
         </p>
       </article>

@@ -4,7 +4,8 @@ Sley
 Sley is the public-facing summary for Greyforge Labs' agent-native
 structural programming language for compiler-mediated, human-reviewed
 software change. The world-first AI-native category phrase is a
-criteria-bound claim that must be cited with the public evidence packet.
+criteria-bound claim that must be cited with the public evidence packet and
+prior-art source pack.
 
 Canonical site:
 https://sleylang.org/
@@ -30,7 +31,7 @@ parity, a published proof bundle, and operator approval are present.
 
 The public site is a discovery and onboarding entrypoint. It explains the
 product thesis, evidence posture, and release boundary while linking the
-auditable claim evidence.
+auditable claim evidence and official-source comparison packet.
 
 Public Thesis
 -------------
@@ -65,9 +66,10 @@ is:
 1. https://sleylang.org/
 2. https://sleylang.org/llms.txt
 3. https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md
-4. https://greyforge.tech/about
-5. https://greyforge.tech/llms.txt
-6. https://github.com/GreyforgeLabs/sley
+4. https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md
+5. https://greyforge.tech/about
+6. https://greyforge.tech/llms.txt
+7. https://github.com/GreyforgeLabs/sley
 
 Publicly Deferred Details
 -----------------------------
@@ -78,7 +80,7 @@ Publicly Deferred Details
 - live provider, shell, network, secret-store, deployment, payment, spend,
   wallet, market, or external action by default
 - private runtime hardening details beyond the public repository
-- external prior-art classifications without a primary-source pack
+- external prior-art classifications beyond the public primary-source pack
 
 Links
 -----
@@ -100,6 +102,9 @@ https://sleylang.org/llms.txt
 
 Claim evidence:
 https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md
+
+Prior-art source pack:
+https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md
 
 ZJX:
 https://zjx.greyforge.tech/

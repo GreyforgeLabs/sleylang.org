@@ -33,6 +33,10 @@ export default function ReadmePage() {
             <strong>Claim evidence:</strong>{" "}
             <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">docs/SleyClaimEvidence.md</a>
           </li>
+          <li>
+            <strong>Prior-art source pack:</strong>{" "}
+            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md">docs/SleyPriorArtSourcePack.md</a>
+          </li>
         </ul>
       </article>
 
@@ -98,7 +102,7 @@ sley verify --json .
         <p>
           Sley is an agent-native structural programming language for compiler-mediated,
           human-reviewed software change. The world-first category claim is documented
-          as a criteria-bound auditor packet, not a bare slogan.
+          as a criteria-bound auditor packet and official-source comparison pack, not a bare slogan.
         </p>
       </article>
     </SleyShell>
