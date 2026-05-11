@@ -26,7 +26,7 @@ function ScopeLink({ scope, to, children, className = "" }) {
 
 export function SleyShell({
   scope = "",
-  kicker = "AI-native programming language",
+  kicker = "Agent-native structural language",
   title,
   subtitle,
   children,

@@ -2,7 +2,7 @@ import { SleyShell } from "../components/SleyShell";
 
 const capabilities = [
   {
-    title: "Designed by AI for AI",
+    title: "Agent-native structural language",
     body: "Sley targets language loops where agents and people share one structure-first workflow. Intent is expressed in auditable form, not brittle prompt patches.",
   },
   {
@@ -10,22 +10,22 @@ const capabilities = [
     body: "By preserving edits as bounded compiler-friendly structure, sessions spend less time reloading context and more time making deterministic progress.",
   },
   {
-    title: "Proof-first editing",
-    body: "Planned edits route through explicit checks and readiness surfaces so edits are bounded, reviewable, and safe to hand across operator/model sessions.",
+    title: "Auditable claim evidence",
+    body: "The public repository carries the claim criteria, evidence map, and current release blockers for independent review.",
   },
 ];
 
 export const metadata = {
   title: "Sley (legacy path)",
   description:
-    "Sley is the world's first AI-native language, designed by AI for AI, optimized for compiler-guided context control.",
+    "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated software change.",
 };
 
 export default function SleyScopedHomePage() {
   return (
     <SleyShell
       scope="/sley"
-      title="Sley: the language AI agents want to speak"
+      title="Sley: agent-native structural programming"
       subtitle="Welcome to the compatibility path mirror used by existing Sley links and docs tooling."
     >
       {capabilities.map((capability) => (

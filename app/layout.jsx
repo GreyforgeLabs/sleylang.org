@@ -7,24 +7,24 @@ export const metadata = {
     template: "%s | Sley",
   },
   description:
-    "Sley is the world's first AI-native programming language, designed by AI for AI, and optimized for token savings through compiler-guided context control.",
+    "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated, human-reviewed software change.",
   keywords: [
     "Sley",
-    "AI-native language",
-    "language AI agents want to speak",
-    "compiler-mediated workflow",
     "agent-native language",
-    "token efficiency",
-    "structured programming",
+    "AI-native programming language claim evidence",
+    "auditable language claim",
+    "compiler-mediated workflow",
+    "structural programming language",
+    "deterministic authority gates",
     "Greyforge Labs",
   ],
   alternates: {
     canonical: "https://sleylang.org/",
   },
   openGraph: {
-    title: "Sley | the language AI agents want to speak",
+    title: "Sley | Agent-native structural programming",
     description:
-      "Sley is the world's first AI-native language designed by AI for AI, optimized for token efficiency.",
+      "Compiler-mediated structural programming for auditable, human-reviewed software change.",
     url: "https://sleylang.org/",
     siteName: "Sley",
     images: [
@@ -40,9 +40,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sley | AI-native language",
+    title: "Sley | Agent-native structural programming",
     description:
-      "AI-native language designed by AI for AI with token-efficient compiler-guided workflows.",
+      "Compiler-mediated structural programming with public claim evidence.",
     images: ["/assets/sley-loom-graph-post.png"],
   },
 };

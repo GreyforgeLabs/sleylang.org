@@ -8,10 +8,10 @@ claim boundaries as the broader Greyforge ecosystem.
 
 The positioning emphasizes:
 
-- Sley as the world's first AI-native programming language
-- "language AI agents want to speak"
-- language designed by AI for AI
-- token savings through structure-first, context-aware compiler mediation
+- Sley as Greyforge Labs' agent-native structural programming language
+- compiler-mediated, human-reviewed software change
+- a criteria-bound auditor packet for the world-first category phrase
+- bounded structure, verification, and evidence instead of bare marketing claims
 
 The mirror also serves the duplicated compatibility path used by existing links:
 

@@ -4,7 +4,7 @@ const sections = [
   {
     title: "What Sley is for",
     body:
-      "Sley is a compiler-oriented language surface for people and AI operators who need fast edits with strong evidence. Use it when your workflow values reproducibility, scope control, and explicit planning over ad-hoc text patching.",
+      "Sley is a compiler-oriented language surface for people and agents who need fast edits with strong evidence. Use it when your workflow values reproducibility, scope control, and explicit planning over ad-hoc text patching.",
     bullets: [
       "Language-level boundaries for authority and side-effects",
       "Deterministic planning and edit receipts for machine handoff",
@@ -88,7 +88,7 @@ sley verify --json .`,
 export const metadata = {
   title: "Sley Documentation | Public brief",
   description:
-    "Sley technical brief: language AI agent ergonomics, token-aware workflows, and structured compiler guidance.",
+    "Sley technical brief: agent-native structural programming, bounded workflows, and compiler-mediated evidence.",
 };
 
 export default function DocsPage() {
@@ -118,10 +118,16 @@ export default function DocsPage() {
       <article className="card">
         <h2>Public claim summary</h2>
         <ul className="qa-list">
-          <li>First AI-native language claim: structured edits over unbounded prompts.</li>
-          <li>Token-efficiency claim: reduce churn through explicit intent boundaries.</li>
-          <li>Safety claim: review-oriented execution at the public edge.</li>
+          <li>Canonical claim: agent-native structural programming for compiler-mediated, human-reviewed software change.</li>
+          <li>World-first category claim: cite only with the public evidence packet.</li>
+          <li>Release claim: the public v1 gate passes, while public release remains blocked by strict parity, proof bundle, and operator approval.</li>
         </ul>
+        <p>
+          Evidence packet:{" "}
+          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">
+            docs/SleyClaimEvidence.md
+          </a>
+        </p>
       </article>
       <article className="card">
         <h2>Walkthrough map</h2>

@@ -12,7 +12,7 @@ const steps = [
 export const metadata = {
   title: "Sley Public Tutorial",
   description:
-    "A public walkthrough for onboarding operators and agents to the Sley AI-native workflow.",
+    "A public walkthrough for onboarding operators and agents to the Sley structural workflow.",
 };
 
 export default function TutorialPage() {
@@ -21,7 +21,7 @@ export default function TutorialPage() {
       scope=""
       kicker="Public walkthrough"
       title="Get started with the Sley public workflow"
-      subtitle="A practical first run for AI-native structured editing and token-efficient handoffs."
+      subtitle="A practical first run for structural editing, bounded verification, and compact handoffs."
     >
       <article className="card">
         <h2>Step-by-step</h2>

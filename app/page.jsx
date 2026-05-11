@@ -2,12 +2,12 @@ import { SleyShell } from "./components/SleyShell";
 
 const capabilities = [
   {
-    title: "AI-native language, designed by AI for AI",
+    title: "Agent-native structural language",
     body: "Sley is built for structured intent, not brittle prompts. Agents and people share the same source surface with deterministic edits and auditable boundaries.",
   },
   {
-    title: "Token savings and efficiency",
-    body: "By replacing repeated prompt restatement with structured edits and planner receipts, teams reduce token churn and keep context focused on intent.",
+    title: "Auditable claim evidence",
+    body: "The world-first AI-native category claim is treated as a criteria-bound claim. The public repository now carries a dedicated evidence packet for independent review.",
   },
   {
     title: "Proof-first editing",
@@ -40,7 +40,7 @@ const quickstart = [
 
 const workflows = [
   {
-    title: "Language-first AI editing",
+    title: "Language-first agent editing",
     body: "Plan bounded changes first, then apply only minimal, verified grafts that preserve context and reduce churn.",
     bullets: [
       "Use structured AST, graph slices, and query views to keep edits focused",
@@ -69,17 +69,17 @@ const workflows = [
 ];
 
 export const metadata = {
-  title: "Sley | The Language AI Agents Want to Speak",
+  title: "Sley | Agent-native structural programming",
   description:
-    "Sley is the world's first AI-native programming language, designed by AI for AI, and optimized for token savings through compiler-guided context control.",
+    "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated, human-reviewed software change.",
 };
 
 export default function HomePage() {
   return (
     <SleyShell
       scope=""
-      title="Sley: the language AI agents want to speak"
-      subtitle="Sley is a compiler-aware AI-native language for practical software editing where token pressure is a first-class design constraint."
+      title="Sley: agent-native structural programming"
+      subtitle="Sley is a compiler-aware language for practical software editing where bounded structure, verification, and evidence are first-class design constraints."
     >
       {capabilities.map((capability) => (
         <article key={capability.title} className="card">
@@ -109,6 +109,16 @@ export default function HomePage() {
             </li>
           ))}
         </ol>
+      </article>
+      <article className="card">
+        <h2>Auditor packet</h2>
+        <p>
+          Review the public evidence map in{" "}
+          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">
+            Sley Claim Evidence
+          </a>
+          . It defines the criteria, local audit commands, current blockers, and prior-art discipline.
+        </p>
       </article>
       <article className="card">
         <h2>Walkthrough focus</h2>

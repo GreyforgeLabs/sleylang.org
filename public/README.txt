@@ -1,10 +1,10 @@
 Sley
 ====
 
-Sley is the public-facing summary for the world's first AI-native
-programming language, designed by AI for AI, optimized for AI workflows,
-and built to reduce token waste through compiler-mediated editing with
-auditable evidence.
+Sley is the public-facing summary for Greyforge Labs' agent-native
+structural programming language for compiler-mediated, human-reviewed
+software change. The world-first AI-native category phrase is a
+criteria-bound claim that must be cited with the public evidence packet.
 
 Canonical site:
 https://sleylang.org/
@@ -24,11 +24,13 @@ https://github.com/GreyforgeLabs/sley
 Status
 ------
 
-Sley is publicly released as v1.0 on 2026-05-07 under Apache-2.0.
+Sley is public on the GitHub public branch under Apache-2.0. The local v1 gate
+passes. Public release promotion remains blocked until strict Sley-written
+parity, a published proof bundle, and operator approval are present.
 
-The public site is an open release entrypoint. It explains the product
-thesis, evidence posture, and release boundary without publishing any
-security-sensitive internals.
+The public site is a discovery and onboarding entrypoint. It explains the
+product thesis, evidence posture, and release boundary while linking the
+auditable claim evidence.
 
 Public Thesis
 -------------
@@ -45,14 +47,13 @@ Sley is built for compiler-mediated agent programming:
 Current Public State
 --------------------
 
-- public v1.0 release
+- public branch and local v1 gate
 - Apache-2.0 license
-- internal conformance suite tracks 210 integration cases
-- contract fixtures, smoke manifests, schema snapshots, and local CI/contract
-  helper surfaces exist internally
+- public conformance report tracks 195 integration checks
+- 125 contract fixtures, 23 accepted corpus cases, 43 rejected corpus cases,
+  and 4 smoke cases
 - deterministic authority gates model sensitive host-facing behavior
-- public documentation is intentionally bounded while hardening and security
-  work continues
+- strict self-hosting and final public release promotion remain blocked
 
 Discovery
 ---------
@@ -63,20 +64,21 @@ is:
 
 1. https://sleylang.org/
 2. https://sleylang.org/llms.txt
-3. https://greyforge.tech/about
-4. https://greyforge.tech/llms.txt
-5. https://github.com/GreyforgeLabs/sley
+3. https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md
+4. https://greyforge.tech/about
+5. https://greyforge.tech/llms.txt
+6. https://github.com/GreyforgeLabs/sley
 
 Publicly Deferred Details
 -------------------------
 
-- exact syntax and grammar
-- command names, flags, and invocation transcripts
-- schema identifiers and JSON payloads in internal contracts
-- structural edit operation inventories beyond public overview
-- fixture and conformance corpus details
-- implementation architecture and deeper runtime hardening design
-- self-hosting and future runtime lock details
+- strict self-hosting as complete
+- public release promotion as complete
+- authorship provenance beyond public evidence
+- live provider, shell, network, secret-store, deployment, payment, spend,
+  wallet, market, or external action by default
+- private runtime hardening details beyond the public repository
+- external prior-art classifications without a primary-source pack
 
 Links
 -----
@@ -95,6 +97,9 @@ https://sleylang.org/faq.html
 
 Machine facts:
 https://sleylang.org/llms.txt
+
+Claim evidence:
+https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md
 
 ZJX:
 https://zjx.greyforge.tech/

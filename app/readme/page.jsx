@@ -3,7 +3,7 @@ import { SleyShell } from "../components/SleyShell";
 export const metadata = {
   title: "Sley README | Start Here",
   description:
-    "Public README mirror for Sley: walkthroughs, release posture, and first-step guidance for the world's first AI-native language.",
+    "Public README mirror for Sley: walkthroughs, release posture, and first-step guidance for agent-native structural programming.",
 };
 
 export default function ReadmePage() {
@@ -28,6 +28,10 @@ export default function ReadmePage() {
           </li>
           <li>
             <strong>Crawler index:</strong> <a href="https://sleylang.org/llms.txt">sleylang.org/llms.txt</a>
+          </li>
+          <li>
+            <strong>Claim evidence:</strong>{" "}
+            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">docs/SleyClaimEvidence.md</a>
           </li>
         </ul>
       </article>
@@ -92,7 +96,9 @@ sley verify --json .
       <article className="card">
         <h2>Brand position</h2>
         <p>
-          Sley is the language AI agents want to speak — the language AI-native programming language designed by AI for AI, optimized for token-efficient engineering.
+          Sley is an agent-native structural programming language for compiler-mediated,
+          human-reviewed software change. The world-first category claim is documented
+          as a criteria-bound auditor packet, not a bare slogan.
         </p>
       </article>
     </SleyShell>
