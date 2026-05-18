@@ -14,7 +14,7 @@ const faq = [
     a: "Public surface links and llms metadata are maintained on this site. The auditable claim map lives in the public Sley repository at docs/SleyClaimEvidence.md, the machine-readable manifest lives at docs/SleyClaimManifest.json, and official-source comparison lives in docs/SleyPriorArtSourcePack.md.",
   },
   {
-    q: "Can I cite the world-first AI-native language claim?",
+    q: "Can I cite the world-first agent-native language claim?",
     a: "Only with the evidence packet, claim manifest, and prior-art source pack. Sley's canonical public claim is agent-native structural programming for compiler-mediated, human-reviewed software change. The stronger world-first phrase is criteria-bound and should not be used as a bare slogan.",
   },
   {

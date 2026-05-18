@@ -11,8 +11,8 @@ export const metadata = {
   keywords: [
     "Sley",
     "agent-native language",
-    "AI-native programming language claim evidence",
-    "AI-native programming language prior art",
+    "agent-native programming language claim evidence",
+    "agent-native programming language prior art",
     "auditable language claim",
     "Sley prior-art source pack",
     "compiler-mediated workflow",

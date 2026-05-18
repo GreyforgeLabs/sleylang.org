@@ -3,7 +3,7 @@ Sley
 
 Sley is the public-facing summary for Greyforge Labs' agent-native
 structural programming language for compiler-mediated, human-reviewed
-software change. The world-first AI-native category phrase is a
+software change. The world-first agent-native category phrase is a
 criteria-bound claim that must be cited with the public evidence packet and
 claim manifest, and prior-art source pack.
 

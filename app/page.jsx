@@ -7,7 +7,7 @@ const capabilities = [
   },
   {
     title: "Auditable claim evidence",
-    body: "The world-first AI-native category claim is treated as a criteria-bound claim. The public repository now carries claim evidence, a machine-readable claim manifest, and a primary-source prior-art packet for independent review.",
+    body: "The world-first agent-native category claim is treated as a criteria-bound claim. The public repository now carries claim evidence, a machine-readable claim manifest, and a primary-source prior-art packet for independent review.",
   },
   {
     title: "Proof-first editing",
