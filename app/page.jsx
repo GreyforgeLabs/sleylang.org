@@ -13,6 +13,10 @@ const capabilities = [
     title: "Proof-first editing",
     body: "Planned transformations go through bounded checks and receipts first, so edits are structured for handoff, verification, and review across sessions.",
   },
+  {
+    title: "May 18 checkpoint",
+    body: "The latest pause checkpoint keeps the local v1 gate green and expands Sley-owned semantic coverage for selected result and deterministic authority-gate output paths. Strict self-hosting remains a blocked release claim.",
+  },
 ];
 
 const quickstart = [
@@ -62,6 +66,7 @@ const workflows = [
     body: "Public docs and walkthroughs stay release-safe while surfacing meaningful, reviewable claims.",
     bullets: [
       "Deterministic checks and verifier outputs are machine-readable",
+      "May 18 checkpoint keeps the local v1 gate green",
       "Open claims link includes release posture and current boundaries",
       "GitHub and Chronicles provide the canonical project status",
     ],

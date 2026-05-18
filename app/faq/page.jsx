@@ -19,7 +19,7 @@ const faq = [
   },
   {
     q: "Is Sley strictly self-hosted?",
-    a: "No. The current public proof is a stage-1 bootstrap with Sley-owned stage-2 semantic modules. Strict self-hosting remains a blocked release claim until parser, checker, runtime, and command semantics execute from Sley source and pass parity tests.",
+    a: "No. The current public proof is a stage-1 bootstrap with Sley-owned stage-2 semantic modules. The May 18 checkpoint expands Sley-owned semantic coverage for selected result and deterministic authority-gate output paths, but strict self-hosting remains a blocked release claim until parser, checker, runtime, and command semantics execute from Sley source and pass parity tests.",
   },
 ];
 

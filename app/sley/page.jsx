@@ -13,6 +13,10 @@ const capabilities = [
     title: "Auditable claim evidence",
     body: "The public repository carries the claim criteria, evidence map, machine-readable claim manifest, prior-art source pack, and current release blockers for independent review.",
   },
+  {
+    title: "May 18 checkpoint",
+    body: "The local v1 gate remains green and selected result plus deterministic authority-gate output paths now have broader Sley-owned semantic coverage. Strict self-hosting is still blocked.",
+  },
 ];
 
 export const metadata = {

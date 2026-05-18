@@ -17,7 +17,7 @@ export default function SleyScopedFaqPage() {
         <h2>Common question</h2>
         <p>
           The public mirror is intentionally constrained; operational internals remain off the public route, while discovery, claims,
-          and official links are maintained.
+          and official links are maintained. The May 18 checkpoint keeps the local v1 gate green while strict self-hosting remains blocked.
         </p>
       </article>
     </SleyShell>

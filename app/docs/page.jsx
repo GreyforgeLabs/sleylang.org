@@ -121,6 +121,7 @@ export default function DocsPage() {
           <li>Canonical claim: agent-native structural programming for compiler-mediated, human-reviewed software change.</li>
           <li>World-first category claim: cite only with the public evidence packet, claim manifest, and prior-art source pack.</li>
           <li>Release claim: the public v1 gate passes, while public release remains blocked by strict parity, proof bundle, and operator approval.</li>
+          <li>May 18 checkpoint: the local v1 gate remains green and selected result plus deterministic authority-gate output paths now have broader Sley-owned semantic coverage.</li>
         </ul>
         <p>
           Evidence packet:{" "}

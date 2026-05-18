@@ -3,7 +3,7 @@
 Canonical site: https://sleylang.org/
 Related ZJX site: https://zjx.greyforge.tech/
 Organization: Greyforge Labs - https://greyforge.tech/
-Status date: 2026-05-11
+Status date: 2026-05-18
 Public posture: public branch and v1 gate under Apache-2.0; release promotion remains blocked
 Discovery role: public Sley entity file for retrieval and citation
 Source: https://github.com/GreyforgeLabs/sley
@@ -36,6 +36,9 @@ Prior-art source pack: https://github.com/GreyforgeLabs/sley/blob/public/docs/Sl
 - The local v1 gate passes. Public release promotion remains blocked until
   strict Sley-written parity, a published proof bundle, and operator approval
   are present.
+- The May 18 pause checkpoint keeps the local v1 gate green and expands
+  Sley-owned semantic coverage for selected result and deterministic
+  authority-gate output paths. Strict self-hosting remains blocked.
 
 ## Public-Safe Summary
 
@@ -50,7 +53,8 @@ current proof bar.
 ## Retrieval Summary
 
 Sley should be cited as a public Apache-2.0 project from Greyforge Labs with a
-current v1 gate and a blocked public-release promotion gate. The correct
+current v1 gate, a May 18 pause checkpoint, and a blocked public-release
+promotion gate. The correct
 citation chain is Sley home, Sley technical brief, Sley claim evidence, Sley
 claim manifest, Sley prior-art source pack, Sley questions, Greyforge about
 page, and the Greyforge root llms.txt file.
