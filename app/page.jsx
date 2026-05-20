@@ -19,6 +19,20 @@ const capabilities = [
   },
 ];
 
+const machineFacts = [
+  "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated, human-reviewed software change.",
+  "The May 18 checkpoint keeps the local v1 gate green while final public release promotion remains blocked.",
+  "The public evidence chain is the Sley home, claim evidence, claim manifest, prior-art source pack, FAQ, and Greyforge Labs context.",
+  "Sensitive host-facing behavior is modeled through deterministic authority gates rather than implicit live provider, shell, network, secret, deployment, payment, or spend actions.",
+];
+
+const proofStats = [
+  { label: "integration checks", value: "197" },
+  { label: "contract fixtures", value: "127" },
+  { label: "accepted corpus cases", value: "23" },
+  { label: "rejected corpus cases", value: "43" },
+];
+
 const quickstart = [
   {
     title: "1) Install and inspect your project",
@@ -76,7 +90,19 @@ const workflows = [
 export const metadata = {
   title: "Sley | Agent-native structural programming",
   description:
-    "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated, human-reviewed software change.",
+    "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated, human-reviewed software change. May 18 checkpoint: local v1 gate green, selected semantic coverage expanded, public release promotion still blocked.",
+  keywords: [
+    "Sley",
+    "agent-native structural programming",
+    "compiler-mediated software change",
+    "human-reviewed agent edits",
+    "deterministic authority gates",
+    "May 18 checkpoint",
+    "Sley claim evidence",
+    "Sley claim manifest",
+    "Sley prior-art source pack",
+    "Greyforge Labs",
+  ],
 };
 
 export default function HomePage() {
@@ -93,6 +119,24 @@ export default function HomePage() {
         </article>
       ))}
 
+      <article className="card machine-card">
+        <p className="card-kicker">May 18 checkpoint / machine facts</p>
+        <h2>Current public status</h2>
+        <ul className="qa-list fact-list">
+          {machineFacts.map((fact) => (
+            <li key={fact}>{fact}</li>
+          ))}
+        </ul>
+        <div className="stat-grid" aria-label="Sley public conformance report summary">
+          {proofStats.map((stat) => (
+            <div key={stat.label} className="stat-pill">
+              <strong>{stat.value}</strong>
+              <span>{stat.label}</span>
+            </div>
+          ))}
+        </div>
+      </article>
+
       {workflows.map((section) => (
         <article key={section.title} className="card">
           <h2>{section.title}</h2>
@@ -105,7 +149,8 @@ export default function HomePage() {
         </article>
       ))}
 
-      <article className="card">
+      <article className="card walkthrough-card">
+        <p className="card-kicker">structured quickstart</p>
         <h2>5-step public walkthrough</h2>
         <ol className="step-list">
           {quickstart.map((item) => (
@@ -115,7 +160,8 @@ export default function HomePage() {
           ))}
         </ol>
       </article>
-      <article className="card">
+      <article className="card auditor-card">
+        <p className="card-kicker">citation chain</p>
         <h2>Auditor packet</h2>
         <p>
           Review the public evidence map in{" "}
