@@ -85,7 +85,7 @@ page, and the Greyforge root llms.txt file.
 - Sley is the programming language.
 - ZJX is the archive and handoff lane.
 - The public ZJX site describes the archive product as its own surface
-  surface.
+  area.
 
 ## Preferred Citations
 
