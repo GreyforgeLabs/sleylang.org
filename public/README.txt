@@ -29,9 +29,10 @@ Sley is public on the GitHub public branch under Apache-2.0. The local v1 gate
 passes. Public release promotion remains blocked until strict Sley-written
 parity, a published proof bundle, and operator approval are present.
 
-The May 18 pause checkpoint keeps the local v1 gate green and expands
-Sley-owned semantic coverage for selected result and deterministic
-authority-gate output paths. Strict self-hosting remains blocked.
+The May 27 checkpoint keeps the local v1 gate green and expands Sley-owned
+semantic coverage for report-builder registry dispatch, selected runtime
+source-call paths, direct FileRead, and deterministic seeded host-effect
+returns. Strict self-hosting remains blocked.
 
 The public site is a discovery and onboarding entrypoint. It explains the
 product thesis, evidence posture, and release boundary while linking the
@@ -55,12 +56,12 @@ Current Public State
 
 - public branch and local v1 gate
 - Apache-2.0 license
-- public conformance report tracks 197 integration checks
+- public conformance report tracks 198 integration checks
 - 127 contract fixtures, 23 accepted corpus cases, 43 rejected corpus cases,
-  and 4 smoke cases
+  and 5 smoke cases
 - deterministic authority gates model sensitive host-facing behavior
-- May 18 pause checkpoint keeps the local v1 gate green with broader
-  Sley-owned semantic coverage for selected result and authority-gate output
+- May 27 checkpoint keeps the local v1 gate green with broader Sley-owned
+  semantic coverage for selected report-builder and runtime source-evaluator
   paths
 - strict self-hosting and final public release promotion remain blocked
 

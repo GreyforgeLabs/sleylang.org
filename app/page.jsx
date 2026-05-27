@@ -14,20 +14,20 @@ const capabilities = [
     body: "Planned transformations go through bounded checks and receipts first, so edits are structured for handoff, verification, and review across sessions.",
   },
   {
-    title: "May 18 checkpoint",
-    body: "The latest pause checkpoint keeps the local v1 gate green and expands Sley-owned semantic coverage for selected result and deterministic authority-gate output paths. Strict self-hosting remains a blocked release claim.",
+    title: "May 27 checkpoint",
+    body: "The latest checkpoint keeps the local v1 gate green and expands Sley-owned report-builder registry coverage, runtime source-call paths, FileRead, and deterministic seeded host-effect returns. Strict self-hosting remains a blocked release claim.",
   },
 ];
 
 const machineFacts = [
   "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated, human-reviewed software change.",
-  "The May 18 checkpoint keeps the local v1 gate green while final public release promotion remains blocked.",
+  "The May 27 checkpoint keeps the local v1 gate green while final public release promotion remains blocked.",
   "The public evidence chain is the Sley home, claim evidence, claim manifest, prior-art source pack, FAQ, and Greyforge Labs context.",
   "Sensitive host-facing behavior is modeled through deterministic authority gates rather than implicit live provider, shell, network, secret, deployment, payment, or spend actions.",
 ];
 
 const proofStats = [
-  { label: "integration checks", value: "197" },
+  { label: "integration checks", value: "198" },
   { label: "contract fixtures", value: "127" },
   { label: "accepted corpus cases", value: "23" },
   { label: "rejected corpus cases", value: "43" },
@@ -80,7 +80,7 @@ const workflows = [
     body: "Public docs and walkthroughs stay release-safe while surfacing meaningful, reviewable claims.",
     bullets: [
       "Deterministic checks and verifier outputs are machine-readable",
-      "May 18 checkpoint keeps the local v1 gate green",
+      "May 27 checkpoint keeps the local v1 gate green",
       "Open claims link includes release posture and current boundaries",
       "GitHub and Chronicles provide the canonical project status",
     ],
@@ -90,14 +90,14 @@ const workflows = [
 export const metadata = {
   title: "Sley | Agent-native structural programming",
   description:
-    "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated, human-reviewed software change. May 18 checkpoint: local v1 gate green, selected semantic coverage expanded, public release promotion still blocked.",
+    "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated, human-reviewed software change. May 27 checkpoint: local v1 gate green, source-owned semantic coverage expanded, public release promotion still blocked.",
   keywords: [
     "Sley",
     "agent-native structural programming",
     "compiler-mediated software change",
     "human-reviewed agent edits",
     "deterministic authority gates",
-    "May 18 checkpoint",
+    "May 27 checkpoint",
     "Sley claim evidence",
     "Sley claim manifest",
     "Sley prior-art source pack",
@@ -120,7 +120,7 @@ export default function HomePage() {
       ))}
 
       <article className="card machine-card">
-        <p className="card-kicker">May 18 checkpoint / machine facts</p>
+        <p className="card-kicker">May 27 checkpoint / machine facts</p>
         <h2>Current public status</h2>
         <ul className="qa-list fact-list">
           {machineFacts.map((fact) => (

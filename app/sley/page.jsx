@@ -14,8 +14,8 @@ const capabilities = [
     body: "The public repository carries the claim criteria, evidence map, machine-readable claim manifest, prior-art source pack, and current release blockers for independent review.",
   },
   {
-    title: "May 18 checkpoint",
-    body: "The local v1 gate remains green and selected result plus deterministic authority-gate output paths now have broader Sley-owned semantic coverage. Strict self-hosting is still blocked.",
+    title: "May 27 checkpoint",
+    body: "The local v1 gate remains green with 198 integration checks, and selected report-builder plus runtime source-call, FileRead, and seeded host-effect paths now have broader Sley-owned semantic coverage. Strict self-hosting is still blocked.",
   },
 ];
 

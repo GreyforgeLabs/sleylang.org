@@ -25,7 +25,7 @@ export default function SleyScopedDocsPage() {
         <ul className="qa-list">
           <li>Engineered for agent-assisted execution with reduced token rework.</li>
           <li>Deterministic plan surfaces and reviewable edit handoffs.</li>
-          <li>May 18 checkpoint keeps the local v1 gate green while strict self-hosting remains blocked.</li>
+          <li>May 27 checkpoint keeps the local v1 gate green while strict self-hosting remains blocked.</li>
           <li>Bounded public claims with a machine-readable claim manifest and controlled private boundaries.</li>
         </ul>
       </article>
