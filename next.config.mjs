@@ -14,6 +14,10 @@ const nextConfig = {
         { source: "/robots.txt", destination: "/sley/robots.txt" },
         { source: "/sitemap.xml", destination: "/sley/sitemap.xml" },
         { source: "/sley", destination: "/sley/index.html" },
+        { source: "/sley/docs", destination: "/sley/docs.html" },
+        { source: "/sley/tutorial", destination: "/sley/tutorial.html" },
+        { source: "/sley/faq", destination: "/sley/faq.html" },
+        { source: "/sley/readme", destination: "/sley/README.txt" },
       ],
     };
   },
