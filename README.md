@@ -25,3 +25,16 @@ The mirror also serves the duplicated compatibility path used by existing links:
 The React routes were added to drop the legacy static-only presentation while
 keeping static artifacts (like `.txt` metadata files and legacy `.html` for direct
 bookmarks) in place.
+
+## Local verification
+
+Use Node.js 20.9 or newer.
+
+```bash
+npm ci
+npm run verify
+npm audit --omit=dev
+```
+
+`verify` runs the Next.js Core Web Vitals lint rules before creating the
+production build.
