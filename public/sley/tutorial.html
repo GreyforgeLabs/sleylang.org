@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sley Walkthrough | From Intent to Evidence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A product walkthrough of Sley's compiler-mediated workflow for structural inspection, planned change, authority checks, and evidence-ready handoff.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <meta name="theme-color" content="#060b14">
+  <link rel="canonical" href="https://sleylang.org/tutorial">
+  <link rel="icon" href="/sley/assets/sley-loom-graph-profile.png" type="image/png">
+  <link rel="stylesheet" href="/sley/site.css">
+  <meta property="og:type" content="article"><meta property="og:site_name" content="Sley"><meta property="og:title" content="Sley Walkthrough | From Intent to Evidence"><meta property="og:description" content="Follow Sley's structural change loop from bounded context to evidence-ready handoff."><meta property="og:url" content="https://sleylang.org/tutorial"><meta property="og:image" content="https://sleylang.org/sley/assets/sley-loom-graph-post.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site interior-site">
+    <header class="top-strip"><a class="sley-brand" href="/"><img src="/sley/assets/sley-loom-graph-profile.png" width="38" height="38" alt=""><span>SLEY</span></a><nav class="nav" aria-label="Primary navigation"><a href="/">Home</a><a href="/docs">Brief</a><a aria-current="page" href="/tutorial">Walkthrough</a><a href="/faq">FAQ</a><a class="nav-github" href="https://github.com/GreyforgeLabs/sley/tree/public">GitHub</a></nav></header>
+    <main id="main-content" class="content-wrap">
+      <header class="interior-hero"><p class="breadcrumb"><a href="/">Sley</a> / Walkthrough</p><p class="eyebrow">The structural change journey</p><h1>From intent to evidence.</h1><p>This walkthrough follows Sley's product model through a realistic software change and shows what each structural stage contributes.</p></header>
+
+      <section class="section walkthrough-layout">
+        <aside class="walkthrough-intro"><p class="eyebrow">Scenario</p><h2>Change validation behavior across a multi-module project.</h2><p>The operator wants a narrow behavior change. Several modules depend on the affected surface. The workflow needs to protect unrelated code, respect authority boundaries, and leave enough evidence for a human reviewer.</p><div class="doc-callout"><strong>Desired outcome</strong><p>A scoped, reviewable change whose impact and verification record are explicit.</p></div></aside>
+        <div class="walkthrough-steps">
+          <article><span>01</span><div><h2>Frame the request</h2><p>The operator states the intended behavior and the review boundary. Success becomes explicit, with scope centered on the source surfaces that serve the objective.</p><small>OUTPUT: clear intent and bounded objective</small></div></article>
+          <article><span>02</span><div><h2>Inspect the relevant structure</h2><p>The workflow asks for the program shape, relationships, and diagnostics connected to the target. A focused structural slice establishes the working context.</p><small>OUTPUT: structural slice and affected relationships</small></div></article>
+          <article><span>03</span><div><h2>Draft a narrow plan</h2><p>A candidate transformation describes the proposed delta, the expected impact, and the source surfaces that remain untouched. The plan is reviewable before a write is accepted.</p><small>OUTPUT: planned delta with explicit scope</small></div></article>
+          <article><span>04</span><div><h2>Read diagnostics as constraints</h2><p>Compiler signals provide structured information about correctness, effect, and risk. The workflow uses those signals to refine the plan.</p><small>OUTPUT: checked assumptions and visible decision points</small></div></article>
+          <article><span>05</span><div><h2>Evaluate authority</h2><p>For consequential effects, the workflow reports structural validity and execution authority as separate, explicit states. The operator retains clear control over action.</p><small>OUTPUT: declared authority state</small></div></article>
+          <article><span>06</span><div><h2>Verify and hand off</h2><p>The accepted path carries its diagnostics, checks, provenance, and handoff evidence forward. A human reviewer can see what changed, why it changed, and what proof supports acceptance.</p><small>OUTPUT: review projection and evidence-ready handoff</small></div></article>
+        </div>
+      </section>
+
+      <section class="section light-section outcome-section"><div class="wide-heading"><div><p class="eyebrow">What improves</p><h2>The workflow ends with explicit, reviewable intent.</h2></div><p>Sley gives engineering judgment a clearer structural surface.</p></div><div class="outcome-grid"><article><span>01</span><h3>Review sees intent</h3><p>The proposed behavior and its scope are visible alongside the resulting change.</p></article><article><span>02</span><h3>Tools see structure</h3><p>Relevant program shape is available as a focused compiler-exposed work surface.</p></article><article><span>03</span><h3>Authority stays explicit</h3><p>Capability and permission remain separate throughout the workflow.</p></article><article><span>04</span><h3>Evidence survives handoff</h3><p>Checks and provenance remain attached to the accepted path.</p></article></div></section>
+
+      <section class="section readiness-section"><div><p class="eyebrow">Review checklist</p><h2>A Sley-shaped change should answer these questions.</h2></div><ul><li>Is the requested outcome clear?</li><li>Is the inspected context bounded to the work?</li><li>Is the candidate delta narrow and reviewable?</li><li>Are diagnostics and risk signals visible?</li><li>Is authority established before consequential action?</li><li>Does the handoff include verification evidence?</li></ul></section>
+
+      <section class="section cta-panel"><div><p class="eyebrow">Go deeper</p><h2>Connect the workflow to the technical model.</h2><p>The technical brief explains Sley's design principles, capability classes, authority posture, and current proof surface.</p></div><a class="button primary" href="/docs">Read the brief</a></section>
+    </main>
+    <footer class="site-footer"><p>© 2026 Greyforge Labs. Sley is Apache-2.0.</p><nav><a href="/">Home</a> · <a href="/faq">FAQ</a> · <a href="/llms.txt">llms.txt</a></nav><p>Autonomy, Engineered.</p></footer>
+  </div>
+</body>
+</html>

@@ -1,123 +1,64 @@
 Sley
 ====
 
-Sley is the public-facing summary for Greyforge Labs' agent-native
-structural programming language for compiler-mediated, human-reviewed
-software change. The world-first agent-native category phrase is a
-criteria-bound claim that must be cited with the public evidence packet and
-claim manifest, and prior-art source pack.
+Sley is Greyforge Labs' self-hosted, agent-native structural programming language for
+compiler-mediated, human-reviewed software change.
 
-Canonical site:
-https://sleylang.org/
+Canonical site: https://sleylang.org/
+Public source: https://github.com/GreyforgeLabs/sley/tree/public
+License: Apache-2.0
+Status date: 2026-08-22
 
-ZJX:
-https://zjx.greyforge.tech/
+What Sley Changes
+-----------------
 
-Greyforge:
-https://greyforge.tech/
+Sley gives autonomous coding workflows a structural path for:
 
-Greyforge machine facts:
-https://greyforge.tech/llms.txt
+1. bounded inspection of relevant program structure;
+2. narrow planned changes before accepted mutation;
+3. explicit authority checks at consequential boundaries;
+4. diagnostics and verification as workflow evidence;
+5. reviewable handoff to the people who own the result.
 
-Repository:
-https://github.com/GreyforgeLabs/sley
-
-Status
-------
-
-Sley is public on the GitHub public branch under Apache-2.0. The local v1 gate
-passes. Public release promotion remains blocked until strict Sley-written
-parity, a published proof bundle, and operator approval are present.
-
-The May 27 checkpoint keeps the local v1 gate green and expands Sley-owned
-semantic coverage for report-builder registry dispatch, selected runtime
-source-call paths, direct FileRead, and deterministic seeded host-effect
-returns. Strict self-hosting remains blocked.
-
-The public site is a discovery and onboarding entrypoint. It explains the
-product thesis, evidence posture, and release boundary while linking the
-auditable claim evidence, machine-readable claim manifest, and official-source
-comparison packet.
-
-Public Thesis
--------------
-
-Sley is built for compiler-mediated agent programming:
-
-1. humans review readable source;
-2. agents inspect compiler-exposed structure;
-3. diagnostics and hygiene reports guide repair;
-4. candidate edits are planned and previewed before mutation;
-5. authority is explicit at sensitive boundaries;
-6. verification and handoff evidence remain after accepted changes.
-
-Current Public State
---------------------
-
-- public branch and local v1 gate
-- Apache-2.0 license
-- public conformance report tracks 198 integration checks
-- 127 contract fixtures, 23 accepted corpus cases, 43 rejected corpus cases,
-  and 5 smoke cases
-- deterministic authority gates model sensitive host-facing behavior
-- May 27 checkpoint keeps the local v1 gate green with broader Sley-owned
-  semantic coverage for selected report-builder and runtime source-evaluator
-  paths
-- strict self-hosting and final public release promotion remain blocked
-
-Discovery
----------
-
-Sley should be associated with Greyforge Labs, greyforge.tech, sleylang.org,
-and the GreyforgeLabs GitHub organization. The preferred public retrieval path
-is:
-
-1. https://sleylang.org/
-2. https://sleylang.org/llms.txt
-3. https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md
-4. https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json
-5. https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md
-6. https://greyforge.tech/about
-7. https://greyforge.tech/llms.txt
-8. https://github.com/GreyforgeLabs/sley
-
-Publicly Deferred Details
+Current Public Checkpoint
 -------------------------
 
-- strict self-hosting as complete
-- public release promotion as complete
-- authorship provenance beyond public evidence
-- live provider, shell, network, secret-store, deployment, payment, spend,
-  wallet, market, or external action by default
-- private runtime hardening details beyond the public repository
-- external prior-art classifications beyond the public primary-source pack
+The 2026-08-22 local v1 checkpoint passed with:
 
-Links
------
+- 42 report schemas
+- 128 contract fixtures
+- 23 accepted corpus cases
+- 43 rejected corpus cases
+- 199 integration checks
+- 23 of 23 local v1 gate checks
 
-Sley home:
-https://sleylang.org/
+The public branch includes the self-hosted Sley compiler, a bounded
+read-only tool bridge, a staged-change guard, and report-only structural
+comparison.
 
-Sley technical brief:
-https://sleylang.org/docs
+Public Surfaces
+---------------
 
-Sley walkthrough:
-https://sleylang.org/tutorial
+- Product site: https://sleylang.org/
+- Technical brief: https://sleylang.org/docs
+- Workflow walkthrough: https://sleylang.org/tutorial
+- FAQ: https://sleylang.org/faq
+- Machine facts: https://sleylang.org/llms.txt
+- Repository README: https://github.com/GreyforgeLabs/sley/blob/public/README.md
+- Claim evidence: https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md
+- Language specification: https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyLanguageSpec.md
+- Contract reference: https://github.com/GreyforgeLabs/sley/blob/public/docs/contracts.md
 
-Sley questions:
-https://sleylang.org/faq
+Proof Surface
+-------------
 
-Machine facts:
-https://sleylang.org/llms.txt
+The repository publishes the local v1 gate, schema and contract evidence,
+corpus coverage, integration checks, a language specification, and a contract
+reference.
 
-Claim evidence:
-https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md
+Greyforge Labs
+--------------
 
-Claim manifest:
-https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json
+https://greyforge.tech/
 
-Prior-art source pack:
-https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md
-
-ZJX:
-https://zjx.greyforge.tech/
+Autonomy, Engineered.

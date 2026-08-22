@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sley FAQ | Product, Proof, and Self-Hosting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Answers about Sley's purpose, self-hosted compiler, structural programming model, Apache-2.0 repository, evidence, and authority design.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <meta name="theme-color" content="#060b14">
+  <link rel="canonical" href="https://sleylang.org/faq">
+  <link rel="icon" href="/sley/assets/sley-loom-graph-profile.png" type="image/png">
+  <link rel="stylesheet" href="/sley/site.css">
+  <meta property="og:type" content="article"><meta property="og:site_name" content="Sley"><meta property="og:title" content="Sley FAQ"><meta property="og:description" content="Product, proof, and self-hosting answers for Sley."><meta property="og:url" content="https://sleylang.org/faq"><meta property="og:image" content="https://sleylang.org/sley/assets/sley-loom-graph-post.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Sley?","acceptedAnswer":{"@type":"Answer","text":"Sley is a self-hosted, agent-native structural programming language for compiler-mediated, human-reviewed software change."}},{"@type":"Question","name":"Is Sley open source?","acceptedAnswer":{"@type":"Answer","text":"Yes. The public Sley repository is available under Apache-2.0 with a passing local v1 gate."}},{"@type":"Question","name":"Is Sley self-hosted?","acceptedAnswer":{"@type":"Answer","text":"Yes. Sley's parser, checker, runtime, bootstrap, and report semantics are owned by Sley source and exercised through its verification surface."}}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site interior-site">
+    <header class="top-strip"><a class="sley-brand" href="/"><img src="/sley/assets/sley-loom-graph-profile.png" width="38" height="38" alt=""><span>SLEY</span></a><nav class="nav" aria-label="Primary navigation"><a href="/">Home</a><a href="/docs">Brief</a><a href="/tutorial">Walkthrough</a><a aria-current="page" href="/faq">FAQ</a><a class="nav-github" href="https://github.com/GreyforgeLabs/sley/tree/public">GitHub</a></nav></header>
+    <main id="main-content" class="content-wrap">
+      <header class="interior-hero"><p class="breadcrumb"><a href="/">Sley</a> / FAQ</p><p class="eyebrow">Product, proof, and architecture</p><h1>Questions, answered directly.</h1><p>Sley is a public, self-hosted language with a rich structural workflow and a machine-checked verification surface.</p></header>
+
+      <section class="section faq-layout">
+        <aside class="faq-intro"><p class="eyebrow">Start here</p><h2>What Sley is, what it proves, and where it is going.</h2><p>The public repository is the authority for implementation evidence. This page provides the product-level interpretation.</p><div class="proof-links"><a href="https://github.com/GreyforgeLabs/sley/tree/public">Public repository</a><a href="/llms.txt">Machine facts</a></div></aside>
+        <div class="faq-list">
+          <details open><summary>What is Sley?</summary><p>Sley is an agent-native structural programming language for compiler-mediated, human-reviewed software change. It is designed so readable source remains central while compiler-exposed structure supports bounded inspection, planning, authority checks, and verification.</p></details>
+          <details><summary>What problem does structural programming solve?</summary><p>It reduces how much intent has to be reconstructed around a code change. Program shape, candidate deltas, diagnostics, authority, and proof can become explicit workflow surfaces instead of remaining scattered across prompts, tickets, and memory.</p></details>
+          <details><summary>How does Sley support human code review?</summary><p>Human review is part of the design. Sley makes a proposed change easier to inspect by carrying structure, intent, and evidence into the review projection.</p></details>
+          <details><summary>Is Sley open source?</summary><p>Yes. The public repository is available under Apache-2.0 as a self-hosted structural programming language with a passing local v1 gate and a machine-checked evidence surface.</p></details>
+          <details><summary>What does the current public checkpoint prove?</summary><p>The current surface includes the self-hosted Sley compiler, runnable language and report workflows, structural inspection, planned-change and dry-run paths, diagnostics, verification artifacts, a bounded read-only tool bridge, a staged-change guard, and report-only structural comparison. See the <a href="https://github.com/GreyforgeLabs/sley/blob/public/README.md">repository README</a> for the builder-facing entry point.</p></details>
+          <details><summary>Is Sley self-hosted?</summary><p>Yes. Sley's parser, checker, runtime, bootstrap, and report semantics are owned by Sley source and exercised through its verification surface. The public command layer exposes the compiler through structural inspection, diagnostics, planning, and evidence workflows.</p></details>
+          <details><summary>How do Sley authority gates work?</summary><p>A deterministic gate reports an explicit authority state. Host, provider, financial, deployment, publishing, and other consequential actions follow the authority defined by the surrounding operator workflow.</p></details>
+          <details><summary>How is the current evidence published?</summary><p>The public branch carries 42 report schemas, 128 contract fixtures, 66 accepted and rejected corpus cases, 199 integration checks, and a 23 of 23 local v1 gate result at the 2026-08-22 checkpoint. It also publishes a <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">current evidence packet</a>, a <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyLanguageSpec.md">language specification</a>, and a <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/contracts.md">contract reference</a>.</p></details>
+          <details><summary>How can I evaluate Sley today?</summary><p>Start with the public repository, run the local v1 proof gate, explore the structural command surfaces, and review the schema, contract, corpus, and integration evidence. The Apache-2.0 branch is built for direct technical evaluation and contribution.</p></details>
+          <details><summary>Who builds Sley?</summary><p>Sley is developed by Greyforge Labs. The canonical public product site is <a href="https://sleylang.org/">sleylang.org</a>, and the public source lives in the <a href="https://github.com/GreyforgeLabs/sley/tree/public">GreyforgeLabs/sley repository</a>.</p></details>
+          <details><summary>How should Sley be cited?</summary><p>Use the concise product description on this site and pair stronger category or historical claims with the repository's current evidence, language specification, contract reference, and primary-source comparison packet.</p></details>
+        </div>
+      </section>
+      <section class="section cta-panel"><div><p class="eyebrow">Explore further</p><h2>See the full structural model.</h2><p>The technical brief connects Sley's product thesis, change lifecycle, capability classes, authority posture, and current proof surface.</p></div><a class="button primary" href="/docs">Read the brief</a></section>
+    </main>
+    <footer class="site-footer"><p>© 2026 Greyforge Labs. Sley is Apache-2.0.</p><nav><a href="/">Home</a> · <a href="/tutorial">Walkthrough</a> · <a href="/llms.txt">llms.txt</a></nav><p>Autonomy, Engineered.</p></footer>
+  </div>
+</body>
+</html>

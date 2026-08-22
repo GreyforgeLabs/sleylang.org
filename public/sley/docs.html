@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sley Technical Brief | Structure for Software Change</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The technical brief for Sley's self-hosted compiler, structural change model, capability classes, authority design, and public evidence.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <meta name="theme-color" content="#060b14">
+  <link rel="canonical" href="https://sleylang.org/docs">
+  <link rel="icon" href="/sley/assets/sley-loom-graph-profile.png" type="image/png">
+  <link rel="stylesheet" href="/sley/site.css">
+  <meta property="og:type" content="article"><meta property="og:site_name" content="Sley"><meta property="og:title" content="Sley Technical Brief"><meta property="og:description" content="How Sley makes autonomous software change structural, bounded, and reviewable."><meta property="og:url" content="https://sleylang.org/docs"><meta property="og:image" content="https://sleylang.org/sley/assets/sley-loom-graph-post.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site interior-site">
+    <header class="top-strip"><a class="sley-brand" href="/"><img src="/sley/assets/sley-loom-graph-profile.png" width="38" height="38" alt=""><span>SLEY</span></a><nav class="nav" aria-label="Primary navigation"><a href="/">Home</a><a aria-current="page" href="/docs">Brief</a><a href="/tutorial">Walkthrough</a><a href="/faq">FAQ</a><a class="nav-github" href="https://github.com/GreyforgeLabs/sley/tree/public">GitHub</a></nav></header>
+    <main id="main-content" class="content-wrap">
+      <header class="interior-hero"><p class="breadcrumb"><a href="/">Sley</a> / Technical brief</p><p class="eyebrow">Public architecture and proof posture</p><h1>Structure for software change.</h1><p>Sley is an agent-native structural programming language designed to make software intent legible to tools, bounded by compiler checks, and reviewable by the people responsible for the result.</p></header>
+
+      <section class="section docs-layout">
+        <nav class="docs-nav" aria-label="On this page"><strong>ON THIS PAGE</strong><a href="#thesis">Thesis</a><a href="#principles">Principles</a><a href="#model">Change model</a><a href="#capabilities">Capabilities</a><a href="#authority">Authority</a><a href="#evidence">Evidence</a><a href="#self-hosting">Self-hosting</a></nav>
+        <div class="docs-content">
+          <section id="thesis"><p class="eyebrow">Thesis</p><h2>Programming surfaces should carry more of the change contract.</h2><p>Most software workflows separate code from the context needed to change it safely. Intent lives in tickets, prompts, review comments, runbooks, and memory. An autonomous workflow has to reconstruct that context before it can make a useful edit.</p><p>Sley approaches the problem at the language and compiler boundary. Human-readable source remains the review projection. Compiler-exposed structure becomes the intended work surface for inspection, planning, validation, and evidence-aware handoff.</p><div class="doc-callout"><strong>Public description</strong><p>Sley is a self-hosted, agent-native structural programming language for compiler-mediated, human-reviewed software change.</p></div></section>
+
+          <section id="principles"><p class="eyebrow">Design principles</p><h2>Make the important parts explicit.</h2><div class="principle-grid"><article><h3>Human-readable by design</h3><p>Source remains understandable to the people who own the software and its consequences.</p></article><article><h3>Structural for tools</h3><p>Compiler surfaces expose program shape and relationships without depending on repeated prose reconstruction.</p></article><article><h3>Bounded before mutation</h3><p>Candidate changes can be inspected, checked, and narrowed before the workflow accepts a write.</p></article><article><h3>Evidence in the handoff</h3><p>Verification and provenance travel with accepted work instead of becoming an afterthought.</p></article></div></section>
+
+          <section id="model"><p class="eyebrow">Change model</p><h2>One lifecycle, four questions.</h2><ol class="doc-flow"><li><span>01</span><div><h3>Inspect</h3><p>What structure, relationship, diagnostic, or risk surface matters to the requested change?</p></div></li><li><span>02</span><div><h3>Plan</h3><p>What narrow transformation is being proposed, and what stays outside its scope?</p></div></li><li><span>03</span><div><h3>Gate</h3><p>Does the proposed effect fit the declared authority and the operator's review boundary?</p></div></li><li><span>04</span><div><h3>Verify</h3><p>What artifacts show that the accepted result is coherent and ready for handoff?</p></div></li></ol></section>
+
+          <section id="capabilities"><p class="eyebrow">Public capability classes</p><h2>What the current surface is built to express.</h2><table class="status-table capability-table"><thead><tr><th>Capability</th><th>Public role</th></tr></thead><tbody><tr><td>Structural inspection</td><td>Program shape, selected relationships, diagnostics, and bounded context.</td></tr><tr><td>Planned change</td><td>Narrow candidate transformations and dry-run review before accepted mutation.</td></tr><tr><td>Authority checks</td><td>Explicit gates around effects and sensitive action boundaries.</td></tr><tr><td>Verification</td><td>Checks, provenance, traces, seals, and evidence-oriented handoff artifacts.</td></tr><tr><td>Read-only integration</td><td>Bounded tool access for query, lint, planning, and verification without write authority by default.</td></tr><tr><td>Structural comparison</td><td>Report meaningful overlap and difference without silently authorizing a merge.</td></tr></tbody></table></section>
+
+          <section id="authority"><p class="eyebrow">Authority posture</p><h2>Capability and permission stay explicit.</h2><p>Sley represents the ability to describe or inspect an effect separately from authority to carry it out. A deterministic gate reports the declared authority state while the surrounding operator workflow governs host, provider, financial, deployment, and publishing actions.</p><p>This separation is central to the product direction: agents reason over more structure while operators retain clear control over consequential effects.</p></section>
+
+          <section id="evidence"><p class="eyebrow">Current evidence</p><h2>A self-hosted compiler with a machine-checked proof surface.</h2><div class="evidence-grid"><article><strong>42</strong><span>report schemas</span></article><article><strong>128</strong><span>contract fixtures</span></article><article><strong>66</strong><span>accepted and rejected corpus cases</span></article><article><strong>199</strong><span>integration checks</span></article></div><p>The 2026-08-22 local checkpoint passed all 23 v1 gate checks. The public repository also carries a current evidence packet, language specification, contract reference, and primary-source comparison packet.</p><div class="proof-links"><a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">Public evidence</a><a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyLanguageSpec.md">Language specification</a><a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/contracts.md">Contract reference</a></div></section>
+
+          <section id="self-hosting"><p class="eyebrow">Self-hosted architecture</p><h2>Sley owns the semantics that define Sley.</h2><p>The self-hosted Sley compiler carries parser, checker, runtime, and report semantics in Sley source. The public command layer turns that language-owned structure into practical inspection, planning, verification, and developer workflows.</p><p>The result is a language whose implementation matches its product thesis: structure is explicit, evidence is inspectable, and autonomy stays reviewable.</p></section>
+        </div>
+      </section>
+      <section class="section cta-panel"><div><p class="eyebrow">Next</p><h2>Walk through the change loop.</h2><p>See how the public model turns a software request into bounded structure, a planned delta, checked authority, and evidence-ready handoff.</p></div><a class="button primary" href="/tutorial">Open the walkthrough</a></section>
+    </main>
+    <footer class="site-footer"><p>© 2026 Greyforge Labs. Sley is Apache-2.0.</p><nav><a href="/">Home</a> · <a href="/faq">FAQ</a> · <a href="/llms.txt">llms.txt</a></nav><p>Autonomy, Engineered.</p></footer>
+  </div>
+</body>
+</html>
