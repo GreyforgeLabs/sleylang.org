@@ -4,6 +4,13 @@ export const metadata = {
   title: "Sley README (legacy path)",
   description:
     "Legacy-path Sley summary for getting started, walkthroughs, and first-command onboarding from external bookmarks.",
+  alternates: {
+    canonical: "/readme",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function SleyScopedReadmePage() {

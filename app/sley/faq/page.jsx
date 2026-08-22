@@ -3,6 +3,13 @@ import { SleyShell } from "../../components/SleyShell";
 export const metadata = {
   title: "Sley FAQ (legacy path)",
   description: "Legacy-path FAQ for Sley.",
+  alternates: {
+    canonical: "/faq",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function SleyScopedFaqPage() {

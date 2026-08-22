@@ -4,6 +4,9 @@ export const metadata = {
   title: "Sley README | Start Here",
   description:
     "Public README mirror for Sley: walkthroughs, release posture, and first-step guidance for agent-native structural programming.",
+  alternates: {
+    canonical: "/readme",
+  },
 };
 
 export default function ReadmePage() {
@@ -47,19 +50,31 @@ export default function ReadmePage() {
       <article className="card">
         <h2>Quick start (recommended)</h2>
         <ol className="step-list">
-          <li>Confirm release posture and current claims:</li>
-          <pre className="code">sley doctor --json .</pre>
-          <li>Inspect structure with deterministic output:</li>
-          <pre className="code">sley ast --json .</pre>
-          <li>Inspect graph scope before editing:</li>
-          <pre className="code">sley graph --json --slice &lt;node-id&gt; .</pre>
-          <li>Draft your first bounded edit plan:</li>
-          <pre className="code">sley plan --json --graft-templates .</pre>
-          <li>Run lint and verification before promoting:</li>
-          <pre className="code">sley lint --json .</pre>
-          <pre className="code">sley verify --json .</pre>
-          <li>Run a dry-run repair when needed:</li>
-          <pre className="code">sley fix --json --kind add_module_declaration --dry-run .</pre>
+          <li>
+            Confirm release posture and current claims:
+            <pre className="code">sley doctor --json .</pre>
+          </li>
+          <li>
+            Inspect structure with deterministic output:
+            <pre className="code">sley ast --json .</pre>
+          </li>
+          <li>
+            Inspect graph scope before editing:
+            <pre className="code">sley graph --json --slice &lt;node-id&gt; .</pre>
+          </li>
+          <li>
+            Draft your first bounded edit plan:
+            <pre className="code">sley plan --json --graft-templates .</pre>
+          </li>
+          <li>
+            Run lint and verification before promoting:
+            <pre className="code">sley lint --json .</pre>
+            <pre className="code">sley verify --json .</pre>
+          </li>
+          <li>
+            Run a dry-run repair when needed:
+            <pre className="code">sley fix --json --kind add_module_declaration --dry-run .</pre>
+          </li>
         </ol>
       </article>
 

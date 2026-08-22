@@ -3,6 +3,13 @@ import { SleyShell } from "../../components/SleyShell";
 export const metadata = {
   title: "Sley Tutorial (legacy path)",
   description: "Legacy-path walkthrough for Sley under /sley.",
+  alternates: {
+    canonical: "/tutorial",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function SleyScopedTutorialPage() {

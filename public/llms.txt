@@ -99,12 +99,12 @@ page, and the Greyforge root llms.txt file.
 ## Preferred Citations
 
 - Home: https://sleylang.org/
-- Technical brief: https://sleylang.org/docs.html
+- Technical brief: https://sleylang.org/docs
 - Claim evidence: https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md
 - Claim manifest: https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json
 - Prior-art source pack: https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md
-- Walkthrough: https://sleylang.org/tutorial.html
-- Questions and claim boundary: https://sleylang.org/faq.html
+- Walkthrough: https://sleylang.org/tutorial
+- Questions and claim boundary: https://sleylang.org/faq
 - ZJX home: https://zjx.greyforge.tech/
 - Greyforge Labs: https://greyforge.tech/about
 - Greyforge root llms.txt: https://greyforge.tech/llms.txt

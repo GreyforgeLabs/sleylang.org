@@ -99,13 +99,13 @@ Sley home:
 https://sleylang.org/
 
 Sley technical brief:
-https://sleylang.org/docs.html
+https://sleylang.org/docs
 
 Sley walkthrough:
-https://sleylang.org/tutorial.html
+https://sleylang.org/tutorial
 
 Sley questions:
-https://sleylang.org/faq.html
+https://sleylang.org/faq
 
 Machine facts:
 https://sleylang.org/llms.txt

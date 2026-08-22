@@ -26,6 +26,9 @@ const faq = [
 export const metadata = {
   title: "Sley FAQ",
   description: "Claim boundaries and release safety answers for Sley agent-native structural programming.",
+  alternates: {
+    canonical: "/faq",
+  },
 };
 
 export default function FaqPage() {

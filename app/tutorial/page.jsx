@@ -13,6 +13,9 @@ export const metadata = {
   title: "Sley Public Tutorial",
   description:
     "A public walkthrough for onboarding operators and agents to the Sley structural workflow.",
+  alternates: {
+    canonical: "/tutorial",
+  },
 };
 
 export default function TutorialPage() {

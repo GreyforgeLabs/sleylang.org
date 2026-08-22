@@ -89,6 +89,9 @@ export const metadata = {
   title: "Sley Documentation | Public brief",
   description:
     "Sley technical brief: agent-native structural programming, bounded workflows, and compiler-mediated evidence.",
+  alternates: {
+    canonical: "/docs",
+  },
 };
 
 export default function DocsPage() {

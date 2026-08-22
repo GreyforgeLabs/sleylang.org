@@ -42,9 +42,6 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-  alternates: {
-    canonical: "https://sleylang.org/",
-  },
   openGraph: {
     title: "Sley | Agent-native structural programming",
     description:

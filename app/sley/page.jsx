@@ -23,6 +23,13 @@ export const metadata = {
   title: "Sley (legacy path)",
   description:
     "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated software change.",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function SleyScopedHomePage() {

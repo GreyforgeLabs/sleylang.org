@@ -91,6 +91,9 @@ export const metadata = {
   title: "Sley | Agent-native structural programming",
   description:
     "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated, human-reviewed software change. May 27 checkpoint: local v1 gate green, source-owned semantic coverage expanded, public release promotion still blocked.",
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
     "Sley",
     "agent-native structural programming",

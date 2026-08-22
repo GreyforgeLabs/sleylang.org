@@ -22,9 +22,9 @@ The mirror also serves the duplicated compatibility path used by existing links:
 - `/readme` and `/sley/readme`
 - `/llms.txt`
 
-The React routes were added to drop the legacy static-only presentation while
-keeping static artifacts (like `.txt` metadata files and legacy `.html` for direct
-bookmarks) in place.
+The React routes replace the legacy static-only presentation. Static `.txt`
+metadata remains in place, and Vercel rewrites preserve legacy `.html`
+bookmarks while canonical metadata and the sitemap point to the primary routes.
 
 ## Local verification
 

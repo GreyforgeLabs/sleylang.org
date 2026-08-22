@@ -3,6 +3,13 @@ import { SleyShell } from "../../components/SleyShell";
 export const metadata = {
   title: "Sley Docs (legacy path)",
   description: "Legacy-path documentation view for Sley on /sley/docs.",
+  alternates: {
+    canonical: "/docs",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function SleyScopedDocsPage() {
