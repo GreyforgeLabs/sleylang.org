@@ -27,6 +27,10 @@ export const metadata = {
   creator: "Greyforge Labs",
   publisher: "Greyforge Labs",
   category: "technology",
+  icons: {
+    icon: "/assets/sley-loom-graph-profile.png",
+    apple: "/assets/sley-loom-graph-profile.png",
+  },
   robots: {
     index: true,
     follow: true,

@@ -12,6 +12,15 @@ Claim evidence: https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaim
 Claim manifest: https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json
 Prior-art source pack: https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md
 
+## Canonical Links
+
+- [Sley home](https://sleylang.org/)
+- [Technical brief](https://sleylang.org/docs)
+- [Protected walkthrough](https://sleylang.org/tutorial)
+- [Questions and claim boundary](https://sleylang.org/faq)
+- [Public source repository](https://github.com/GreyforgeLabs/sley)
+- [Greyforge Labs](https://greyforge.tech/about)
+
 ## High-Confidence Facts
 
 - Sley is Greyforge Labs' agent-native structural programming language for
