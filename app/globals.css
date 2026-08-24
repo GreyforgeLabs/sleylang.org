@@ -1,4 +1,6 @@
 :root {
+  color-scheme: dark;
+
   --bg: #020617;
   --bg-soft: #07111f;
   --panel: rgba(10, 18, 34, 0.72);
@@ -23,6 +25,34 @@
 html,
 body {
   min-height: 100%;
+}
+
+html {
+  background: var(--bg);
+  color: var(--text);
+}
+
+::selection {
+  color: #020617;
+  background: var(--accent);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #253b54;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #355777;
 }
 
 body {
