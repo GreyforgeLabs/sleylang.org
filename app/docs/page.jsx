@@ -4,7 +4,7 @@ const sections = [
   {
     title: "What Sley is for",
     body:
-      "Sley is a compiler-oriented language surface for people and agents who need fast edits with strong evidence. Use it when your workflow values reproducibility, scope control, and explicit planning over ad-hoc text patching.",
+      "Sley 1.x is a compiler-oriented language surface for people and agents who need readable source, bounded edits, and strong evidence. Use 1.2.0 when your workflow values reproducibility, scope control, explicit planning, and direct human inspection.",
     bullets: [
       "Language-level boundaries for authority and side-effects",
       "Deterministic planning and edit receipts for machine handoff",
@@ -76,9 +76,9 @@ sley verify --json .`,
   {
     title: "Operational references",
     body:
-      "Public release posture, comparison posture, benchmark posture, and release notes are surfaced through the Sley source pack, Greyforge OpenForge, and Greyforge Chronicles. Those are the stable sources for claims and public links.",
+      "Public release posture, the 1.x feature freeze, the Sley 2.x architectural break, and release notes are surfaced through the Sley source pack, Greyforge OpenForge, and Greyforge Chronicles. Those are the stable sources for claims and public links.",
     bullets: [
-      "Read `/chronicles/sley-zjx-agent-native-stack` on greyforge.tech",
+      "Read `/chronicles/sley-120-machine-native-break` on greyforge.tech",
       "Track OpenForge repo posture from the same source chain",
       "Use llms.txt for crawler-facing summary and links",
     ],
@@ -121,11 +121,15 @@ export default function DocsPage() {
       <article className="card">
         <h2>Public claim summary</h2>
         <ul className="qa-list">
-          <li>Canonical claim: agent-native structural programming for compiler-mediated, human-reviewed software change.</li>
+          <li>Sley 1.2.0 completes the agent-native, human-readable 1.x architecture.</li>
+          <li>Greyforge has frozen active 1.x feature development while keeping the Apache-2.0 repository public.</li>
+          <li>Sley 2.x is a clean machine-native line. Human governance remains required, but readability of the canonical raw representation is optional.</li>
+          <li>Compatibility, migration tooling, release timing, and unreleased 2.x mechanisms are not promised.</li>
           <li>World-first category claim: cite only with the public evidence packet, claim manifest, and prior-art source pack.</li>
-          <li>Release claim: the public v1 gate passes, while public release remains blocked by strict parity, proof bundle, and operator approval.</li>
-          <li>May 27 checkpoint: the local v1 gate remains green with 198 integration checks, and Sley-owned source coverage now includes report-builder registry dispatch plus selected runtime source-call, FileRead, and seeded host-effect return paths.</li>
+          <li>Release claim: v1.2.0 is a public Linux x86_64 release candidate with unsigned provenance, not a production promotion.</li>
+          <li>Verified release inventory: 38 targets, 99 schemas, 187 contract fixtures, 72 corpus cases, 264 integration checks, 11 release-packet checks, and 4 public-release checks.</li>
         </ul>
+        <p><a href="https://greyforge.tech/chronicles/sley-120-machine-native-break">Architectural transition Chronicle</a></p>
         <p>
           Evidence packet:{" "}
           <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">
@@ -168,7 +172,7 @@ export default function DocsPage() {
       <article className="card">
         <h2>Release-friendly onboarding</h2>
         <p>
-          The easiest onboarding path is intentionally conservative: confirm baseline checks, generate structured reports, and only then
+          The Sley 1.2.0 onboarding path is intentionally conservative: confirm baseline checks, generate structured reports, and only then
           promote deeper edits after lint and verify pass.
         </p>
       </article>

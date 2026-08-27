@@ -1,7 +1,7 @@
 import { SleyShell } from "../components/SleyShell";
 
 const steps = [
-  "Read the public release boundary first, then open `/readme` and `/docs` for scope and constraints.",
+  "Read the Sley 1.2.0 release boundary first, then open `/readme` and `/docs` for scope and constraints.",
   "Run a baseline posture check with `sley doctor --json .` and capture the context.",
   "Inspect the smallest relevant slice with `sley ast --json .` and `sley graph --json --slice <node-id> .`",
   "Draft edits with structure-first plans using `sley plan --json --graft-templates .`",
@@ -24,7 +24,7 @@ export default function TutorialPage() {
       scope=""
       kicker="Public walkthrough"
       title="Get started with the Sley public workflow"
-      subtitle="A practical first run for structural editing, bounded verification, and compact handoffs."
+      subtitle="A practical first run for the human-readable Sley 1.x workflow: structural editing, bounded verification, and compact handoffs."
     >
       <article className="card">
         <h2>Step-by-step</h2>
@@ -66,7 +66,7 @@ sley verify --json .`}</pre>
       <article className="card">
         <h2>Next actions</h2>
         <p>
-          Continue from the docs page and use OpenForge + release links as your anchor. This keeps public claims consistent while
+          Continue from the docs page and use the v1.2.0 release plus transition Chronicle as your anchor. This keeps public claims consistent while
           minimizing repeated context and overpromising.
         </p>
       </article>

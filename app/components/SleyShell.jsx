@@ -58,6 +58,9 @@ export function SleyShell({
           <ScopeLink scope="" to="https://greyforge.tech/openforge" className="nav-link">
             OpenForge
           </ScopeLink>
+          <ScopeLink scope="" to="https://greyforge.tech/chronicles/sley-120-machine-native-break" className="nav-link">
+            Transition
+          </ScopeLink>
         </nav>
       </header>
 
@@ -75,6 +78,9 @@ export function SleyShell({
             </ScopeLink>
             <ScopeLink scope={rootScope} to="/faq" className="button-ghost">
               Claim boundaries
+            </ScopeLink>
+            <ScopeLink scope="" to="https://greyforge.tech/chronicles/sley-120-machine-native-break" className="button-ghost">
+              Why 2.x exists
             </ScopeLink>
           </div>
         </section>

@@ -7,7 +7,7 @@ export const metadata = {
     template: "%s | Sley",
   },
   description:
-    "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated, human-reviewed software change. May 27 checkpoint: local v1 gate green, source-owned semantic coverage expanded, public release promotion still blocked.",
+    "Sley 1.2.0 completes Greyforge Labs' open human-readable structural language. Active research has moved to the clean machine-native Sley 2.x architecture.",
   keywords: [
     "Sley",
     "agent-native language",
@@ -18,9 +18,9 @@ export const metadata = {
     "compiler-mediated workflow",
     "structural programming language",
     "deterministic authority gates",
-    "May 27 checkpoint",
-    "local v1 gate green",
-    "public release promotion blocked",
+    "Sley 1.2.0",
+    "Sley 2.0",
+    "machine-native programming language",
     "Greyforge Labs",
   ],
   authors: [{ name: "Greyforge Labs", url: "https://greyforge.tech/about" }],
@@ -43,9 +43,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Sley | Agent-native structural programming",
+    title: "Sley 1.2.0 | The open human-readable line",
     description:
-      "Compiler-mediated structural programming for auditable, human-reviewed software change. May 27 status: v1 gate green, final public release blocked pending proof.",
+      "Sley 1.2.0 completes the human-readable line as Greyforge moves active language research to the clean machine-native Sley 2.x architecture.",
     url: "https://sleylang.org/",
     siteName: "Sley",
     images: [
@@ -61,17 +61,17 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sley | Agent-native structural programming",
+    title: "Sley 1.2.0 | The open human-readable line",
     description:
-      "Compiler-mediated structural programming with public claim evidence and May 27 checkpoint boundaries.",
+      "The open human-readable Sley 1.x line and the architectural transition to machine-native Sley 2.x.",
     images: ["/assets/sley-loom-graph-post.png"],
   },
   other: {
     "citation_entity": "Sley",
     "citation_publisher": "Greyforge Labs",
-    "citation_status_date": "2026-05-27",
+    "citation_status_date": "2026-08-27",
     "llm_discovery_file": "https://sleylang.org/llms.txt",
-    "llm_claim_boundary": "local v1 gate green; public release promotion blocked pending strict parity, proof bundle, and operator approval",
+    "llm_claim_boundary": "Sley 1.2.0 is a Linux x86_64 release candidate; 1.x feature development is frozen; Sley 2.x mechanisms and compatibility are not public claims",
   },
 };
 
@@ -83,20 +83,21 @@ const sleyJsonLd = {
   codeRepository: "https://github.com/GreyforgeLabs/sley",
   license: "https://www.apache.org/licenses/LICENSE-2.0",
   programmingLanguage: "Sley",
-  dateModified: "2026-05-27",
+  dateModified: "2026-08-27",
   creator: {
     "@type": "Organization",
     name: "Greyforge Labs",
     url: "https://greyforge.tech",
   },
   description:
-    "Sley is Greyforge Labs' agent-native structural programming language for compiler-mediated, human-reviewed software change. The May 27 checkpoint keeps the local v1 gate green while final public release promotion remains blocked.",
+    "Sley 1.2.0 is Greyforge Labs' completed agent-native, human-readable structural programming line. Active research has moved to a clean machine-native Sley 2.x architecture.",
   keywords: [
     "agent-native structural programming",
     "compiler-mediated software change",
     "deterministic authority gates",
     "Sley claim evidence",
-    "May 27 checkpoint",
+    "Sley 1.2.0",
+    "machine-native programming",
   ],
   sameAs: [
     "https://greyforge.tech/about",

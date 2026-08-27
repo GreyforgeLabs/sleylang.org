@@ -2,6 +2,18 @@ import { SleyShell } from "../components/SleyShell";
 
 const faq = [
   {
+    q: "Is Sley 1.x still active?",
+    a: "Sley 1.2.0 is the completed human-readable 1.x architecture. Greyforge has frozen active 1.x feature development, but the Apache-2.0 repository remains public for use, study, extension, experimentation, and forks.",
+  },
+  {
+    q: "Is Sley 2.x compatible with Sley 1.x?",
+    a: "Compatibility is not promised. Sley 2.x is a clean machine-native lineage rather than an ordinary incremental upgrade. Reuse is allowed, but source compatibility, migration tooling, and implementation continuity are not current commitments.",
+  },
+  {
+    q: "Does machine-native mean people lose control?",
+    a: "No. Human governance remains required. People own objectives, constraints, authority, policy, risk, deployment, and acceptance. Sley 2.x changes only the assumption that people must directly consume the canonical raw program representation.",
+  },
+  {
     q: "Is Sley a standalone runtime yet?",
     a: "The public posture is intentionally constrained. Sley is presented as a language layer with explicit boundaries around private runtime capabilities.",
   },
@@ -19,13 +31,13 @@ const faq = [
   },
   {
     q: "Is Sley strictly self-hosted?",
-    a: "No. The current public proof is a stage-1 bootstrap with Sley-owned stage-2 semantic modules. The May 27 checkpoint expands Sley-owned semantic coverage for report-builder registry dispatch and selected runtime source-call, FileRead, and seeded host-effect return paths, but strict self-hosting remains blocked until parser, checker, runtime, and command semantics execute from Sley source and pass parity tests.",
+    a: "The Sley 1.2.0 public release evidence describes a self-hosted compiler whose parser, checker, lint, runtime, bootstrap, and report semantics are owned in Sley source. Use the release, claim-evidence packet, and current repository gates for the exact proof boundary.",
   },
 ];
 
 export const metadata = {
   title: "Sley FAQ",
-  description: "Claim boundaries and release safety answers for Sley agent-native structural programming.",
+  description: "Claim boundaries for Sley 1.2.0, the 1.x feature freeze, and the clean machine-native Sley 2.x architecture.",
   alternates: {
     canonical: "/faq",
   },
