@@ -129,22 +129,22 @@ export default function DocsPage() {
           <li>Release claim: v1.2.0 is a public Linux x86_64 release candidate with unsigned provenance, not a production promotion.</li>
           <li>Verified release inventory: 38 targets, 99 schemas, 187 contract fixtures, 72 corpus cases, 264 integration checks, 11 release-packet checks, and 4 public-release checks.</li>
         </ul>
-        <p><a href="https://greyforge.tech/chronicles/sley-120-machine-native-break">Architectural transition Chronicle</a></p>
+        <p><a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Architectural transition Chronicle</a></p>
         <p>
           Evidence packet:{" "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">
+          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md" rel="external noopener noreferrer">
             docs/SleyClaimEvidence.md
           </a>
         </p>
         <p>
           Claim manifest:{" "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json">
+          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json" rel="external noopener noreferrer">
             docs/SleyClaimManifest.json
           </a>
         </p>
         <p>
           Prior-art source pack:{" "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md">
+          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md" rel="external noopener noreferrer">
             docs/SleyPriorArtSourcePack.md
           </a>
         </p>

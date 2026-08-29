@@ -172,15 +172,15 @@ export default function HomePage() {
         <h2>Auditor packet</h2>
         <p>
           Review the public evidence map in{" "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">
+          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md" rel="external noopener noreferrer">
             Sley Claim Evidence
           </a>
           {", "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json">
+          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json" rel="external noopener noreferrer">
             Sley Claim Manifest
           </a>
           {", and "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md">
+          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md" rel="external noopener noreferrer">
             Sley Prior-Art Source Pack
           </a>
           . They define the criteria, local audit commands, current blockers, and official-source comparison posture.
@@ -194,7 +194,7 @@ export default function HomePage() {
           remain comfortable for direct human authorship. People still own
           objectives, constraints, authority, risk, deployment, and acceptance.
         </p>
-        <p><a href="https://greyforge.tech/chronicles/sley-120-machine-native-break">Read the canonical transition Chronicle</a></p>
+        <p><a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Read the canonical transition Chronicle</a></p>
       </article>
       <article className="card">
         <h2>Walkthrough focus</h2>

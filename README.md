@@ -1,6 +1,7 @@
 # sleylang.org
 
-Modern React/Next.js mirror for the Sley public brief.
+Modern React/Next.js source for the Sley public brief. Repository version:
+`1.0.1`.
 
 This repo hosts a production-safe Sley marketing surface for external discovery.
 It keeps the private compiler internals out of the public site and keeps the same
@@ -13,7 +14,7 @@ The positioning emphasizes:
 - a criteria-bound auditor packet for the world-first category phrase
 - bounded structure, verification, and evidence instead of bare marketing claims
 
-The mirror also serves the duplicated compatibility path used by existing links:
+The site permanently redirects compatibility paths used by existing links:
 
 - `/` and `/sley`
 - `/docs.html` and `/docs`
@@ -22,9 +23,14 @@ The mirror also serves the duplicated compatibility path used by existing links:
 - `/readme` and `/sley/readme`
 - `/llms.txt`
 
-The React routes replace the legacy static-only presentation. Static `.txt`
-metadata remains in place, and Vercel rewrites preserve legacy `.html`
-bookmarks while canonical metadata and the sitemap point to the primary routes.
+The React routes are the only editable page source. Static `.txt` metadata
+remains in place, permanent redirects preserve legacy `.html` bookmarks, and
+the sitemap is generated from the same checked-in route manifest used by tests.
+
+This source repository is authorized for public GitHub visibility. Its
+`private: true` package flag prevents accidental npm publication; it does not
+describe GitHub visibility. No software license for this site repository is
+granted unless an operator-approved license file is added.
 
 ## Local verification
 
@@ -36,5 +42,6 @@ npm run verify
 npm audit --omit=dev
 ```
 
-`verify` runs the Next.js Core Web Vitals lint rules before creating the
-production build.
+`verify` runs lint, route/redirect parity, a production build, a live link
+crawl, canonical and sitemap checks, a 404 check, and an axe-core accessibility
+smoke pass.

@@ -1,24 +1,21 @@
 import Link from "next/link";
-
-function scopeAware(scope, path) {
-  if (!scope || scope === "/") {
-    return path;
-  }
-
-  if (/^https?:\/\//.test(path)) {
-    return path;
-  }
-
-  if (path === "/") {
-    return scope;
-  }
-
-  return `${scope}${path}`;
-}
+import { classifyHref, resolveScopedHref } from "../../lib/routes.mjs";
 
 function ScopeLink({ scope, to, children, className = "" }) {
+  if (classifyHref(to) === "external") {
+    return (
+      <a
+        href={to}
+        className={className}
+        rel="external noopener noreferrer"
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <Link href={scopeAware(scope, to)} className={className}>
+    <Link href={resolveScopedHref(scope, to)} className={className}>
       {children}
     </Link>
   );
@@ -91,9 +88,9 @@ export function SleyShell({
       <footer className="footer">
         <p>© 2026 Greyforge Labs. Sley is open source under Apache-2.0.</p>
         <p>
-          <a href="https://greyforge.tech">greyforge.tech</a> ·
-          <a href="https://greyforge.tech/chronicles">Chronicles</a> ·
-          <a href="https://x.com/GreyforgeLabs">X</a> ·
+          <a href="https://greyforge.tech" rel="external noopener noreferrer">greyforge.tech</a> ·
+          <a href="https://greyforge.tech/chronicles" rel="external noopener noreferrer">Chronicles</a> ·
+          <a href="https://x.com/GreyforgeLabs" rel="external noopener noreferrer">X</a> ·
           <a href="/llms.txt">llms.txt</a>
         </p>
       </footer>

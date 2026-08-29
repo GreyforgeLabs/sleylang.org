@@ -23,26 +23,26 @@ export default function ReadmePage() {
         <ul className="qa-list">
           <li>
             <strong>Core repository:</strong>{" "}
-            <a href="https://github.com/GreyforgeLabs/sley">github.com/GreyforgeLabs/sley</a>
+            <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">github.com/GreyforgeLabs/sley</a>
           </li>
           <li>
             <strong>Project discovery:</strong>{" "}
-            <a href="https://greyforge.tech/openforge">greyforge.tech/openforge</a>
+            <a href="https://greyforge.tech/openforge" rel="external noopener noreferrer">greyforge.tech/openforge</a>
           </li>
           <li>
-            <strong>Crawler index:</strong> <a href="https://sleylang.org/llms.txt">sleylang.org/llms.txt</a>
+            <strong>Crawler index:</strong> <a href="https://sleylang.org/llms.txt" rel="external noopener noreferrer">sleylang.org/llms.txt</a>
           </li>
           <li>
             <strong>Claim evidence:</strong>{" "}
-            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md">docs/SleyClaimEvidence.md</a>
+            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md" rel="external noopener noreferrer">docs/SleyClaimEvidence.md</a>
           </li>
           <li>
             <strong>Claim manifest:</strong>{" "}
-            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json">docs/SleyClaimManifest.json</a>
+            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json" rel="external noopener noreferrer">docs/SleyClaimManifest.json</a>
           </li>
           <li>
             <strong>Prior-art source pack:</strong>{" "}
-            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md">docs/SleyPriorArtSourcePack.md</a>
+            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md" rel="external noopener noreferrer">docs/SleyPriorArtSourcePack.md</a>
           </li>
         </ul>
       </article>
