@@ -34,7 +34,7 @@ export function SleyShell({
     <div className="site-shell">
       <header className="topbar">
         <ScopeLink scope={scope} to="/" className="brand">
-          Sley
+          Sley Legacy
         </ScopeLink>
         <nav aria-label="Primary">
           <ScopeLink scope={rootScope} to="/" className="nav-link">
@@ -50,7 +50,10 @@ export function SleyShell({
             FAQ
           </ScopeLink>
           <ScopeLink scope="" to="https://github.com/GreyforgeLabs/sley" className="nav-link">
-            GitHub
+            Active Sley
+          </ScopeLink>
+          <ScopeLink scope="" to="https://github.com/GreyforgeLabs/sley-legacy" className="nav-link">
+            Legacy GitHub
           </ScopeLink>
           <ScopeLink scope="" to="https://greyforge.tech/openforge" className="nav-link">
             OpenForge
@@ -86,7 +89,7 @@ export function SleyShell({
       </main>
 
       <footer className="footer">
-        <p>© 2026 Greyforge Labs. Sley is open source under Apache-2.0.</p>
+        <p>© 2026 Greyforge Labs. Sley 1.x Legacy is open source under Apache-2.0.</p>
         <p>
           <a href="https://greyforge.tech" rel="external noopener noreferrer">greyforge.tech</a> ·
           <a href="https://greyforge.tech/chronicles" rel="external noopener noreferrer">Chronicles</a> ·

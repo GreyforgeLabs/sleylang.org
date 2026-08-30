@@ -1,7 +1,11 @@
 # sleylang.org
 
-Modern React/Next.js source for the Sley public brief. Repository version:
+Modern React/Next.js source for the Sley 1.x Legacy public brief. Repository version:
 `1.0.1`.
+
+Active Sley development is the intentionally incompatible machine-native 2.x
+lineage at <https://github.com/GreyforgeLabs/sley>. The completed Sley 1.x
+language and evidence live at <https://github.com/GreyforgeLabs/sley-legacy>.
 
 This repo hosts a production-safe Sley marketing surface for external discovery.
 It keeps the private compiler internals out of the public site and keeps the same

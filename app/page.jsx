@@ -14,8 +14,8 @@ const capabilities = [
     body: "Planned transformations go through bounded checks and receipts first, so edits are structured for handoff, verification, and review across sessions.",
   },
   {
-    title: "Machine-native research begins",
-    body: "Greyforge has frozen active feature development of the 1.x architecture. Sley 2.x is a clean machine-native line where direct human readability of the canonical raw representation is optional and human governance remains required.",
+    title: "Machine-native Sley is active",
+    body: "Greyforge has frozen active feature development of the 1.x architecture. Sley 2.x is the active machine-native line where direct human readability of the canonical raw representation is optional and human governance remains required.",
   },
 ];
 
@@ -23,7 +23,7 @@ const machineFacts = [
   "Sley 1.2.0 is Greyforge Labs' completed agent-native, human-readable structural programming line for compiler-mediated software change.",
   "The v1.2.0 release candidate records 38 targets, 99 report schemas, 187 contract fixtures, 72 corpus cases, 264 integration checks, 11 release-packet checks, and 4 public-release checks.",
   "Greyforge has frozen active feature development of the Sley 1.x architecture. The public Apache-2.0 repository remains available for use, study, extension, experimentation, and forks.",
-  "Sley 2.x is a clean machine-native research lineage. It keeps human governance while removing direct human readability of the canonical raw representation as a mandatory design constraint.",
+  "Sley 2.x is the active machine-native lineage at GreyforgeLabs/sley. It keeps human governance while removing direct human readability of the canonical raw representation as a mandatory design constraint.",
   "Compatibility between Sley 1.x and 2.x is not promised.",
   "The public evidence chain is the Sley home, claim evidence, claim manifest, prior-art source pack, FAQ, and Greyforge Labs context.",
   "Sensitive host-facing behavior is modeled through deterministic authority gates rather than implicit live provider, shell, network, secret, deployment, payment, or spend actions.",
@@ -91,7 +91,7 @@ const workflows = [
 ];
 
 export const metadata = {
-  title: "Sley 1.2.0 | The open human-readable line",
+  title: "Sley Legacy 1.2.0 | The completed human-readable line",
   description:
     "Sley 1.2.0 completes Greyforge Labs' open human-readable structural language. Active research has moved to the clean machine-native Sley 2.x architecture.",
   alternates: {
@@ -116,8 +116,8 @@ export default function HomePage() {
     <SleyShell
       scope=""
       kicker="Sley 1.2.0 / architectural transition"
-      title="The open human-readable Sley line"
-      subtitle="Sley 1.2.0 completes the agent-native language that people and machines can read together. Greyforge's active language research now moves to machine-native Sley 2.x."
+      title="The completed human-readable Sley line"
+      subtitle="Sley Legacy preserves the completed 1.x language that people and machines can read together. Active development continues in the intentionally incompatible machine-native Sley 2.x repository."
     >
       {capabilities.map((capability) => (
         <article key={capability.title} className="card">
@@ -128,7 +128,7 @@ export default function HomePage() {
 
       <article className="card machine-card">
         <p className="card-kicker">August 27 release / machine facts</p>
-        <h2>Current public status</h2>
+        <h2>Legacy public status</h2>
         <ul className="qa-list fact-list">
           {machineFacts.map((fact) => (
             <li key={fact}>{fact}</li>
@@ -172,15 +172,15 @@ export default function HomePage() {
         <h2>Auditor packet</h2>
         <p>
           Review the public evidence map in{" "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md" rel="external noopener noreferrer">
+          <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyClaimEvidence.md" rel="external noopener noreferrer">
             Sley Claim Evidence
           </a>
           {", "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json" rel="external noopener noreferrer">
+          <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyClaimManifest.json" rel="external noopener noreferrer">
             Sley Claim Manifest
           </a>
           {", and "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md" rel="external noopener noreferrer">
+          <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyPriorArtSourcePack.md" rel="external noopener noreferrer">
             Sley Prior-Art Source Pack
           </a>
           . They define the criteria, local audit commands, current blockers, and official-source comparison posture.

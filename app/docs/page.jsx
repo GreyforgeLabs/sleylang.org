@@ -76,7 +76,7 @@ sley verify --json .`,
   {
     title: "Operational references",
     body:
-      "Public release posture, the 1.x feature freeze, the Sley 2.x architectural break, and release notes are surfaced through the Sley source pack, Greyforge OpenForge, and Greyforge Chronicles. Those are the stable sources for claims and public links.",
+      "Public release posture, the 1.x legacy freeze, the active Sley 2.x architectural break, and release notes are surfaced through the Sley source pack, Greyforge OpenForge, and Greyforge Chronicles. Those are the stable sources for claims and public links.",
     bullets: [
       "Read `/chronicles/sley-120-machine-native-break` on greyforge.tech",
       "Track OpenForge repo posture from the same source chain",
@@ -123,8 +123,8 @@ export default function DocsPage() {
         <ul className="qa-list">
           <li>Sley 1.2.0 completes the agent-native, human-readable 1.x architecture.</li>
           <li>Greyforge has frozen active 1.x feature development while keeping the Apache-2.0 repository public.</li>
-          <li>Sley 2.x is a clean machine-native line. Human governance remains required, but readability of the canonical raw representation is optional.</li>
-          <li>Compatibility, migration tooling, release timing, and unreleased 2.x mechanisms are not promised.</li>
+          <li>Sley 2.x is the active machine-native line at `GreyforgeLabs/sley`. Human governance remains required, but readability of the canonical raw representation is optional.</li>
+          <li>Sley 1.x and Sley 2.x are intentionally incompatible. Migration tooling, release timing, and unreleased 2.x mechanisms are not promised.</li>
           <li>World-first category claim: cite only with the public evidence packet, claim manifest, and prior-art source pack.</li>
           <li>Release claim: v1.2.0 is a public Linux x86_64 release candidate with unsigned provenance, not a production promotion.</li>
           <li>Verified release inventory: 38 targets, 99 schemas, 187 contract fixtures, 72 corpus cases, 264 integration checks, 11 release-packet checks, and 4 public-release checks.</li>
@@ -132,19 +132,19 @@ export default function DocsPage() {
         <p><a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Architectural transition Chronicle</a></p>
         <p>
           Evidence packet:{" "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md" rel="external noopener noreferrer">
+          <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyClaimEvidence.md" rel="external noopener noreferrer">
             docs/SleyClaimEvidence.md
           </a>
         </p>
         <p>
           Claim manifest:{" "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json" rel="external noopener noreferrer">
+          <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyClaimManifest.json" rel="external noopener noreferrer">
             docs/SleyClaimManifest.json
           </a>
         </p>
         <p>
           Prior-art source pack:{" "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md" rel="external noopener noreferrer">
+          <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyPriorArtSourcePack.md" rel="external noopener noreferrer">
             docs/SleyPriorArtSourcePack.md
           </a>
         </p>

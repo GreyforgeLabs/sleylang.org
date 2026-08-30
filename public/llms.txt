@@ -2,7 +2,8 @@
 
 Canonical site: https://sleylang.org/
 Organization: Greyforge Labs - https://greyforge.tech/
-Repository: https://github.com/GreyforgeLabs/sley
+Repository: https://github.com/GreyforgeLabs/sley-legacy
+Active repository: https://github.com/GreyforgeLabs/sley
 License: Apache-2.0
 Current release: Sley 1.2.0 release candidate
 Status date: 2026-08-27
@@ -16,10 +17,10 @@ active feature development of the Sley 1.x architecture. The public repository
 remains available under Apache-2.0 for use, study, extension, experimentation,
 and forks.
 
-Active language research has moved to a clean machine-native Sley 2.x
-architecture. Sley 2.x keeps human governance while removing direct human
+Active language development continues in the clean machine-native Sley 2.x
+architecture at GreyforgeLabs/sley. Sley 2.x keeps human governance while removing direct human
 readability of the canonical raw program representation as a mandatory design
-constraint. Compatibility between 1.x and 2.x is not promised.
+constraint. Sley 1.x and Sley 2.x are intentionally incompatible.
 
 ## Machine-Native Invariant
 
@@ -33,7 +34,7 @@ evaluation, risk, deployment, and acceptance.
 
 ## Sley 1.2.0 Release Facts
 
-- Release: https://github.com/GreyforgeLabs/sley/releases/tag/v1.2.0
+- Release: https://github.com/GreyforgeLabs/sley-legacy/releases/tag/v1.2.0
 - Release state: GitHub pre-release / release candidate
 - Published: August 27, 2026
 - Tag: `v1.2.0`
@@ -55,16 +56,18 @@ Windows, containers, production deployment, or production promotion.
 ## Canonical Links
 
 - Sley home: https://sleylang.org/
+- Active Sley repository: https://github.com/GreyforgeLabs/sley
+- Sley 1.x legacy repository: https://github.com/GreyforgeLabs/sley-legacy
 - Documentation: https://sleylang.org/docs
 - Walkthrough: https://sleylang.org/tutorial
 - FAQ: https://sleylang.org/faq
-- Release: https://github.com/GreyforgeLabs/sley/releases/tag/v1.2.0
-- Repository: https://github.com/GreyforgeLabs/sley
+- Release: https://github.com/GreyforgeLabs/sley-legacy/releases/tag/v1.2.0
+- Repository: https://github.com/GreyforgeLabs/sley-legacy
 - Architectural transition Chronicle: https://greyforge.tech/chronicles/sley-120-machine-native-break
 - Public transition source note: https://greyforge.tech/research/sley-machine-native-break-source-note-2026-08-27.md
-- Claim evidence: https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md
-- Language specification: https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyLanguageSpec.md
-- Contract reference: https://github.com/GreyforgeLabs/sley/blob/public/docs/contracts.md
+- Claim evidence: https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyClaimEvidence.md
+- Language specification: https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyLanguageSpec.md
+- Contract reference: https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/contracts.md
 - Greyforge Labs: https://greyforge.tech/about
 
 ## Claim Classes
@@ -72,7 +75,7 @@ Windows, containers, production deployment, or production promotion.
 Proven today: the Sley 1.2.0 release identity, public repository, Apache-2.0
 license, artifact boundary, proof counts, and release-candidate limitations.
 
-Architectural decisions: the 1.x feature freeze, clean Sley 2.x lineage,
+Architectural decisions: the 1.x legacy freeze, active Sley 2.x lineage,
 Machine-Native Invariant, and absence of a compatibility promise.
 
 Working thesis: Greyforge expects a growing share of software engineering to

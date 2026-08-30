@@ -11,16 +11,16 @@ Greyforge has frozen active feature development of the Sley 1.x architecture.
 The public repository remains available under Apache-2.0 for use, study,
 extension, experimentation, and forks.
 
-Active language research has moved to a clean machine-native Sley 2.x
-architecture. Sley 2.x keeps human governance while removing direct human
+Active language development continues in the clean machine-native Sley 2.x
+architecture at https://github.com/GreyforgeLabs/sley. Sley 2.x keeps human governance while removing direct human
 readability of the canonical raw program representation as a mandatory design
-constraint. Compatibility between 1.x and 2.x is not promised.
+constraint. Sley 1.x and Sley 2.x are intentionally incompatible.
 
 Sley 1.2.0 Release Candidate
 ----------------------------
 
 Release:
-https://github.com/GreyforgeLabs/sley/releases/tag/v1.2.0
+https://github.com/GreyforgeLabs/sley-legacy/releases/tag/v1.2.0
 
 The release records 38 targets, 99 report schemas, 187 of 187 contract
 fixtures, 72 accepted and rejected corpus cases, 264 of 264 declared
@@ -40,6 +40,9 @@ Documentation:
 https://sleylang.org/docs
 
 Repository:
+https://github.com/GreyforgeLabs/sley-legacy
+
+Active Sley:
 https://github.com/GreyforgeLabs/sley
 
 Architectural transition:

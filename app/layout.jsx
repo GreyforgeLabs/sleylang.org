@@ -80,7 +80,7 @@ const sleyJsonLd = {
   "@type": "SoftwareSourceCode",
   name: "Sley",
   alternateName: "Sley language",
-  codeRepository: "https://github.com/GreyforgeLabs/sley",
+  codeRepository: "https://github.com/GreyforgeLabs/sley-legacy",
   license: "https://www.apache.org/licenses/LICENSE-2.0",
   programmingLanguage: "Sley",
   dateModified: "2026-08-27",
@@ -101,7 +101,7 @@ const sleyJsonLd = {
   ],
   sameAs: [
     "https://greyforge.tech/about",
-    "https://github.com/GreyforgeLabs/sley",
+    "https://github.com/GreyforgeLabs/sley-legacy",
     "https://sleylang.org/llms.txt",
   ],
 };

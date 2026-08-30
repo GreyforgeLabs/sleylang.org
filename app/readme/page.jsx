@@ -22,8 +22,12 @@ export default function ReadmePage() {
         <p>Welcome to the public Sley brief. This site is intentionally focused on practical onboarding and public-safe claim boundaries.</p>
         <ul className="qa-list">
           <li>
-            <strong>Core repository:</strong>{" "}
+            <strong>Active repository:</strong>{" "}
             <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">github.com/GreyforgeLabs/sley</a>
+          </li>
+          <li>
+            <strong>Sley 1.x legacy repository:</strong>{" "}
+            <a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">github.com/GreyforgeLabs/sley-legacy</a>
           </li>
           <li>
             <strong>Project discovery:</strong>{" "}
@@ -34,15 +38,15 @@ export default function ReadmePage() {
           </li>
           <li>
             <strong>Claim evidence:</strong>{" "}
-            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimEvidence.md" rel="external noopener noreferrer">docs/SleyClaimEvidence.md</a>
+            <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyClaimEvidence.md" rel="external noopener noreferrer">docs/SleyClaimEvidence.md</a>
           </li>
           <li>
             <strong>Claim manifest:</strong>{" "}
-            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyClaimManifest.json" rel="external noopener noreferrer">docs/SleyClaimManifest.json</a>
+            <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyClaimManifest.json" rel="external noopener noreferrer">docs/SleyClaimManifest.json</a>
           </li>
           <li>
             <strong>Prior-art source pack:</strong>{" "}
-            <a href="https://github.com/GreyforgeLabs/sley/blob/public/docs/SleyPriorArtSourcePack.md" rel="external noopener noreferrer">docs/SleyPriorArtSourcePack.md</a>
+            <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyPriorArtSourcePack.md" rel="external noopener noreferrer">docs/SleyPriorArtSourcePack.md</a>
           </li>
         </ul>
       </article>
