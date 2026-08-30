@@ -1,94 +1,21 @@
 import { SleyShell } from "../components/SleyShell";
 
-const sections = [
-  {
-    title: "What Sley is for",
-    body:
-      "Sley 1.x is a compiler-oriented language surface for people and agents who need readable source, bounded edits, and strong evidence. Use 1.2.0 when your workflow values reproducibility, scope control, explicit planning, and direct human inspection.",
-    bullets: [
-      "Language-level boundaries for authority and side-effects",
-      "Deterministic planning and edit receipts for machine handoff",
-      "Token-aware workflows where context stays scoped and reviewable",
-    ],
-  },
-  {
-    title: "Quick start",
-    body:
-      "Use this shortest path for a first successful loop with low context overhead.",
-    code: `# 1) Sanity-check the language surface
-sley doctor --json .
-
-# 2) Inspect structure and graph intent
-sley ast --json main.sley
-sley graph --json --slice <node-id> main.sley`,
-    command: "sley tutorial",
-  },
-  {
-    title: "Public command surface",
-    body:
-      "The public API is oriented around checks, graph views, and verified edit planning. Use JSON outputs by default so tools can compare receipts across hands.",
-    bullets: [
-      "sley ast",
-      "sley graph",
-      "sley query",
-      "sley lint",
-      "sley plan",
-      "sley verify",
-      "sley doctor",
-    ],
-  },
-  {
-    title: "Language-first workflow",
-    body:
-      "Sley prefers explicit task declarations, typed task calls, schema-linked JSON reports, and deterministic plan outputs. This keeps token pressure low by preserving edit structure instead of re-explaining intent on every cycle.",
-    bullets: [
-      "Scope every operation to the smallest valid edit slice",
-      "Read diagnostics before mutation",
-      "Use `--dry-run` mode for repair previews",
-    ],
-  },
-  {
-    title: "Hands-on walkthrough",
-    body:
-      "From a fresh checkout, begin with release-boundary checks, then run readiness commands in this sequence. Each stage emits JSON artifacts intended for deterministic comparison across handoffs.",
-    code: `# Step 1: baseline health
-sley doctor
-
-# Step 2: inspect structure
-sley ast --json .
-
-# Step 3: inspect planned edits
-sley plan --json --graft-templates .
-
-# Step 4: lock behavior with verification
-sley verify --json .`,
-  },
-  {
-    title: "Evidence and safety boundaries",
-    body:
-      "Every public-facing route points to bounded claims and open references only. Internal runtime specifics remain intentionally omitted from the public mirror until release posture and doctrine allow a wider public reveal.",
-    bullets: [
-      "Source and docs links are canonical: GitHub, OpenForge, and sleylang.org",
-      "Protected implementation details stay off the public brief",
-      "Verification artifacts stay the compatibility boundary for external review",
-    ],
-  },
-  {
-    title: "Operational references",
-    body:
-      "Public release posture, the 1.x legacy freeze, the active Sley 2.x architectural break, and release notes are surfaced through the Sley source pack, Greyforge OpenForge, and Greyforge Chronicles. Those are the stable sources for claims and public links.",
-    bullets: [
-      "Read `/chronicles/sley-120-machine-native-break` on greyforge.tech",
-      "Track OpenForge repo posture from the same source chain",
-      "Use llms.txt for crawler-facing summary and links",
-    ],
-  },
-];
+const briefJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  headline: "Sley 2 Technical Brief — Machine-native programming system",
+  description:
+    "Typed machine-native program state: SSMC1 canonical form, SCB1 encoding, SMP1 designated interface; immutable objects, deterministic roots, proposal-validated transactions, restricted execution, explicit policy/capability, and native branch ancestry. Bounded pre-release 2.0.0-alpha.0 implementation status.",
+  author: { "@type": "Organization", name: "Greyforge Labs", url: "https://greyforge.tech" },
+  publisher: { "@type": "Organization", name: "Greyforge Labs", url: "https://greyforge.tech" },
+  dateModified: "2026-08-30",
+  mainEntityOfPage: "https://sleylang.org/docs",
+};
 
 export const metadata = {
-  title: "Sley Documentation | Public brief",
+  title: "Sley 2 Technical Brief",
   description:
-    "Sley technical brief: agent-native structural programming, bounded workflows, and compiler-mediated evidence.",
+    "Sley 2 Technical Brief: typed machine-native program state (SSMC1/SCB1), immutable objects, deterministic roots, proposal → validation → transaction, semantic checks, bounded execution, policy roots, capability tokens, native branches, and current completion boundary.",
   alternates: {
     canonical: "/docs",
   },
@@ -98,83 +25,169 @@ export default function DocsPage() {
   return (
     <SleyShell
       scope=""
-      kicker="Documentation brief"
-      title="Sley Documentation"
-      subtitle="A practical public orientation: what you can use today, what the language optimizes for, and how to onboard safely."
+      kicker="Sley 2 Technical Brief"
+      title="Sley 2 Technical Brief"
+      subtitle="Typed machine-native program state for machines, with human governance, deterministic identity, and proposal-validated transactions. Active pre-release 2.0.0-alpha.0 — no GA, no tag, no package is claimed."
     >
-      {sections.map((section) => (
-        <article key={section.title} className="card">
-          <h2>{section.title}</h2>
-          <p>{section.body}</p>
-          {section.code && <pre className="code">{section.code}</pre>}
-          {section.command && <p>Starter page: <a href="/tutorial">Sley tutorial</a></p>}
-          {section.bullets && (
-            <ul className="qa-list">
-              {section.bullets.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          )}
-        </article>
-      ))}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(briefJsonLd) }} />
+
+      <article className="card" style={{ gridColumn: "1 / -1" }}>
+        <p className="card-kicker">What Sley 2 is</p>
+        <h2>Typed machine-native program state — not canonical human source</h2>
+        <p>
+          Sley 2 programs are created, stored, changed, executed, tested, versioned, and exchanged as <strong>typed semantic state</strong>. The canonical program form is <strong>SSMC1</strong>, the
+          canonical encoding is <strong>SCB1</strong>, and the designated machine-interface lineage is <strong>SMP1</strong> (architecturally frozen, not claimed implemented). Machines construct and validate state mutations; humans govern
+          through projections, inspection, policy, evidence, objectives, and acceptance — without requiring the canonical machine representation itself to be comfortable human source code.
+        </p>
+        <p>
+          <strong>Thesis:</strong> Machines do not write source. They mutate verified program state. <em>Machine Native. Human Governed.</em>
+        </p>
+        <ul className="qa-list">
+          <li>No human-readable canonical source, no source parser, no canonical text format, no conventional formatter, no conventional LSP, no Sley 1.x compatibility — intentionally.</li>
+          <li>Human-readable projections, diagnostics, receipts, evidence capsules, and inspection surfaces exist — but they are derived, not canonical.</li>
+        </ul>
+      </article>
 
       <article className="card">
-        <h2>Public claim summary</h2>
+        <h2>Representation — SSMC1 / SCB1</h2>
+        <p>
+          <strong>SSMC1</strong> is the canonical typed entity/opcode schema (frozen by S20-200). <strong>SCB1</strong> is the only canonical byte encoding for objects, roots, transactions, candidates, receipts, packs, and declared protocol payloads — strict, minimal, domain-separated via BLAKE3, with independent oracle conformance (S20-130).
+        </p>
         <ul className="qa-list">
-          <li>Sley 1.2.0 completes the agent-native, human-readable 1.x architecture.</li>
-          <li>Greyforge has frozen active 1.x feature development while keeping the Apache-2.0 repository public.</li>
-          <li>Sley 2.x is the active machine-native line at `GreyforgeLabs/sley`. Human governance remains required, but readability of the canonical raw representation is optional.</li>
-          <li>Sley 1.x and Sley 2.x are intentionally incompatible. Migration tooling, release timing, and unreleased 2.x mechanisms are not promised.</li>
-          <li>World-first category claim: cite only with the public evidence packet, claim manifest, and prior-art source pack.</li>
-          <li>Release claim: v1.2.0 is a public Linux x86_64 release candidate with unsigned provenance, not a production promotion.</li>
-          <li>Verified release inventory: 38 targets, 99 schemas, 187 contract fixtures, 72 corpus cases, 264 integration checks, 11 release-packet checks, and 4 public-release checks.</li>
+          <li>18 entity kinds and 16 primitive classes generate 179 immutable mutation descriptors (exact-manifest codegen, S20-340).</li>
+          <li>All 16 ConstData variants, five terminators, and sixteen mutation classes are exercised by independent value/candidate corpora (170 accepted + 22 rejected values; 1 accepted + 14 rejected candidates).</li>
+          <li>Low-level ScbValueCursor exposes the frozen primitive decoder without selecting schema or mutation type.</li>
         </ul>
-        <p><a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Architectural transition Chronicle</a></p>
-        <p>
-          Evidence packet:{" "}
-          <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyClaimEvidence.md" rel="external noopener noreferrer">
-            docs/SleyClaimEvidence.md
-          </a>
-        </p>
-        <p>
-          Claim manifest:{" "}
-          <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyClaimManifest.json" rel="external noopener noreferrer">
-            docs/SleyClaimManifest.json
-          </a>
-        </p>
-        <p>
-          Prior-art source pack:{" "}
-          <a href="https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyPriorArtSourcePack.md" rel="external noopener noreferrer">
-            docs/SleyPriorArtSourcePack.md
-          </a>
-        </p>
       </article>
+
       <article className="card">
-        <h2>Walkthrough map</h2>
+        <h2>Identity and storage</h2>
+        <p>
+          Immutable object storage with typed identifiers, schema epochs, deterministic state roots, and uncompressed repository object/root packs (M1 complete: S20-100 through S20-170).
+        </p>
+        <ul className="qa-list">
+          <li>Immutable write/verify/promote, tamper detection, and exact root reconstruction independent of binding order.</li>
+          <li>Round-trip import preflights the complete pack before promotion; refs/transactions remain separate until S20-540 clone-equivalent exchange.</li>
+          <li>Retention snapshots, dry-run reports, and exclusive-guarded GC preserve all roots/leases (S20-180).</li>
+        </ul>
+      </article>
+
+      <article className="card">
+        <h2>Change lifecycle — proposal → validation → transaction</h2>
+        <p><strong>State → Proposal → Validation → Transaction → Verified State</strong></p>
         <ol className="step-list">
-          <li>
-            Read this brief and <a href="/tutorial">the walkthrough</a> before any edits.
-          </li>
-          <li>
-            Verify baseline posture: <code>sley doctor --json .</code>
-          </li>
-          <li>
-            Inspect structure and graph slices before planning: <code>sley ast --json .</code> and <code>sley graph --json --slice &lt;node-id&gt; .</code>
-          </li>
-          <li>
-            Produce structured plans and only then promote: <code>sley plan --json --graft-templates .</code>
-          </li>
-          <li>
-            Validate again with <code>sley verify --json .</code> and move forward only if checks pass.
-          </li>
+          <li><strong>State:</strong> begin from a verified deterministic StateRoot.</li>
+          <li><strong>Proposal:</strong> construct a proposal-only SLEYCAN1 candidate from closed host values — 179 discriminants, contiguous ordinals, deterministic creation IDs, frozen validation-profile ID, digest trailer.</li>
+          <li><strong>Validation:</strong> fourteen-phase restricted validator owns every outcome (pure apply, reference, type, CFG, effect, policy, capability, contract, test, root judgments).</li>
+          <li><strong>Transaction:</strong> durable atomic commit with fresh revalidation, 19-field parent-bound transaction, 9-field receipt, object/receipt-before-head ordering, and fixed-head compare-and-swap.</li>
+          <li><strong>Verified State:</strong> new StateRoot with deterministic ancestry and maintenance-coordinated refs.</li>
         </ol>
+        <p>Semantic operation entities are explicitly not yet analyzed — candidates within the restricted executable-operation-free subset pass; others fail closed by design.</p>
       </article>
+
       <article className="card">
-        <h2>Release-friendly onboarding</h2>
+        <h2>Semantic checks — the restricted validation profile</h2>
+        <ul className="qa-list">
+          <li>Deterministic core type checking (S20-210), bounded CFG + value-use validation (S20-220), exact least-fixed-point effect closure + static scope typing (S20-230).</li>
+          <li>Restricted epoch-1 contract/test profile with deterministic policy-incomplete planning (S20-240) — six unmodeled entity bodies remain a full-GA blocker.</li>
+          <li>Deterministic TypeDef/Function fingerprints, canonical value hash, and exact impact relationships for 12 modeled kinds (S20-250).</li>
+          <li>Five-realm rejection and stale-preimage/digest matrices are pinned; Rust consumes Python-produced bytes and exact error codes.</li>
+        </ul>
+      </article>
+
+      <article className="card">
+        <h2>Execution — restricted deterministic VM</h2>
+        <p>Sley 2 already contains a bounded deterministic execution path for the implemented semantic subset — not a complete runtime.</p>
+        <ul className="qa-list">
+          <li>Restricted O0 lowering for all five terminators and three validated Boolean opcodes with exact derived bytes and root/profile-bound cache key (S20-260).</li>
+          <li>Deterministic execution with exact Boolean semantics, bounded fuel/value/output/cancellation, and canonical observation digest (S20-270).</li>
+          <li>Eight restricted request-owned reference adapter fixtures with exact identity/state/replay/limit/atomicity/transcript rules (S20-280); VM adapter opcodes and live host access remain gaps.</li>
+          <li>Restricted execution/test report envelopes that verify observations without claiming persistence, policy finality, or M2 exit (S20-290).</li>
+        </ul>
+      </article>
+
+      <article className="card">
+        <h2>Authority — policy roots and capability tokens</h2>
+        <ul className="qa-list">
+          <li><strong>Protected policy root:</strong> separately registry-authorized, with opaque principals, principal-specific grants, protected entity bindings, and mandatory test/contract finalization (S20-370). No self-authorization.</li>
+          <li><strong>Local capability tokens:</strong> exact root/effect/scope/adapter/budget binding, keyed BLAKE3 authentication, caller-owned replay/budget ledger (S20-380).</li>
+          <li>Authorized reference-adapter wrapper enforces fixture atomicity; VM adapter opcodes, candidate admission, and live-runtime authority remain blocked.</li>
+          <li>Deterministic authority checks are explicit — no live provider/shell/network/deployment authority is implied.</li>
+        </ul>
+      </article>
+
+      <article className="card">
+        <h2>Versioned state — native branch refs and ancestry</h2>
         <p>
-          The Sley 1.2.0 onboarding path is intentionally conservative: confirm baseline checks, generate structured reports, and only then
-          promote deeper edits after lint and verify pass.
+          Native S20-500 refs are landed — not future work. Inspect crate code, tests, and <code>docs/WORK_PACKAGES.md</code> as authority over prose.
         </p>
+        <ul className="qa-list">
+          <li>Immutable branch origins, lowercase-ASCII names, digest-keyed confined layout, idempotent create, verified mutable refs.</li>
+          <li>Compare-and-swap advancement only from direct parent, with exact stale/parent/workspace errors; deterministic bounded ancestry.</li>
+          <li>Shared/exclusive GC maintenance ownership with owned-stage recovery and fan-out retries.</li>
+          <li>Explicitly <em>not</em> implemented: merge, force-reset, rename, symbolic refs, tags, branch deletion, pack-exchange clone, named-branch candidate commit.</li>
+        </ul>
+        <p>Evidence: 28 focused native ref tests + 5 verified-revision tests, 64 repository tests, 19 active transaction tests, plus ancestry convergence/cycle/limit adversarial and create/advance & GC races.</p>
+      </article>
+
+      <article className="card">
+        <h2>Human governance — projections, diagnostics, receipts, evidence</h2>
+        <ul className="qa-list">
+          <li><strong>Restricted queries:</strong> SLEYIDX1 snapshot + four typed queries over freshly derived snapshots, exact QueryId/response records, hard-fail on omission (S20-310). Nineteen root-backed classes remain blocked.</li>
+          <li><strong>Evidence capsule:</strong> restricted complete-query capsule with raw-ID dictionaries and direct-edge tables, fixed no-omission/no-truncation/no-continuation (S20-320). Not the master ContextCapsule.</li>
+          <li>Readable projections, diagnostics, receipts, observation digests, and deterministic error behavior — engineering evidence, not formal proof of correctness.</li>
+          <li>Independent oracle/conformance fixtures, persistent libFuzzer targets, malformed-input testing, and fail-closed public-safety checks across concerns.</li>
+        </ul>
+      </article>
+
+      <article className="card" style={{ gridColumn: "1 / -1" }}>
+        <p className="card-kicker">Current completion boundary</p>
+        <h2>What is implemented · restricted · unfinished · release-blocking</h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1rem" }}>
+          <div>
+            <h3 style={{ fontSize: "1rem", margin: "0 0 0.5rem" }}>Implemented (bounded)</h3>
+            <ul className="qa-list">
+              <li>SCB1, SSMC1 schema, identifiers, independent oracle, immutable store, deterministic roots, packs, retention/GC coordination</li>
+              <li>Type, CFG, value-use, effect closure, restricted contracts, fingerprints, lowering/VM subset, adapters (fixtures), report envelopes, snapshot/queries/capsules</li>
+              <li>Proposal-only candidate construction, 14-phase validator, atomic transactions + receipts, protected policy, capability tokens, native branches</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style={{ fontSize: "1rem", margin: "0 0 0.5rem" }}>Restricted-profile</h3>
+            <ul className="qa-list">
+              <li>Execution limited to Boolean/terminator subset; contracts limited to epoch-1; queries limited to four complete types over opaque snapshots</li>
+              <li>Adapter fixtures only (no live host); policy is registry-authorized but not live-transitioned; transactions are for the operation-free subset</li>
+              <li>Branches are native refs without merge/clone/production recovery</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style={{ fontSize: "1rem", margin: "0 0 0.5rem" }}>Unfinished · release-blocking</h3>
+            <ul className="qa-list">
+              <li>52 opcode families, generics, VM adapter opcodes, live authority, provider/shell/network, SMP1 framing, JSON bridge, CLI protocol</li>
+              <li>Complete semantic-operation analysis, full query/capsule surface, production crash-matrix implementation (S20-530: 100-row contract frozen, not implemented)</li>
+              <li>S20-710: operator-approved proprietary license text, standards SBOM, release provenance, re-anchored scan, Argus/Vulcan dispositions</li>
+              <li>Benchmarks, S20-610 raw-baseline trials, and M6 GA gates — `make v2` remains the authoritative full gate</li>
+            </ul>
+          </div>
+        </div>
+        <p style={{ marginTop: "1rem" }}>
+          For exact package detail, see <a href="https://github.com/GreyforgeLabs/sley/blob/main/docs/WORK_PACKAGES.md" rel="external noopener noreferrer">docs/WORK_PACKAGES.md</a> and{" "}
+          <a href="https://github.com/GreyforgeLabs/sley/blob/main/ARCHITECTURE.md" rel="external noopener noreferrer">ARCHITECTURE.md</a>. Do not trust prose that disagrees with landed crate code.
+        </p>
+        <p>
+          <strong>Status:</strong> M0 complete · M1 core complete · M2 actively advancing · later release/GA work incomplete. <em>Active pre-release engineering</em> — substantial running implementation, not a research idea; not a released production language.
+        </p>
+      </article>
+
+      <article className="card">
+        <h2>Related surfaces</h2>
+        <ul className="qa-list">
+          <li><a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">Active Sley 2.x repository</a> — public source (LicenseRef-Proprietary)</li>
+          <li><a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">Sley 1.x Legacy</a> — Apache-2.0 frozen line, <a href="/legacy">legacy page</a></li>
+          <li><a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Architectural transition Chronicle</a></li>
+          <li><a href="https://greyforge.tech/research/sley-machine-native-break-source-note-2026-08-27.md" rel="external noopener noreferrer">Transition source note</a></li>
+          <li><a href="/llms.txt">llms.txt</a> — machine discovery</li>
+        </ul>
       </article>
     </SleyShell>
   );

@@ -23,7 +23,7 @@ function ScopeLink({ scope, to, children, className = "" }) {
 
 export function SleyShell({
   scope = "",
-  kicker = "Agent-native structural language",
+  kicker = "Sley 2 / Machine-native programming",
   title,
   subtitle,
   children,
@@ -34,32 +34,29 @@ export function SleyShell({
     <div className="site-shell">
       <header className="topbar">
         <ScopeLink scope={scope} to="/" className="brand">
-          Sley Legacy
+          Sley
         </ScopeLink>
         <nav aria-label="Primary">
           <ScopeLink scope={rootScope} to="/" className="nav-link">
             Home
           </ScopeLink>
           <ScopeLink scope={rootScope} to="/docs" className="nav-link">
-            Docs
+            Architecture
           </ScopeLink>
           <ScopeLink scope={rootScope} to="/tutorial" className="nav-link">
-            Tutorial
+            Walkthrough
           </ScopeLink>
           <ScopeLink scope={rootScope} to="/faq" className="nav-link">
             FAQ
           </ScopeLink>
+          <ScopeLink scope={rootScope} to="/legacy" className="nav-link">
+            Legacy
+          </ScopeLink>
           <ScopeLink scope="" to="https://github.com/GreyforgeLabs/sley" className="nav-link">
-            Active Sley
+            GitHub
           </ScopeLink>
-          <ScopeLink scope="" to="https://github.com/GreyforgeLabs/sley-legacy" className="nav-link">
-            Legacy GitHub
-          </ScopeLink>
-          <ScopeLink scope="" to="https://greyforge.tech/openforge" className="nav-link">
-            OpenForge
-          </ScopeLink>
-          <ScopeLink scope="" to="https://greyforge.tech/chronicles/sley-120-machine-native-break" className="nav-link">
-            Transition
+          <ScopeLink scope="" to="https://greyforge.tech" className="nav-link">
+            Greyforge
           </ScopeLink>
         </nav>
       </header>
@@ -89,11 +86,12 @@ export function SleyShell({
       </main>
 
       <footer className="footer">
-        <p>© 2026 Greyforge Labs. Sley 1.x Legacy is open source under Apache-2.0.</p>
+        <p>© 2026 Greyforge Labs. Sley 2 source is public under LicenseRef-Proprietary · Sley 1.x Legacy is Apache-2.0.</p>
         <p>
           <a href="https://greyforge.tech" rel="external noopener noreferrer">greyforge.tech</a> ·
-          <a href="https://greyforge.tech/chronicles" rel="external noopener noreferrer">Chronicles</a> ·
-          <a href="https://x.com/GreyforgeLabs" rel="external noopener noreferrer">X</a> ·
+          <a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Transition Chronicle</a> ·
+          <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">Active Sley</a> ·
+          <a href="/legacy">Legacy</a> ·
           <a href="/llms.txt">llms.txt</a>
         </p>
       </footer>

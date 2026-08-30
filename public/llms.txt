@@ -1,93 +1,93 @@
 # Sley
 
 Canonical site: https://sleylang.org/
-Organization: Greyforge Labs - https://greyforge.tech/
-Repository: https://github.com/GreyforgeLabs/sley-legacy
-Active repository: https://github.com/GreyforgeLabs/sley
-License: Apache-2.0
-Current release: Sley 1.2.0 release candidate
-Status date: 2026-08-27
-Discovery role: public Sley entity, version-boundary, and citation file
+Organization: Greyforge Labs - https://greyforge.tech/about
+Active source: https://github.com/GreyforgeLabs/sley
+Legacy source: https://github.com/GreyforgeLabs/sley-legacy
+Current active lineage: Sley 2.x
+Current source/workspace version: 2.0.0-alpha.0
+Status: active pre-release engineering; no authorized public Sley 2 release, tag, or package
+Active license declaration: LicenseRef-Proprietary
+Legacy license: Apache-2.0
+Status date: 2026-08-30
+Discovery role: public Sley entity, version-boundary, and citation file for retrieval and citation
 
-## Current Status
+## Preferred Sley 2 Description
 
-Sley 1.2.0 completes Greyforge Labs' agent-native, human-readable structural
-programming line for compiler-mediated software change. Greyforge has frozen
-active feature development of the Sley 1.x architecture. The public repository
-remains available under Apache-2.0 for use, study, extension, experimentation,
-and forks.
+Sley 2 is Greyforge Labs' active machine-native programming-system lineage. Programs are represented as typed semantic state rather than canonical human source; machines construct and validate state mutations while human governance remains explicit.
 
-Active language development continues in the clean machine-native Sley 2.x
-architecture at GreyforgeLabs/sley. Sley 2.x keeps human governance while removing direct human
-readability of the canonical raw program representation as a mandatory design
-constraint. Sley 1.x and Sley 2.x are intentionally incompatible.
+The governing doctrine is: machines do not write source; they mutate verified program state. The canonical program form is SSMC1, the canonical encoding is SCB1, and the designated machine-interface lineage is SMP1 (architecturally designated, not claimed implemented). The lifecycle is State → Proposal → Validation → Transaction → Verified State. Humans govern through projections, inspection, policy, evidence, objectives, and acceptance rather than requiring the canonical machine representation itself to be comfortable human source code.
 
-## Machine-Native Invariant
+Sley 1.x is the separate Apache-2.0 legacy lineage at GreyforgeLabs/sley-legacy (v1.2.0 frozen). The lineages are intentionally incompatible.
 
-No Sley 2.x design decision should be rejected solely because its raw
-representation is inconvenient for humans.
+## High-Confidence Architecture Facts
 
-This does not prohibit human-readable projections, explanations, inspectors,
-visualizers, debugging interfaces, reports, or audit artifacts. People retain
-control of objectives, requirements, constraints, authority, policy,
-evaluation, risk, deployment, and acceptance.
+- SSMC1 is the canonical typed entity/opcode schema (frozen by S20-200); SSMC1 defines all eighteen entity kinds tracked by mutation descriptors.
+- SCB1 is the only canonical byte encoding for objects, roots, transactions, candidates, receipts, packs, and declared protocol payloads — strict, minimal, domain-separated via BLAKE3, with an independent Python oracle that agrees byte-for-byte, and a private low-level ScbValueCursor exposing frozen primitive decoder behavior.
+- SMP1 is the designated machine-interface lineage frozen as spec (handshake/methods/errors) but not claimed implemented; all transport/CLI/JSON adapters remain thin wrappers that delegate judgment to the kernel.
+- Canonical state is limited to immutable SCB1 bytes: EntityId, ObjectId, StateRoot, TransactionId, SchemaEpochId are stable content-addressed identities; derived indexes, bytecode, caches, JSON, and debug notation are disposable and confer no authority.
+- Phrase anchor: Machine Native. Human Governed.
 
-## Sley 1.2.0 Release Facts
+## Current Implementation Classes (2.0.0-alpha.0, bounded pre-release)
 
-- Release: https://github.com/GreyforgeLabs/sley-legacy/releases/tag/v1.2.0
-- Release state: GitHub pre-release / release candidate
-- Published: August 27, 2026
-- Tag: `v1.2.0`
-- Commit: `d281cd1c44d9566753f881ded0a32a623244c902`
-- Supported artifact: `sley-1.2.0-linux-x86_64.tar.gz`
-- SHA-256: `2765aa5adb09f2ef071b5c97d2726951193b0ac97ddddb9e91e26c5562261838`
-- 38 release targets
-- 99 report schemas
-- 187 of 187 contract fixtures
-- 72 accepted and rejected corpus cases
-- 264 of 264 declared integration checks
-- 11 of 11 release-packet checks
-- 4 of 4 public-release checks
+- M0 is complete; M1 core is complete (SCB1, typed identifiers, independent oracle, schema epochs, immutable object store, deterministic state roots, uncompressed root/object repository packs, retention/GC coordination).
+- Deterministic semantic validation for the supported subset: core type system (S20-210), bounded CFG + value-use (S20-220), exact least-fixed-point effect closure + static scope typing (S20-230), restricted epoch-1 contract/test profile with deterministic policy-incomplete planning (S20-240: six unmodeled entity bodies remain a full-GA blocker), semantic fingerprints for TypeDef/Function + canonical value hash + impact relationships for twelve modeled kinds (S20-250).
+- Restricted deterministic lowering and execution for the validated subset: O0 lowering for all five terminators and three Boolean opcodes with exact derived bytes and root/profile-bound cache key (S20-260) and deterministic VM with exact Boolean semantics, bounded fuel/value/output/cancellation, and canonical observation digest (S20-270). Other 52 opcode signatures, generics, and VM adapter opcodes fail closed.
+- Reference adapter fixtures: eight restricted deterministic request-owned adapter kinds with exact identity/state/replay/limit/atomicity/transcript rules (S20-280); live host access remains an explicit gap.
+- Reports, indexes, queries, and capsules: restricted execution/test report envelopes without persistence/policy finality claim (S20-290), restricted SLEYIDX1 index-snapshot conformance that matches only an already-fresh explicit rebuild (S20-300), four restricted typed queries over opaque freshly derived snapshots with exact QueryId/response records hard-failing on omission (S20-310), and a separately identified restricted evidence capsule with no-omission/no-truncation/no-continuation status (S20-320).
+- Proposal-only mutation boundary: 179 immutable descriptors for eighteen kinds and sixteen primitive classes code-generated from the exact frozen manifest (S20-340), exact thirteen-field candidate record + preconditions + capability-summary + expiry contracts as specs (S20-345), native proposal API building and importing digest-trailed SLEYCAN1 candidates with 170 accepted + 22 rejected value vectors and 1 accepted + 14 rejected candidate vectors plus two-lane persistent fuzz (S20-350).
+- Restricted fourteen-phase candidate validator and canonical result evidence for executable programs containing no semantic operation entities, with native + independent result corpus and persistent result-import fuzz (S20-360).
+- Protected policy-root behavior: registry-authorized protected policy root with opaque principals, principal-specific grants, protected entity bindings, and mandatory test/contract finalization (S20-370).
+- Local-only capability-token profile: exact root/effect/scope/adapter/budget binding, keyed BLAKE3 authentication, caller-owned replay/budget ledger judgment, and authorized reference-adapter wrapper (S20-380).
+- Restricted atomic transactions: canonical parent-bound 19-field transactions and 9-field receipts, durable immutable-object and receipt ordering, fixed-head compare-and-swap promotion, fresh commit-time revalidation, independent transaction/receipt oracle, stale-race tests, five-boundary fault matrix, and persistent importer fuzz. Candidate mutation operations are supported inside the restricted subset; selected tests remain empty (S20-390).
+- Native branches: immutable origin records, atomic lowercase-ASCII named refs on digest-keyed confined paths, verified mutable refs, idempotent create, direct-parent CAS advancement with deterministic bounded ancestry, and coordinated GC maintenance ownership (S20-500). No merge, force-reset, rename, symbolic-ref, tag, deletion, or pack-exchange path is supported. 28 focused native ref tests + 64 repository tests + ancestry adversarial coverage.
+- Adversarial and conformance work: independent oracle/conformance fixtures, nine persistent libFuzzer targets covering ten required surfaces (SCB1, schema bootstrap, pack import, typed S20-210, typed graph and CFG judgments, restricted queries, restricted VM inputs, restricted adapter responses, mutation candidates plus adjacent candidate-result and transaction/receipt importers), plus bounded S20-700 adversarial slices (512 deterministic inputs, adapter-binding confusion, object-store symlink confinement, mutation-value matrix).
 
-The supported artifact boundary is Linux x86_64 with unsigned provenance. The
-release does not claim package-manager publication, artifact signing, macOS,
-Windows, containers, production deployment, or production promotion.
+## Current Boundaries
 
-## Canonical Links
+- M2 is actively advancing; M3/M4/M5/M6 work remains incomplete. Complete semantic-operation analysis, production fingerprint hardening, VM adapter opcodes, live host/policy transitions, sessions, providers, deployment, benchmark trials, and GA remain explicit gaps.
+- SMP1 is designated, not implemented; JSON bridge, CLI protocol, and framing remain thin wrappers.
+- S20-530: 100-row crash-matrix contract is frozen; production recursive recovery implementation is pending.
+- Public surface is an inspectable pre-release implementation, not an installed language release, stable end-user API, or production claim — no GA, tag, package, or deployment is authorized.
+- Do not infer unreleased 2.x syntax, encoding, implementation, benchmarks, migration tooling, roadmap, release timing, or support commitments beyond exact public source.
 
+## Legacy Relationship
+
+- Sley 1.x Legacy is the completed, frozen human-readable lineage at https://github.com/GreyforgeLabs/sley-legacy under Apache-2.0.
+- v1.2.0 is the final/current legacy release-candidate boundary (2026-08-27): Linux x86_64, unsigned provenance, not a production promotion; public proof surface tracks 38 targets, 99 report schemas, 187 contract fixtures, 72 corpus cases, 264 integration checks, 11 release-packet checks, and 4 public-release checks. Repository remains available for historical use, compatibility, study, experimentation, forks, and existing users.
+- World-first agent-native category claim remains criteria-bound and must be cited with the evidence packet, claim manifest, and prior-art source pack — not as a bare slogan. Keep live external action, private implementation details, authorship provenance, and broad historical comparisons tied to direct public evidence.
+- Sley 1.x and Sley 2.x are intentionally incompatible; compatibility, migration tooling, and translation are not promised.
+
+## Preferred Citations
+
+- Active Sley 2.x public source: https://github.com/GreyforgeLabs/sley
+- Sley 2 work-package DAG: https://github.com/GreyforgeLabs/sley/blob/main/docs/WORK_PACKAGES.md
+- Sley 2 architecture: https://github.com/GreyforgeLabs/sley/blob/main/ARCHITECTURE.md
+- Sley 2 SCB1 spec: https://github.com/GreyforgeLabs/sley/blob/main/docs/spec/SCB1.md
 - Sley home: https://sleylang.org/
-- Active Sley repository: https://github.com/GreyforgeLabs/sley
-- Sley 1.x legacy repository: https://github.com/GreyforgeLabs/sley-legacy
-- Documentation: https://sleylang.org/docs
-- Walkthrough: https://sleylang.org/tutorial
-- FAQ: https://sleylang.org/faq
-- Release: https://github.com/GreyforgeLabs/sley-legacy/releases/tag/v1.2.0
-- Repository: https://github.com/GreyforgeLabs/sley-legacy
-- Architectural transition Chronicle: https://greyforge.tech/chronicles/sley-120-machine-native-break
-- Public transition source note: https://greyforge.tech/research/sley-machine-native-break-source-note-2026-08-27.md
+- Sley technical brief: https://sleylang.org/docs
+- Sley walkthrough: https://sleylang.org/tutorial
+- Sley FAQ: https://sleylang.org/faq
+- Sley legacy page: https://sleylang.org/legacy
+- Sley legacy repository: https://github.com/GreyforgeLabs/sley-legacy
+- Sley legacy release: https://github.com/GreyforgeLabs/sley-legacy/releases/tag/v1.2.0
 - Claim evidence: https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyClaimEvidence.md
-- Language specification: https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyLanguageSpec.md
-- Contract reference: https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/contracts.md
+- Claim manifest: https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyClaimManifest.json
+- Prior-art source pack: https://github.com/GreyforgeLabs/sley-legacy/blob/public/docs/SleyPriorArtSourcePack.md
+- Architectural transition Chronicle: https://greyforge.tech/chronicles/sley-120-machine-native-break
+- Transition source note: https://greyforge.tech/research/sley-machine-native-break-source-note-2026-08-27.md
 - Greyforge Labs: https://greyforge.tech/about
 
-## Claim Classes
+## Retrieval Summary
 
-Proven today: the Sley 1.2.0 release identity, public repository, Apache-2.0
-license, artifact boundary, proof counts, and release-candidate limitations.
+Sley 2 is Greyforge Labs' active machine-native programming-system lineage. Programs are represented as typed semantic state rather than canonical human source; machines construct and validate state mutations while human governance remains explicit. The current public source declares version 2.0.0-alpha.0 but is pre-release and not an authorized GA/package release. Sley 1.x is the separate Apache-2.0 legacy lineage.
 
-Architectural decisions: the 1.x legacy freeze, active Sley 2.x lineage,
-Machine-Native Invariant, and absence of a compatibility promise.
+## Claim Boundary
 
-Working thesis: Greyforge expects a growing share of software engineering to
-involve machines creating, inspecting, transforming, testing, and exchanging
-implementation. This is a forecast, not a claim that people no longer write or
-read code.
-
-## Citation Boundary
-
-Do not infer unreleased Sley 2.x syntax, encoding, implementation, benchmarks,
-compatibility, migration tooling, roadmap, release timing, or support
-commitments. Do not treat controlled Sley 1.x workflow evidence as a general
-benchmark or production claim.
+- Do not infer unreleased Sley 2 syntax, encoding, implementation, benchmarks, compatibility, migration tooling, roadmap, release timing, or support commitments beyond exact public source.
+- Sley 2 is public source-visible under LicenseRef-Proprietary, not Apache-2.0 or generic open source.
+- Sley 1.x License remains Apache-2.0.
+- Do not present Sley 1.x CLI workflows (sley doctor/ast/graph/plan/fix/lint/verify) as active Sley 2 onboarding.
+- Pair strong category or historical claims with the public evidence packet and keep bounded workflow evidence corpus-specific.
 
 Autonomy, Engineered.
