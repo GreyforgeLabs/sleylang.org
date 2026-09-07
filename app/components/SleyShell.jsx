@@ -26,6 +26,7 @@ export function SleyShell({
   kicker = "Sley 2 / Machine-native programming",
   title,
   subtitle,
+  art,
   children,
 }) {
   const rootScope = scope || "";
@@ -80,6 +81,13 @@ export function SleyShell({
               Why 2.x exists
             </ScopeLink>
           </div>
+          {art ? (
+            <figure className="hero-art">
+              {/* eslint-disable-next-line @next/next/no-img-element -- pre-sized 117 KB WebP brand image; no runtime optimizer needed */}
+              <img src={art.src} width={art.width || 1200} height={art.height || 675} alt={art.alt} decoding="async" fetchPriority="high" />
+              {art.caption ? <figcaption>{art.caption}</figcaption> : null}
+            </figure>
+          ) : null}
         </section>
 
         <div className="section-grid">{children}</div>

@@ -3,7 +3,7 @@ import { SleyShell } from "../components/SleyShell";
 const briefJsonLd = {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  headline: "Sley 2 Technical Brief — Machine-native programming system",
+  headline: "Sley 2 Technical Brief - Machine-native programming system",
   description:
     "Typed machine-native program state: SSMC1 canonical form, SCB1 encoding, SMP1 designated interface; immutable objects, deterministic roots, proposal-validated transactions, restricted execution, explicit policy/capability, and native branch ancestry. Bounded pre-release 2.0.0-alpha.0 implementation status.",
   author: { "@type": "Organization", name: "Greyforge Labs", url: "https://greyforge.tech" },
@@ -27,31 +27,31 @@ export default function DocsPage() {
       scope=""
       kicker="Sley 2 Technical Brief"
       title="Sley 2 Technical Brief"
-      subtitle="Typed machine-native program state for machines, with human governance, deterministic identity, and proposal-validated transactions. Active pre-release 2.0.0-alpha.0 — no GA, no tag, no package is claimed."
+      subtitle="Typed machine-native program state for machines, with human governance, deterministic identity, and proposal-validated transactions. Active pre-release 2.0.0-alpha.0 - no GA, no tag, no package is claimed."
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(briefJsonLd) }} />
 
       <article className="card" style={{ gridColumn: "1 / -1" }}>
         <p className="card-kicker">What Sley 2 is</p>
-        <h2>Typed machine-native program state — not canonical human source</h2>
+        <h2>Typed machine-native program state - not canonical human source</h2>
         <p>
           Sley 2 programs are created, stored, changed, executed, tested, versioned, and exchanged as <strong>typed semantic state</strong>. The canonical program form is <strong>SSMC1</strong>, the
           canonical encoding is <strong>SCB1</strong>, and the designated machine-interface lineage is <strong>SMP1</strong> (architecturally frozen, not claimed implemented). Machines construct and validate state mutations; humans govern
-          through projections, inspection, policy, evidence, objectives, and acceptance — without requiring the canonical machine representation itself to be comfortable human source code.
+          through projections, inspection, policy, evidence, objectives, and acceptance - without requiring the canonical machine representation itself to be comfortable human source code.
         </p>
         <p>
           <strong>Thesis:</strong> Machines do not write source. They mutate verified program state. <em>Machine Native. Human Governed.</em>
         </p>
         <ul className="qa-list">
-          <li>No human-readable canonical source, no source parser, no canonical text format, no conventional formatter, no conventional LSP, no Sley 1.x compatibility — intentionally.</li>
-          <li>Human-readable projections, diagnostics, receipts, evidence capsules, and inspection surfaces exist — but they are derived, not canonical.</li>
+          <li>No human-readable canonical source, no source parser, no canonical text format, no conventional formatter, no conventional LSP, no Sley 1.x compatibility - intentionally.</li>
+          <li>Human-readable projections, diagnostics, receipts, evidence capsules, and inspection surfaces exist - but they are derived, not canonical.</li>
         </ul>
       </article>
 
       <article className="card">
-        <h2>Representation — SSMC1 / SCB1</h2>
+        <h2>Representation - SSMC1 / SCB1</h2>
         <p>
-          <strong>SSMC1</strong> is the canonical typed entity/opcode schema (frozen by S20-200). <strong>SCB1</strong> is the only canonical byte encoding for objects, roots, transactions, candidates, receipts, packs, and declared protocol payloads — strict, minimal, domain-separated via BLAKE3, with independent oracle conformance (S20-130).
+          <strong>SSMC1</strong> is the canonical typed entity/opcode schema (frozen by S20-200). <strong>SCB1</strong> is the only canonical byte encoding for objects, roots, transactions, candidates, receipts, packs, and declared protocol payloads - strict, minimal, domain-separated via BLAKE3, with independent oracle conformance (S20-130).
         </p>
         <ul className="qa-list">
           <li>18 entity kinds and 16 primitive classes generate 179 immutable mutation descriptors (exact-manifest codegen, S20-340).</li>
@@ -73,31 +73,31 @@ export default function DocsPage() {
       </article>
 
       <article className="card">
-        <h2>Change lifecycle — proposal → validation → transaction</h2>
+        <h2>Change lifecycle - proposal → validation → transaction</h2>
         <p><strong>State → Proposal → Validation → Transaction → Verified State</strong></p>
         <ol className="step-list">
           <li><strong>State:</strong> begin from a verified deterministic StateRoot.</li>
-          <li><strong>Proposal:</strong> construct a proposal-only SLEYCAN1 candidate from closed host values — 179 discriminants, contiguous ordinals, deterministic creation IDs, frozen validation-profile ID, digest trailer.</li>
+          <li><strong>Proposal:</strong> construct a proposal-only SLEYCAN1 candidate from closed host values - 179 discriminants, contiguous ordinals, deterministic creation IDs, frozen validation-profile ID, digest trailer.</li>
           <li><strong>Validation:</strong> fourteen-phase restricted validator owns every outcome (pure apply, reference, type, CFG, effect, policy, capability, contract, test, root judgments).</li>
           <li><strong>Transaction:</strong> durable atomic commit with fresh revalidation, 19-field parent-bound transaction, 9-field receipt, object/receipt-before-head ordering, and fixed-head compare-and-swap.</li>
           <li><strong>Verified State:</strong> new StateRoot with deterministic ancestry and maintenance-coordinated refs.</li>
         </ol>
-        <p>Semantic operation entities are explicitly not yet analyzed — candidates within the restricted executable-operation-free subset pass; others fail closed by design.</p>
+        <p>Semantic operation entities are explicitly not yet analyzed - candidates within the restricted executable-operation-free subset pass; others fail closed by design.</p>
       </article>
 
       <article className="card">
-        <h2>Semantic checks — the restricted validation profile</h2>
+        <h2>Semantic checks - the restricted validation profile</h2>
         <ul className="qa-list">
           <li>Deterministic core type checking (S20-210), bounded CFG + value-use validation (S20-220), exact least-fixed-point effect closure + static scope typing (S20-230).</li>
-          <li>Restricted epoch-1 contract/test profile with deterministic policy-incomplete planning (S20-240) — six unmodeled entity bodies remain a full-GA blocker.</li>
+          <li>Restricted epoch-1 contract/test profile with deterministic policy-incomplete planning (S20-240) - six unmodeled entity bodies remain a full-GA blocker.</li>
           <li>Deterministic TypeDef/Function fingerprints, canonical value hash, and exact impact relationships for 12 modeled kinds (S20-250).</li>
           <li>Five-realm rejection and stale-preimage/digest matrices are pinned; Rust consumes Python-produced bytes and exact error codes.</li>
         </ul>
       </article>
 
       <article className="card">
-        <h2>Execution — restricted deterministic VM</h2>
-        <p>Sley 2 already contains a bounded deterministic execution path for the implemented semantic subset — not a complete runtime.</p>
+        <h2>Execution - restricted deterministic VM</h2>
+        <p>Sley 2 already contains a bounded deterministic execution path for the implemented semantic subset - not a complete runtime.</p>
         <ul className="qa-list">
           <li>Restricted O0 lowering for all five terminators and three validated Boolean opcodes with exact derived bytes and root/profile-bound cache key (S20-260).</li>
           <li>Deterministic execution with exact Boolean semantics, bounded fuel/value/output/cancellation, and canonical observation digest (S20-270).</li>
@@ -107,19 +107,19 @@ export default function DocsPage() {
       </article>
 
       <article className="card">
-        <h2>Authority — policy roots and capability tokens</h2>
+        <h2>Authority - policy roots and capability tokens</h2>
         <ul className="qa-list">
           <li><strong>Protected policy root:</strong> separately registry-authorized, with opaque principals, principal-specific grants, protected entity bindings, and mandatory test/contract finalization (S20-370). No self-authorization.</li>
           <li><strong>Local capability tokens:</strong> exact root/effect/scope/adapter/budget binding, keyed BLAKE3 authentication, caller-owned replay/budget ledger (S20-380).</li>
           <li>Authorized reference-adapter wrapper enforces fixture atomicity; VM adapter opcodes, candidate admission, and live-runtime authority remain blocked.</li>
-          <li>Deterministic authority checks are explicit — no live provider/shell/network/deployment authority is implied.</li>
+          <li>Deterministic authority checks are explicit - no live provider/shell/network/deployment authority is implied.</li>
         </ul>
       </article>
 
       <article className="card">
-        <h2>Versioned state — native branch refs and ancestry</h2>
+        <h2>Versioned state - native branch refs and ancestry</h2>
         <p>
-          Native S20-500 refs are landed — not future work. Inspect crate code, tests, and <code>docs/WORK_PACKAGES.md</code> as authority over prose.
+          Native S20-500 refs are landed - not future work. Inspect crate code, tests, and <code>docs/WORK_PACKAGES.md</code> as authority over prose.
         </p>
         <ul className="qa-list">
           <li>Immutable branch origins, lowercase-ASCII names, digest-keyed confined layout, idempotent create, verified mutable refs.</li>
@@ -131,11 +131,11 @@ export default function DocsPage() {
       </article>
 
       <article className="card">
-        <h2>Human governance — projections, diagnostics, receipts, evidence</h2>
+        <h2>Human governance - projections, diagnostics, receipts, evidence</h2>
         <ul className="qa-list">
           <li><strong>Restricted queries:</strong> SLEYIDX1 snapshot + four typed queries over freshly derived snapshots, exact QueryId/response records, hard-fail on omission (S20-310). Nineteen root-backed classes remain blocked.</li>
           <li><strong>Evidence capsule:</strong> restricted complete-query capsule with raw-ID dictionaries and direct-edge tables, fixed no-omission/no-truncation/no-continuation (S20-320). Not the master ContextCapsule.</li>
-          <li>Readable projections, diagnostics, receipts, observation digests, and deterministic error behavior — engineering evidence, not formal proof of correctness.</li>
+          <li>Readable projections, diagnostics, receipts, observation digests, and deterministic error behavior - engineering evidence, not formal proof of correctness.</li>
           <li>Independent oracle/conformance fixtures, persistent libFuzzer targets, malformed-input testing, and fail-closed public-safety checks across concerns.</li>
         </ul>
       </article>
@@ -166,7 +166,7 @@ export default function DocsPage() {
               <li>52 opcode families, generics, VM adapter opcodes, live authority, provider/shell/network, SMP1 framing, JSON bridge, CLI protocol</li>
               <li>Complete semantic-operation analysis, full query/capsule surface, production crash-matrix implementation (S20-530: 100-row contract frozen, not implemented)</li>
               <li>S20-710: operator-approved proprietary license text, standards SBOM, release provenance, re-anchored scan, Argus/Vulcan dispositions</li>
-              <li>Benchmarks, S20-610 raw-baseline trials, and M6 GA gates — `make v2` remains the authoritative full gate</li>
+              <li>Benchmarks, S20-610 raw-baseline trials, and M6 GA gates - `make v2` remains the authoritative full gate</li>
             </ul>
           </div>
         </div>
@@ -175,18 +175,18 @@ export default function DocsPage() {
           <a href="https://github.com/GreyforgeLabs/sley/blob/main/ARCHITECTURE.md" rel="external noopener noreferrer">ARCHITECTURE.md</a>. Do not trust prose that disagrees with landed crate code.
         </p>
         <p>
-          <strong>Status:</strong> M0 complete · M1 core complete · M2 actively advancing · later release/GA work incomplete. <em>Active pre-release engineering</em> — substantial running implementation, not a research idea; not a released production language.
+          <strong>Status:</strong> M0 complete · M1 core complete · M2 actively advancing · later release/GA work incomplete. <em>Active pre-release engineering</em> - substantial running implementation, not a research idea; not a released production language.
         </p>
       </article>
 
       <article className="card">
         <h2>Related surfaces</h2>
         <ul className="qa-list">
-          <li><a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">Active Sley 2.x repository</a> — public source (LicenseRef-Proprietary)</li>
-          <li><a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">Sley 1.x Legacy</a> — Apache-2.0 frozen line, <a href="/legacy">legacy page</a></li>
+          <li><a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">Active Sley 2.x repository</a> - public source (LicenseRef-Proprietary)</li>
+          <li><a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">Sley 1.x Legacy</a> - Apache-2.0 frozen line, <a href="/legacy">legacy page</a></li>
           <li><a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Architectural transition Chronicle</a></li>
           <li><a href="https://greyforge.tech/research/sley-machine-native-break-source-note-2026-08-27.md" rel="external noopener noreferrer">Transition source note</a></li>
-          <li><a href="/llms.txt">llms.txt</a> — machine discovery</li>
+          <li><a href="/llms.txt">llms.txt</a> - machine discovery</li>
         </ul>
       </article>
     </SleyShell>

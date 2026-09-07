@@ -1,7 +1,7 @@
 import { SleyShell } from "../components/SleyShell";
 
 export const metadata = {
-  title: "Sley 1.x Legacy — The completed human-readable line",
+  title: "Sley 1.x Legacy - The completed human-readable line",
   description:
     "Sley 1.x Legacy is the frozen, complete human-readable structural line (v1.2.0 RC, Apache-2.0). Self-hosted 1.x compiler, 99 report schemas, 187 contract fixtures, 72 corpus cases, 264 integration checks. Intentionally incompatible with machine-native Sley 2.x.",
   alternates: {
@@ -38,7 +38,7 @@ export default function LegacyPage() {
       scope=""
       kicker="Sley 1.x Legacy / Apache-2.0"
       title="Sley 1.x Legacy"
-      subtitle="The completed human-readable line — frozen, self-hosted, and preserved. Sley 1.2.0 is the final 1.x release-candidate boundary. Active development now lives in the intentionally incompatible machine-native Sley 2.x lineage."
+      subtitle="The completed human-readable line - frozen, self-hosted, and preserved. Sley 1.2.0 is the final 1.x release-candidate boundary. Active development now lives in the intentionally incompatible machine-native Sley 2.x lineage."
     >
       <script
         type="application/ld+json"
@@ -47,24 +47,24 @@ export default function LegacyPage() {
 
       <article className="card" style={{ gridColumn: "1 / -1" }}>
         <p className="card-kicker">Legacy lineage · frozen · Apache-2.0</p>
-        <h2>Sley 1.x is complete — and stays open</h2>
+        <h2>Sley 1.x is complete - and stays open</h2>
         <ul className="qa-list">
           <li><strong>1.x is frozen:</strong> no active feature development on the human-readable architecture.</li>
-          <li><strong>v1.2.0</strong> is the final/current legacy release-candidate boundary — Linux x86_64, unsigned provenance, not a production promotion.</li>
+          <li><strong>v1.2.0</strong> is the final/current legacy release-candidate boundary - Linux x86_64, unsigned provenance, not a production promotion.</li>
           <li><strong>Human-readable canonical source</strong> is the 1.x review projection; <strong>self-hosted 1.x compiler</strong> owns parser, checker, lint, runtime, bootstrap, and report semantics in Sley source.</li>
-          <li><strong>License:</strong> Apache-2.0 — confined to the Sley 1.x Legacy lineage. Active Sley 2 is LicenseRef-Proprietary.</li>
-          <li><strong>Original workflow:</strong> structural inspection (AST, graph slices, queries), planned edits, deterministic receipts, and authority gates — the structural, agent-native workflow that Sley 1.x proved.</li>
+          <li><strong>License:</strong> Apache-2.0 - confined to the Sley 1.x Legacy lineage. Active Sley 2 is LicenseRef-Proprietary.</li>
+          <li><strong>Original workflow:</strong> structural inspection (AST, graph slices, queries), planned edits, deterministic receipts, and authority gates - the structural, agent-native workflow that Sley 1.x proved.</li>
           <li><strong>Compatibility:</strong> intentionally incompatible with machine-native Sley 2.x. No migration tooling is promised.</li>
         </ul>
       </article>
 
       <article className="card machine-card">
         <p className="card-kicker">Release-candidate proof surface</p>
-        <h2>v1.2.0 release evidence — auditor packet</h2>
+        <h2>v1.2.0 release evidence - auditor packet</h2>
         <ul className="qa-list fact-list">
           <li>38 release targets · 99 report schemas · 187 contract fixtures · 72 corpus cases · 264 integration checks · 11 release-packet checks · 4 public-release checks</li>
           <li>Self-hosted compiler exercised through the verification surface; public shell wraps that language-owned core into a practical local command surface</li>
-          <li>Sensitive host-facing behavior through deterministic authority gates — not implicit live provider/shell/network/secret/payment actions</li>
+          <li>Sensitive host-facing behavior through deterministic authority gates - not implicit live provider/shell/network/secret/payment actions</li>
         </ul>
         <div className="stat-grid">
           <div className="stat-pill"><strong>38 / 38</strong><span>release targets</span></div>
@@ -116,7 +116,7 @@ export default function LegacyPage() {
         <ul className="qa-list">
           <li>New work that needs machine-native typed state, deterministic roots, and proposal-validated transactions</li>
           <li>Lanes requiring explicit policy/capability and native branch ancestry over verified receipts</li>
-          <li>Active pre-release engineering — inspect the <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">public source</a> directly; no GA or package is claimed</li>
+          <li>Active pre-release engineering - inspect the <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">public source</a> directly; no GA or package is claimed</li>
         </ul>
         <p>
           <a href="/docs">Sley 2 technical brief</a> · <a href="/tutorial">Architecture walkthrough</a> · <a href="/faq">Sley 2 FAQ</a>
@@ -128,7 +128,7 @@ export default function LegacyPage() {
         <h2>How to cite Sley 1.x</h2>
         <p>
           Pair strong category or historical claims with the public evidence packet, language specification, contract reference, release record, and primary-source comparison packet. Do not use the{" "}
-          world-first agent-native phrase as a bare slogan — it is criteria-bound.
+          world-first agent-native phrase as a bare slogan - it is criteria-bound.
         </p>
         <ul className="qa-list">
           <li>

@@ -11,7 +11,7 @@ const architectureCards = [
   },
   {
     title: "Proposal before mutation",
-    body: "Machines construct proposal-only mutation candidates — never direct mutation. Every candidate is digest-trailed SLEYCAN1 with exact discriminants.",
+    body: "Machines construct proposal-only mutation candidates - never direct mutation. Every candidate is digest-trailed SLEYCAN1 with exact discriminants.",
   },
   {
     title: "Validation before commit",
@@ -31,7 +31,7 @@ const architectureCards = [
   },
   {
     title: "Human governance & evidence",
-    body: "Readable projections, diagnostics, QueryId-typed queries, evidence capsules, receipts, and deterministic error behavior — machines mutate, people govern.",
+    body: "Readable projections, diagnostics, QueryId-typed queries, evidence capsules, receipts, and deterministic error behavior - machines mutate, people govern.",
   },
 ];
 
@@ -47,7 +47,7 @@ const implementedNow = [
   "Fourteen-phase validator for the executable-operation-free subset with independent result corpus and persistent result-import fuzz",
   "Protected policy roots, local capability tokens, authorized adapter wrapper, and durable atomic transactions with receipts",
   "Native branch refs: atomic lowercase-ASCII named refs, direct-parent CAS, bounded ancestry, GC maintenance coordination",
-  "Nine persistent libFuzzer targets covering SCB1, schema, packs, types, CFG, queries, VM, adapters, and candidates — plus bounded S20-700 adversarial slices",
+  "Nine persistent libFuzzer targets covering SCB1, schema, packs, types, CFG, queries, VM, adapters, and candidates - plus bounded S20-700 adversarial slices",
 ];
 
 const boundaries = [
@@ -55,11 +55,11 @@ const boundaries = [
   "19 root-backed query classes, truncation/continuation, master ContextCapsule, SMP1 protocol framing, and JSON bridge are deferred (SMP1 is designated, not claimed implemented)",
   "Complete semantic-operation analysis, production fingerprint hardening, and full S20-530 crash-matrix implementation remain gaps",
   "Merge, force-reset, symbolic refs, tags, branch deletion, and clone-equivalent pack exchange are not supported",
-  "Public surface is inspectable pre-release, not an installed language release — no GA, tag, package, or production claim",
+  "Public surface is inspectable pre-release, not an installed language release - no GA, tag, package, or production claim",
 ];
 
 export const metadata = {
-  title: "Sley 2 — Machine-native programming",
+  title: "Sley 2 - Machine-native programming",
   description:
     "Sley 2 is Greyforge Labs' active machine-native programming system. Machines mutate typed verified program state; humans govern through projections, policy, and evidence. 2.0.0-alpha.0 source-visible pre-release (LicenseRef-Proprietary), intentionally incompatible with the Apache-2.0 Sley 1.x Legacy lineage.",
   alternates: {
@@ -85,23 +85,28 @@ export default function HomePage() {
     <SleyShell
       scope=""
       kicker="Sley 2 / Machine-native programming"
+      art={{
+        src: "/assets/sley-2-loom-graph-post.webp",
+        alt: "Sley 2.0 Loom Graph: a machined steel loom weaving a structural graph into etched lines",
+        caption: "The Sley 2.0 Loom Graph. Brand artwork, not compiler output.",
+      }}
       title="Programming state for machines. Governance for people."
-      subtitle="Machines do not write source. They mutate verified program state. Sley 2 is Greyforge Labs' active, intentionally incompatible machine-native lineage — typed semantic state with proposal → validation → transaction and explicit human governance."
+      subtitle="Machines do not write source. They mutate verified program state. Sley 2 is Greyforge Labs' active, intentionally incompatible machine-native lineage - typed semantic state with proposal → validation → transaction and explicit human governance."
     >
       <article className="card" style={{ gridColumn: "1 / -1", borderColor: "rgba(34,211,238,0.28)" }}>
         <p className="card-kicker">Active lineage · pre-release engineering</p>
-        <h2>Sley 2 — the canonical Sley</h2>
+        <h2>Sley 2 - the canonical Sley</h2>
         <p>
           The canonical site is <strong>sleylang.org</strong> and the canonical active repository is{" "}
           <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">
             GreyforgeLabs/sley
           </a>
-          . Current workspace/source version: <code>2.0.0-alpha.0</code> — a workspace pre-release, not a released product, GitHub release, package, or GA.
+          . Current workspace/source version: <code>2.0.0-alpha.0</code> - a workspace pre-release, not a released product, GitHub release, package, or GA.
           Public source visibility is <code>LicenseRef-Proprietary</code>, not an open-source license.
         </p>
         <p>
           <strong>Machine Native. Human Governed.</strong> The canonical raw program representation is intentionally not required to be comfortable human source. Humans govern
-          through projections, inspection, policy roots, capability tokens, objectives, constraints, receipts, and acceptance — not by authoring canonical bytes.
+          through projections, inspection, policy roots, capability tokens, objectives, constraints, receipts, and acceptance - not by authoring canonical bytes.
         </p>
         <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", marginTop: "0.9rem" }}>
           <a className="button-primary" href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">
@@ -119,10 +124,10 @@ export default function HomePage() {
         </div>
         <ul className="qa-list" style={{ marginTop: "1rem" }}>
           <li>
-            <strong>Active:</strong> <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">GreyforgeLabs/sley</a> — SSMC1 canonical form · SCB1 canonical encoding · SMP1 designated interface · 2.0.0-alpha.0 · LicenseRef-Proprietary
+            <strong>Active:</strong> <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">GreyforgeLabs/sley</a> - SSMC1 canonical form · SCB1 canonical encoding · SMP1 designated interface · 2.0.0-alpha.0 · LicenseRef-Proprietary
           </li>
           <li>
-            <strong>Legacy:</strong> <a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">GreyforgeLabs/sley-legacy</a> — Sley 1.2.0 frozen · human-readable canonical source · self-hosted 1.x compiler · Apache-2.0
+            <strong>Legacy:</strong> <a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">GreyforgeLabs/sley-legacy</a> - Sley 1.2.0 frozen · human-readable canonical source · self-hosted 1.x compiler · Apache-2.0
           </li>
           <li>
             <strong>Transition:</strong> <a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Sley 1.2.0 → Machine-native break Chronicle</a> ·{" "}
@@ -133,9 +138,9 @@ export default function HomePage() {
 
       <article className="card" style={{ gridColumn: "1 / -1", background: "rgba(251,191,36,0.08)" }}>
         <p className="card-kicker">Current phase</p>
-        <h2>Active pre-release engineering — not research, not GA</h2>
+        <h2>Active pre-release engineering - not research, not GA</h2>
         <p>
-          M0 is complete. M1 core (SCB1, identifiers, independent oracle, epochs, immutable store, deterministic roots, root/object packs) is complete. M2 is advancing — deterministic type, CFG, effects, restricted contracts, fingerprints, lowering, VM, adapters, and policy now have bounded implementations for the supported subset. Full-GA semantics, complete operation analysis, and release hardening remain incomplete. See{" "}
+          M0 is complete. M1 core (SCB1, identifiers, independent oracle, epochs, immutable store, deterministic roots, root/object packs) is complete. M2 is advancing - deterministic type, CFG, effects, restricted contracts, fingerprints, lowering, VM, adapters, and policy now have bounded implementations for the supported subset. Full-GA semantics, complete operation analysis, and release hardening remain incomplete. See{" "}
           <a href="https://github.com/GreyforgeLabs/sley/blob/main/docs/WORK_PACKAGES.md" rel="external noopener noreferrer">docs/WORK_PACKAGES.md</a> for the exact DAG.
         </p>
       </article>
@@ -151,13 +156,13 @@ export default function HomePage() {
         <p className="card-kicker">State → Proposal → Validation → Transaction → Verified State</p>
         <h2>How a machine changes a Sley 2 program</h2>
         <ol className="step-list">
-          <li><strong>Verified state root</strong> — begin from a deterministic StateRoot over immutable canonical bytes.</li>
-          <li><strong>Derive bounded context</strong> — derive freshly rebuilt snapshots and typed queries; candidates match only an already-fresh explicit modeled-request rebuild.</li>
-          <li><strong>Proposal-only candidate</strong> — build an immutable digest-trailed SLEYCAN1 candidate from 179 bound descriptors; no semantic validation yet.</li>
-          <li><strong>Deterministic validation</strong> — fourteen-phase validator owns every outcome; unsupported semantic operations and insufficient capability fail closed.</li>
-          <li><strong>Atomic transaction</strong> — commit-time revalidation, durable object + receipt ordering, and one fixed-head compare-and-swap promotion.</li>
-          <li><strong>Advance a branch</strong> — named ref CAS from direct parent, deterministic ancestry, coordinated maintenance.</li>
-          <li><strong>Retain receipts & evidence</strong> — canonical receipts, observation digests, query responses, and evidence capsules for acceptance.</li>
+          <li><strong>Verified state root</strong> - begin from a deterministic StateRoot over immutable canonical bytes.</li>
+          <li><strong>Derive bounded context</strong> - derive freshly rebuilt snapshots and typed queries; candidates match only an already-fresh explicit modeled-request rebuild.</li>
+          <li><strong>Proposal-only candidate</strong> - build an immutable digest-trailed SLEYCAN1 candidate from 179 bound descriptors; no semantic validation yet.</li>
+          <li><strong>Deterministic validation</strong> - fourteen-phase validator owns every outcome; unsupported semantic operations and insufficient capability fail closed.</li>
+          <li><strong>Atomic transaction</strong> - commit-time revalidation, durable object + receipt ordering, and one fixed-head compare-and-swap promotion.</li>
+          <li><strong>Advance a branch</strong> - named ref CAS from direct parent, deterministic ancestry, coordinated maintenance.</li>
+          <li><strong>Retain receipts & evidence</strong> - canonical receipts, observation digests, query responses, and evidence capsules for acceptance.</li>
         </ol>
         <p style={{ marginTop: "0.8rem", color: "var(--muted)", fontSize: "0.9rem" }}>
           The current public surface is an inspectable pre-release implementation, not an installed language release. No stable end-user CLI/API is claimed beyond thin machine wrappers that delegate all judgment to the kernel.
@@ -166,7 +171,7 @@ export default function HomePage() {
 
       <article className="card machine-card">
         <p className="card-kicker">Implemented now / 2.0.0-alpha.0</p>
-        <h2>What Sley 2 already contains — bounded, deterministic, and evidenced</h2>
+        <h2>What Sley 2 already contains - bounded, deterministic, and evidenced</h2>
         <ul className="qa-list fact-list">
           {implementedNow.map((item) => (
             <li key={item}>{item}</li>
@@ -182,7 +187,7 @@ export default function HomePage() {
 
       <article className="card">
         <p className="card-kicker">Boundaries</p>
-        <h2>What Sley 2 is intentionally not — yet</h2>
+        <h2>What Sley 2 is intentionally not - yet</h2>
         <ul className="qa-list">
           {boundaries.map((item) => (
             <li key={item}>{item}</li>
@@ -195,10 +200,10 @@ export default function HomePage() {
       </article>
 
       <article className="card">
-        <p className="card-kicker">Sley 1.x Legacy — preserved</p>
+        <p className="card-kicker">Sley 1.x Legacy - preserved</p>
         <h2>Looking for human-readable Sley 1.2?</h2>
         <p>
-          Sley 1.2 completes the human-readable structural line — self-hosted compiler, 99 report schemas, 187 contract fixtures, 72 corpus cases, 264 integration checks. It remains
+          Sley 1.2 completes the human-readable structural line - self-hosted compiler, 99 report schemas, 187 contract fixtures, 72 corpus cases, 264 integration checks. It remains
           frozen and available under Apache-2.0.
         </p>
         <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", marginTop: "0.8rem" }}>

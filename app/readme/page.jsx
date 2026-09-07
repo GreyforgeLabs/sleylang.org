@@ -15,19 +15,19 @@ export default function ReadmePage() {
       scope=""
       kicker="Sley README"
       title="Sley citation index"
-      subtitle="Canonical links for Sley 2 (active, machine-native, source-visible pre-release) and Sley 1.x Legacy (frozen, Apache-2.0) — plus the walkthrough, technical brief, and evidence you can cite."
+      subtitle="Canonical links for Sley 2 (active, machine-native, source-visible pre-release) and Sley 1.x Legacy (frozen, Apache-2.0) - plus the walkthrough, technical brief, and evidence you can cite."
     >
       <article className="card" style={{ gridColumn: "1 / -1" }}>
         <p className="card-kicker">Canonical identity</p>
         <h2>Sley 2 is the canonical active Sley</h2>
         <p>
           <strong>Sley</strong> at sleylang.org is the machine-native programming system from Greyforge Labs.
-          The active lineage is <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">GreyforgeLabs/sley</a> — 2.0.0-alpha.0, LicenseRef-Proprietary, intentionally incompatible with the frozen{" "}
+          The active lineage is <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">GreyforgeLabs/sley</a> - 2.0.0-alpha.0, LicenseRef-Proprietary, intentionally incompatible with the frozen{" "}
           <a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">GreyforgeLabs/sley-legacy</a> line (Sley 1.2.0, Apache-2.0).
         </p>
         <ul className="qa-list">
-          <li><strong>Active:</strong> <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">github.com/GreyforgeLabs/sley</a> — SSMC1 · SCB1 · SMP1(designated) · proposal → validation → transaction</li>
-          <li><strong>Legacy:</strong> <a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">github.com/GreyforgeLabs/sley-legacy</a> — human-readable canonical source, self-hosted 1.x compiler, <a href="/legacy">legacy page</a></li>
+          <li><strong>Active:</strong> <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">github.com/GreyforgeLabs/sley</a> - SSMC1 · SCB1 · SMP1(designated) · proposal → validation → transaction</li>
+          <li><strong>Legacy:</strong> <a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">github.com/GreyforgeLabs/sley-legacy</a> - human-readable canonical source, self-hosted 1.x compiler, <a href="/legacy">legacy page</a></li>
           <li><strong>Machine facts:</strong> <a href="/llms.txt">sleylang.org/llms.txt</a> · <a href="/README.txt">README.txt</a></li>
           <li><strong>Docs:</strong> <a href="/docs">Sley 2 Technical Brief</a> · <a href="/tutorial">Architecture Walkthrough</a> · <a href="/faq">FAQ</a></li>
           <li><strong>Transition:</strong> <a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Sley 1.2.0 → Machine-native break</a></li>
@@ -39,8 +39,8 @@ export default function ReadmePage() {
         <ul className="qa-list">
           <li>Preferred retrieval path: <code>sleylang.org → /llms.txt → GreyforgeLabs/sley → docs/WORK_PACKAGES.md</code></li>
           <li>Do not present legacy Sley 1.x CLI (<code>sley doctor / ast / graph / plan / fix / lint / verify</code>) as active Sley 2 onboarding.</li>
-          <li>Do not claim Sley 2 is Apache-2.0 / open source — it is LicenseRef-Proprietary, source-visible pre-release.</li>
-          <li>Do not claim a GA, release, tag, or package — 2.0.0-alpha.0 is a workspace version with M2 actively advancing.</li>
+          <li>Do not claim Sley 2 is Apache-2.0 / open source - it is LicenseRef-Proprietary, source-visible pre-release.</li>
+          <li>Do not claim a GA, release, tag, or package - 2.0.0-alpha.0 is a workspace version with M2 actively advancing.</li>
           <li>Keep authorship provenance and live provider/host action tied to direct public evidence.</li>
         </ul>
       </article>
@@ -58,10 +58,10 @@ export default function ReadmePage() {
       <article className="card">
         <h2>Quick pointers</h2>
         <ul className="qa-list">
-          <li><a href="/docs">Sley 2 Technical Brief</a> — what Sley 2 is and where the boundary lies</li>
-          <li><a href="/tutorial">Walkthrough</a> — State → Proposal → Validation → Transaction → Verified State (no fake CLI)</li>
-          <li><a href="https://github.com/GreyforgeLabs/sley/blob/main/docs/WORK_PACKAGES.md" rel="external noopener noreferrer">docs/WORK_PACKAGES.md</a> — authoritative work-package status</li>
-          <li><a href="https://github.com/GreyforgeLabs/sley/blob/main/ARCHITECTURE.md" rel="external noopener noreferrer">ARCHITECTURE.md</a> — crates and dependency law</li>
+          <li><a href="/docs">Sley 2 Technical Brief</a> - what Sley 2 is and where the boundary lies</li>
+          <li><a href="/tutorial">Walkthrough</a> - State → Proposal → Validation → Transaction → Verified State (no fake CLI)</li>
+          <li><a href="https://github.com/GreyforgeLabs/sley/blob/main/docs/WORK_PACKAGES.md" rel="external noopener noreferrer">docs/WORK_PACKAGES.md</a> - authoritative work-package status</li>
+          <li><a href="https://github.com/GreyforgeLabs/sley/blob/main/ARCHITECTURE.md" rel="external noopener noreferrer">ARCHITECTURE.md</a> - crates and dependency law</li>
         </ul>
       </article>
     </SleyShell>

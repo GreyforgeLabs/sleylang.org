@@ -3,7 +3,7 @@ import "./globals.css";
 export const metadata = {
   metadataBase: new URL("https://sleylang.org"),
   title: {
-    default: "Sley 2 — Machine-native programming",
+    default: "Sley 2 - Machine-native programming",
     template: "%s | Sley",
   },
   description:
@@ -45,17 +45,17 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Sley 2 — Machine-native programming",
+    title: "Sley 2 - Machine-native programming",
     description:
       "Machines do not write source. They mutate verified program state. Sley 2 is the active machine-native programming system from Greyforge Labs (2.0.0-alpha.0 source-visible pre-release).",
     url: "https://sleylang.org/",
     siteName: "Sley",
     images: [
       {
-        url: "/assets/sley-loom-graph-post.png",
+        url: "/assets/sley-2-loom-graph-post.png",
         width: 1200,
-        height: 630,
-        alt: "Sley Loom Graph",
+        height: 675,
+        alt: "Sley 2.0 Loom Graph: a machined steel loom weaving a structural graph into etched lines",
       },
     ],
     locale: "en_US",
@@ -63,10 +63,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sley 2 — Machine-native programming",
+    title: "Sley 2 - Machine-native programming",
     description:
-      "Programming state for machines. Governance for people. Sley 2 (2.0.0-alpha.0, LicenseRef-Proprietary, intentionally incompatible with 1.x) — typed semantic state, deterministic identity, proposal-validated transactions.",
-    images: ["/assets/sley-loom-graph-post.png"],
+      "Programming state for machines. Governance for people. Sley 2 (2.0.0-alpha.0, LicenseRef-Proprietary, intentionally incompatible with 1.x) - typed semantic state, deterministic identity, proposal-validated transactions.",
+    images: ["/assets/sley-2-loom-graph-post.png"],
   },
   other: {
     citation_entity: "Sley",

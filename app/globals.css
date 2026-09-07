@@ -203,6 +203,28 @@ h1 {
   font-size: clamp(1rem, 2vw, 1.18rem);
 }
 
+.hero-art {
+  position: relative;
+  z-index: 1;
+  margin: 1.7rem 0 0;
+}
+
+.hero-art img {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(125, 211, 252, 0.28);
+  box-shadow: 0 18px 50px rgba(2, 6, 23, 0.45);
+}
+
+.hero-art figcaption {
+  margin: 0.55rem 0 0;
+  color: #8fa5c0;
+  font-size: 0.85rem;
+}
+
 .hero-actions {
   margin-top: 1.45rem;
   display: flex;
