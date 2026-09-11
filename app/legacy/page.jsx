@@ -116,7 +116,7 @@ export default function LegacyPage() {
         <ul className="qa-list">
           <li>New work that needs machine-native typed state, deterministic roots, and proposal-validated transactions</li>
           <li>Lanes requiring explicit policy/capability and native branch ancestry over verified receipts</li>
-          <li>Active pre-release engineering - inspect the <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">public source</a> directly; no GA or package is claimed</li>
+          <li>Active pre-release engineering - developed privately, documented in the <a href="/docs">technical brief</a>; no GA or package is claimed</li>
         </ul>
         <p>
           <a href="/docs">Sley 2 technical brief</a> · <a href="/tutorial">Architecture walkthrough</a> · <a href="/faq">Sley 2 FAQ</a>

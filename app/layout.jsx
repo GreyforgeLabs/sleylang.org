@@ -47,7 +47,7 @@ export const metadata = {
   openGraph: {
     title: "Sley 2 - Machine-native programming",
     description:
-      "Machines do not write source. They mutate verified program state. Sley 2 is the active machine-native programming system from Greyforge Labs (2.0.0-alpha.0 source-visible pre-release).",
+      "Machines do not write source. They mutate verified program state. Sley 2 is the active machine-native programming system from Greyforge Labs (2.0.0-alpha.0 private pre-release).",
     url: "https://sleylang.org/",
     siteName: "Sley",
     images: [
@@ -74,7 +74,7 @@ export const metadata = {
     citation_status_date: "2026-08-30",
     llm_discovery_file: "https://sleylang.org/llms.txt",
     llm_claim_boundary:
-      "Active Sley 2 is 2.0.0-alpha.0 source-visible pre-release under LicenseRef-Proprietary; not a GA release/tag/package. Sley 1.x Legacy is Apache-2.0 v1.2.0 frozen.",
+      "Active Sley 2 is a 2.0.0-alpha.0 private pre-release under LicenseRef-Proprietary; not a GA release/tag/package. Sley 1.x Legacy is Apache-2.0 v1.2.0 frozen.",
   },
 };
 
@@ -86,12 +86,11 @@ const sleyJsonLd = {
   applicationCategory: "DeveloperApplication",
   operatingSystem: "Linux",
   url: "https://sleylang.org/",
-  codeRepository: "https://github.com/GreyforgeLabs/sley",
   programmingLanguage: "Sley",
   version: "2.0.0-alpha.0",
   softwareVersion: "2.0.0-alpha.0",
-  dateModified: "2026-08-30",
-  license: "https://github.com/GreyforgeLabs/sley#license",
+  dateModified: "2026-09-11",
+  license: "LicenseRef-Proprietary",
   author: {
     "@type": "Organization",
     name: "Greyforge Labs",
@@ -118,7 +117,6 @@ const sleyJsonLd = {
   isAccessibleForFree: true,
   sameAs: [
     "https://greyforge.tech/about",
-    "https://github.com/GreyforgeLabs/sley",
     "https://github.com/GreyforgeLabs/sley-legacy",
     "https://sleylang.org/llms.txt",
     "https://sleylang.org/legacy",

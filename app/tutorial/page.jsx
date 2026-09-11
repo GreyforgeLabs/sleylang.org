@@ -39,13 +39,13 @@ export default function TutorialPage() {
 
       <article className="card" style={{ gridColumn: "1 / -1", borderColor: "rgba(251,191,36,0.25)" }}>
         <p className="card-kicker">Pre-release surface</p>
-        <h2>The current public surface is an inspectable pre-release implementation, not an installed language release.</h2>
+        <h2>Sley 2 is a privately developed pre-release implementation, not an installed language release.</h2>
         <p>
-          No authorized installable user-facing CLI, package, or GA is claimed. The repository exposes the kernel crates, typed descriptors, candidate proposal APIs, validator, and transaction engine for inspection. Wrappers such as
+          No authorized installable user-facing CLI, package, or GA is claimed. The private repository holds the kernel crates, typed descriptors, candidate proposal APIs, validator, and transaction engine described here; they are documented for inspection. Wrappers such as
           <code> sley-cli </code> remain thin machine adapters that delegate all judgment to the kernel - they are not the source of truth. Follow this walkthrough as the architecture, not as a stable end-user API.
         </p>
         <p>
-          All seven steps below use only real implemented public-safe operations at <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">GreyforgeLabs/sley</a> (2.0.0-alpha.0, LicenseRef-Proprietary).
+          All seven steps below describe only real implemented operations in Sley 2 (2.0.0-alpha.0, LicenseRef-Proprietary, private source).
         </p>
       </article>
 
@@ -89,11 +89,11 @@ export default function TutorialPage() {
       </article>
 
       <article className="card">
-        <h2>Where to inspect each step</h2>
+        <h2>Which component owns each step</h2>
         <ul className="qa-list">
-          <li>State & storage: <code>sley-store</code>, <code>sley-state-root</code>, <code>sley-repo</code> - see <a href="https://github.com/GreyforgeLabs/sley/tree/main/crates/sley-store" rel="external noopener noreferrer">store</a> &amp; <a href="https://github.com/GreyforgeLabs/sley/tree/main/crates/sley-repo" rel="external noopener noreferrer">repo</a></li>
-          <li>Representation: <code>sley-scb1</code> + oracle - <a href="https://github.com/GreyforgeLabs/sley/blob/main/docs/spec/SCB1.md" rel="external noopener noreferrer">SCB1.md</a></li>
-          <li>Mutation descriptors & candidates: <code>sley-mutate</code> + <a href="https://github.com/GreyforgeLabs/sley/blob/main/docs/spec/SCB1.md" rel="external noopener noreferrer">S20-340/350/345</a> conformance corpora</li>
+          <li>State & storage: <code>sley-store</code>, <code>sley-state-root</code>, <code>sley-repo</code></li>
+          <li>Representation: <code>sley-scb1</code> + oracle - SCB1 spec</li>
+          <li>Mutation descriptors & candidates: <code>sley-mutate</code> + S20-340/350/345 conformance corpora</li>
           <li>Validation: <code>sley-check</code> + <code>sley-policy</code> - S20-360 fourteen-phase validator</li>
           <li>Transactions & receipts: <code>sley-txn</code> - S20-390 independent oracle & five-boundary fault matrix</li>
           <li>Branches: <code>sley-repo/refs.rs</code> - S20-500 native branch refs</li>
@@ -137,8 +137,7 @@ export default function TutorialPage() {
       <article className="card">
         <h2>Next</h2>
         <p>
-          Read the <a href="/docs">Sley 2 Technical Brief</a> for representation, identity, checks, execution, authority, and the exact completion boundary - or consult{" "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/main/docs/WORK_PACKAGES.md" rel="external noopener noreferrer">docs/WORK_PACKAGES.md</a> for every work package.
+          Read the <a href="/docs">Sley 2 Technical Brief</a> for representation, identity, checks, execution, authority, and the exact completion boundary - which summarises every work package.
         </p>
         <p>
           For the frozen human-readable lineage, see <a href="/legacy">Sley 1.x Legacy</a>.

@@ -2,7 +2,7 @@ Sley
 ====
 
 Canonical site: https://sleylang.org/
-Active source:  https://github.com/GreyforgeLabs/sley
+Active source:  private Greyforge Labs repository
 Legacy source:  https://github.com/GreyforgeLabs/sley-legacy
 Organization:   Greyforge Labs — https://greyforge.tech/about
 Status date:    2026-08-30
@@ -22,7 +22,7 @@ and acceptance.
 
 Current source/workspace version: 2.0.0-alpha.0 — a workspace pre-release
 version, not a GitHub release, tag, package, GA, or production claim.
-License declaration: LicenseRef-Proprietary — public source-visible, not
+License declaration: LicenseRef-Proprietary — private source, not
 an open-source license under Apache-2.0. No Sley 2 release/tag/package is
 authorized by this site.
 
@@ -68,7 +68,7 @@ Public Surfaces
 ---------------
 
 Sley home (canonical):       https://sleylang.org/
-Active Sley 2.x:             https://github.com/GreyforgeLabs/sley
+Active Sley 2.x:             private repository; public record https://sleylang.org/docs
 Legacy Sley 1.x:             https://github.com/GreyforgeLabs/sley-legacy
 Technical brief:             https://sleylang.org/docs
 Architecture walkthrough:    https://sleylang.org/tutorial

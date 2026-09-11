@@ -171,8 +171,7 @@ export default function DocsPage() {
           </div>
         </div>
         <p style={{ marginTop: "1rem" }}>
-          For exact package detail, see <a href="https://github.com/GreyforgeLabs/sley/blob/main/docs/WORK_PACKAGES.md" rel="external noopener noreferrer">docs/WORK_PACKAGES.md</a> and{" "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/main/ARCHITECTURE.md" rel="external noopener noreferrer">ARCHITECTURE.md</a>. Do not trust prose that disagrees with landed crate code.
+          The exact work-package DAG and crate architecture are maintained in the private repository; this brief is the public summary and is dated. Do not trust prose that disagrees with landed crate code.
         </p>
         <p>
           <strong>Status:</strong> M0 complete · M1 core complete · M2 actively advancing · later release/GA work incomplete. <em>Active pre-release engineering</em> - substantial running implementation, not a research idea; not a released production language.
@@ -182,7 +181,7 @@ export default function DocsPage() {
       <article className="card">
         <h2>Related surfaces</h2>
         <ul className="qa-list">
-          <li><a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">Active Sley 2.x repository</a> - public source (LicenseRef-Proprietary)</li>
+          <li>Active Sley 2.x - private repository (LicenseRef-Proprietary); this site is the public record</li>
           <li><a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">Sley 1.x Legacy</a> - Apache-2.0 frozen line, <a href="/legacy">legacy page</a></li>
           <li><a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Architectural transition Chronicle</a></li>
           <li><a href="https://greyforge.tech/research/sley-machine-native-break-source-note-2026-08-27.md" rel="external noopener noreferrer">Transition source note</a></li>

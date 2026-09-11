@@ -53,7 +53,7 @@ export function SleyShell({
           <ScopeLink scope={rootScope} to="/legacy" className="nav-link">
             Legacy
           </ScopeLink>
-          <ScopeLink scope="" to="https://github.com/GreyforgeLabs/sley" className="nav-link">
+          <ScopeLink scope="" to="https://github.com/GreyforgeLabs" className="nav-link">
             GitHub
           </ScopeLink>
           <ScopeLink scope="" to="https://greyforge.tech" className="nav-link">
@@ -98,7 +98,7 @@ export function SleyShell({
         <p>
           <a href="https://greyforge.tech" rel="external noopener noreferrer">greyforge.tech</a> ·
           <a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Transition Chronicle</a> ·
-          <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">Active Sley</a> ·
+          <a href="/docs">Active Sley</a> ·
           <a href="/legacy">Legacy</a> ·
           <a href="/llms.txt">llms.txt</a>
         </p>

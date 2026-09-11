@@ -55,13 +55,13 @@ const boundaries = [
   "19 root-backed query classes, truncation/continuation, master ContextCapsule, SMP1 protocol framing, and JSON bridge are deferred (SMP1 is designated, not claimed implemented)",
   "Complete semantic-operation analysis, production fingerprint hardening, and full S20-530 crash-matrix implementation remain gaps",
   "Merge, force-reset, symbolic refs, tags, branch deletion, and clone-equivalent pack exchange are not supported",
-  "Public surface is inspectable pre-release, not an installed language release - no GA, tag, package, or production claim",
+  "Sley 2 is a privately developed pre-release, not an installed language release - no GA, tag, package, or production claim",
 ];
 
 export const metadata = {
   title: "Sley 2 - Machine-native programming",
   description:
-    "Sley 2 is Greyforge Labs' active machine-native programming system. Machines mutate typed verified program state; humans govern through projections, policy, and evidence. 2.0.0-alpha.0 source-visible pre-release (LicenseRef-Proprietary), intentionally incompatible with the Apache-2.0 Sley 1.x Legacy lineage.",
+    "Sley 2 is Greyforge Labs' active machine-native programming system. Machines mutate typed verified program state; humans govern through projections, policy, and evidence. 2.0.0-alpha.0 private pre-release (LicenseRef-Proprietary), intentionally incompatible with the Apache-2.0 Sley 1.x Legacy lineage.",
   alternates: {
     canonical: "/",
   },
@@ -97,20 +97,16 @@ export default function HomePage() {
         <p className="card-kicker">Active lineage · pre-release engineering</p>
         <h2>Sley 2 - the canonical Sley</h2>
         <p>
-          The canonical site is <strong>sleylang.org</strong> and the canonical active repository is{" "}
-          <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">
-            GreyforgeLabs/sley
-          </a>
-          . Current workspace/source version: <code>2.0.0-alpha.0</code> - a workspace pre-release, not a released product, GitHub release, package, or GA.
-          Public source visibility is <code>LicenseRef-Proprietary</code>, not an open-source license.
+          The canonical site is <strong>sleylang.org</strong>. Sley 2 is developed in a private Greyforge Labs repository; this site is its public record. Current workspace/source version: <code>2.0.0-alpha.0</code> - a workspace pre-release, not a released product, GitHub release, package, or GA.
+          The license declaration is <code>LicenseRef-Proprietary</code>; the source is private and not open source.
         </p>
         <p>
           <strong>Machine Native. Human Governed.</strong> The canonical raw program representation is intentionally not required to be comfortable human source. Humans govern
           through projections, inspection, policy roots, capability tokens, objectives, constraints, receipts, and acceptance - not by authoring canonical bytes.
         </p>
         <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", marginTop: "0.9rem" }}>
-          <a className="button-primary" href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">
-            Inspect active Sley 2.x
+          <a className="button-primary" href="/docs">
+            Read the Sley 2 brief
           </a>
           <a className="button-ghost" href="/docs">
             Read technical brief
@@ -124,7 +120,7 @@ export default function HomePage() {
         </div>
         <ul className="qa-list" style={{ marginTop: "1rem" }}>
           <li>
-            <strong>Active:</strong> <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">GreyforgeLabs/sley</a> - SSMC1 canonical form · SCB1 canonical encoding · SMP1 designated interface · 2.0.0-alpha.0 · LicenseRef-Proprietary
+            <strong>Active:</strong> Sley 2 (private repository, Greyforge Labs) - SSMC1 canonical form · SCB1 canonical encoding · SMP1 designated interface · 2.0.0-alpha.0 · LicenseRef-Proprietary
           </li>
           <li>
             <strong>Legacy:</strong> <a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">GreyforgeLabs/sley-legacy</a> - Sley 1.2.0 frozen · human-readable canonical source · self-hosted 1.x compiler · Apache-2.0
@@ -140,8 +136,7 @@ export default function HomePage() {
         <p className="card-kicker">Current phase</p>
         <h2>Active pre-release engineering - not research, not GA</h2>
         <p>
-          M0 is complete. M1 core (SCB1, identifiers, independent oracle, epochs, immutable store, deterministic roots, root/object packs) is complete. M2 is advancing - deterministic type, CFG, effects, restricted contracts, fingerprints, lowering, VM, adapters, and policy now have bounded implementations for the supported subset. Full-GA semantics, complete operation analysis, and release hardening remain incomplete. See{" "}
-          <a href="https://github.com/GreyforgeLabs/sley/blob/main/docs/WORK_PACKAGES.md" rel="external noopener noreferrer">docs/WORK_PACKAGES.md</a> for the exact DAG.
+          M0 is complete. M1 core (SCB1, identifiers, independent oracle, epochs, immutable store, deterministic roots, root/object packs) is complete. M2 is advancing - deterministic type, CFG, effects, restricted contracts, fingerprints, lowering, VM, adapters, and policy now have bounded implementations for the supported subset. Full-GA semantics, complete operation analysis, and release hardening remain incomplete. The exact work-package DAG is maintained in the private repository; the <a href="/docs">technical brief</a> tracks its milestone state.
         </p>
       </article>
 
@@ -165,7 +160,7 @@ export default function HomePage() {
           <li><strong>Retain receipts & evidence</strong> - canonical receipts, observation digests, query responses, and evidence capsules for acceptance.</li>
         </ol>
         <p style={{ marginTop: "0.8rem", color: "var(--muted)", fontSize: "0.9rem" }}>
-          The current public surface is an inspectable pre-release implementation, not an installed language release. No stable end-user CLI/API is claimed beyond thin machine wrappers that delegate all judgment to the kernel.
+          Sley 2 is a privately developed pre-release implementation, not an installed language release. No stable end-user CLI/API is claimed beyond thin machine wrappers that delegate all judgment to the kernel.
         </p>
       </article>
 
@@ -194,8 +189,7 @@ export default function HomePage() {
           ))}
         </ul>
         <p>
-          Full-GA blockers remain: six unmodeled entity bodies, unsupported opcode families, trunk truncated query coverage, master capsule, live provider/shell/network authority, and complete S20-530 recovery implementation. See the{" "}
-          <a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">repository</a> for exact status.
+          Full-GA blockers remain: six unmodeled entity bodies, unsupported opcode families, trunk truncated query coverage, master capsule, live provider/shell/network authority, and complete S20-530 recovery implementation. This page and the <a href="/docs">technical brief</a> track exact status.
         </p>
       </article>
 
@@ -220,8 +214,7 @@ export default function HomePage() {
           The root README still describes named branches as future work, but code evidence proves S20-500 native refs (CAS, ancestry) are landed. Prefer crate code, tests, and <code>docs/WORK_PACKAGES.md</code> over prose when they disagree. Other known divergences: SMP1 is architecturally designated but not claimed implemented.
         </p>
         <p>
-          <a href="https://github.com/GreyforgeLabs/sley/blob/main/docs/WORK_PACKAGES.md" rel="external noopener noreferrer">Work-package DAG</a> ·
-          <a href="https://github.com/GreyforgeLabs/sley/blob/main/ARCHITECTURE.md" rel="external noopener noreferrer">Architecture</a> ·
+          <a href="/docs">Technical brief</a> ·
           <a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Transition Chronicle</a>
         </p>
       </article>

@@ -4,7 +4,8 @@ Modern React/Next.js source for the Sley 1.x Legacy public brief. Repository ver
 `1.0.1`.
 
 Active Sley development is the intentionally incompatible machine-native 2.x
-lineage at <https://github.com/GreyforgeLabs/sley>. The completed Sley 1.x
+lineage, developed in a private Greyforge Labs repository; this site is its
+public record. The completed Sley 1.x
 language and evidence live at <https://github.com/GreyforgeLabs/sley-legacy>.
 
 This repo hosts a production-safe Sley marketing surface for external discovery.

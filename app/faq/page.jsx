@@ -3,7 +3,7 @@ import { SleyShell } from "../components/SleyShell";
 const faq = [
   {
     q: "What is Sley?",
-    a: "Sley is Greyforge Labs' programming-system lineage. The canonical domain is sleylang.org. Active Sley is the machine-native Sley 2.x lineage at GreyforgeLabs/sley; the frozen human-readable Sley 1.x lineage lives at GreyforgeLabs/sley-legacy and is preserved under /legacy.",
+    a: "Sley is Greyforge Labs' programming-system lineage. The canonical domain is sleylang.org. Active Sley is the machine-native Sley 2.x lineage, developed privately by Greyforge Labs with sleylang.org as its public record; the frozen human-readable Sley 1.x lineage lives at GreyforgeLabs/sley-legacy and is preserved under /legacy.",
   },
   {
     q: "What is Sley 2?",
@@ -51,7 +51,7 @@ const faq = [
   },
   {
     q: "Is Sley 2 open source?",
-    a: "No. The Sley 2 source repository at GreyforgeLabs/sley is public and inspectable, but the current workspace declares LicenseRef-Proprietary. Public source visibility is not the same as an open-source license. Sley 1.x Legacy remains the Apache-2.0 lineage.",
+    a: "No. Sley 2 is developed in a private Greyforge Labs repository under LicenseRef-Proprietary; there is no public source and no open-source license. Sley 1.x Legacy remains the Apache-2.0 lineage.",
   },
   {
     q: "Is Sley 1.x still available?",
@@ -96,7 +96,7 @@ export default function FaqPage() {
       scope=""
       kicker="Sley 2 FAQ"
       title="Sley 2 FAQ"
-      subtitle="What Sley 2 is, how machines change it, how humans govern it, and where the pre-release boundary lies - in sync with public source at GreyforgeLabs/sley."
+      subtitle="What Sley 2 is, how machines change it, how humans govern it, and where the pre-release boundary lies."
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sleyFaqJsonLd) }} />
       {faq.map((item) => (
@@ -111,7 +111,7 @@ export default function FaqPage() {
         <ul className="qa-list">
           <li><a href="/docs">Sley 2 Technical Brief</a> - representation, checks, execution, authority, branches, completion boundary</li>
           <li><a href="/tutorial">Architecture Walkthrough</a> - State → Proposal → Validation → Transaction → Verified State</li>
-          <li><a href="https://github.com/GreyforgeLabs/sley" rel="external noopener noreferrer">Active Sley 2.x repository</a> - public source, LicenseRef-Proprietary, 2.0.0-alpha.0</li>
+          <li>Active Sley 2.x - private repository, LicenseRef-Proprietary, 2.0.0-alpha.0</li>
           <li><a href="/legacy">Sley 1.x Legacy</a> - frozen Apache-2.0 1.2.0, intentionally incompatible</li>
           <li><a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Transition Chronicle</a> - why the break</li>
           <li><a href="/llms.txt">llms.txt</a> - machine discovery</li>
