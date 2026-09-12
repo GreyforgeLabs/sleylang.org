@@ -7,7 +7,7 @@ const faq = [
   },
   {
     q: "What is Sley 2?",
-    a: "Sley 2 is the active machine-native lineage in which programs are created, stored, changed, executed, tested, versioned, and exchanged as typed semantic state. Its canonical form is SSMC1, its canonical encoding is SCB1, and its designated machine-interface lineage is SMP1. Machines mutate verified state; humans govern through projections, inspection, policy, evidence, objectives, and acceptance.",
+    a: "Sley 2 is the active machine-native lineage for AI agents in which programs are created, stored, changed, executed, tested, versioned, and exchanged as typed semantic state. Its canonical form is SSMC1, its canonical encoding is SCB1, and its designated machine-interface lineage is SMP1. AI agents mutate verified state through projections, inspection, policy, evidence, objectives, and acceptance.",
   },
   {
     q: "Is Sley 2 a programming language or a programming system?",
@@ -15,11 +15,11 @@ const faq = [
   },
   {
     q: "Why doesn't Sley 2 use canonical source text?",
-    a: "Human readability is no longer a mandatory design constraint for the canonical raw representation. This gives freedom to optimize for machine determinism, validated mutation, and governance. People govern via readable projections, diagnostics, receipts, and evidence - not by authoring canonical bytes.",
+    a: "Human readability is no longer a mandatory design constraint for the canonical raw representation. This gives freedom to optimize for machine determinism and validated mutation. Agents work via readable projections, diagnostics, receipts, and evidence - not by authoring canonical bytes.",
   },
   {
-    q: "Can humans still inspect Sley programs?",
-    a: "Yes. Readable projections, inspectors, visualizers, typed queries, diagnostics, receipts, observation digests, and evidence capsules are explicit derived surfaces. The canonical bytes are not required to be comfortable human source.",
+    q: "How do agents inspect Sley programs?",
+    a: "Yes. Readable projections, inspectors, visualizers, typed queries, diagnostics, receipts, observation digests, and evidence capsules are explicit derived surfaces for agents. The canonical bytes are not required to be comfortable human source.",
   },
   {
     q: "What are SSMC1 and SCB1?",
@@ -96,7 +96,7 @@ export default function FaqPage() {
       scope=""
       kicker="Sley 2 FAQ"
       title="Sley 2 FAQ"
-      subtitle="What Sley 2 is, how machines change it, how humans govern it, and where the pre-release boundary lies."
+      subtitle="What Sley 2 is, how AI agents change it, and where the pre-release boundary lies."
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sleyFaqJsonLd) }} />
       {faq.map((item) => (

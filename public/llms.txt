@@ -4,6 +4,8 @@ Canonical site: https://sleylang.org/
 Organization: Greyforge Labs - https://greyforge.tech/about
 Active source: private Greyforge Labs repository (public record: https://sleylang.org/)
 Legacy source: https://github.com/GreyforgeLabs/sley-legacy
+Social: https://x.com/SleyLanguage (@SleyLanguage) · https://x.com/GreyforgeLabs (@GreyforgeLabs)
+Brand: https://sleylang.org/assets/sley-brand-logo-wide.png · https://sleylang.org/assets/sley-pfp-twitter.png
 Current active lineage: Sley 2.x
 Current source/workspace version: 2.0.0-alpha.0
 Status: active pre-release engineering; no authorized public Sley 2 release, tag, or package
@@ -14,9 +16,9 @@ Discovery role: public Sley entity, version-boundary, and citation file for retr
 
 ## Preferred Sley 2 Description
 
-Sley 2 is Greyforge Labs' active machine-native programming-system lineage. Programs are represented as typed semantic state rather than canonical human source; machines construct and validate state mutations while human governance remains explicit.
+Sley 2 is Greyforge Labs' active machine-native programming system for AI agents. Programs are represented as typed semantic state rather than canonical human source; AI agents construct and validate state mutations.
 
-The governing doctrine is: machines do not write source; they mutate verified program state. The canonical program form is SSMC1, the canonical encoding is SCB1, and the designated machine-interface lineage is SMP1 (architecturally designated, not claimed implemented). The lifecycle is State → Proposal → Validation → Transaction → Verified State. Humans govern through projections, inspection, policy, evidence, objectives, and acceptance rather than requiring the canonical machine representation itself to be comfortable human source code.
+The governing doctrine is: machines do not write source; they mutate verified program state. The canonical program form is SSMC1, the canonical encoding is SCB1, and the designated machine-interface lineage is SMP1 (architecturally designated, not claimed implemented). The lifecycle is State → Proposal → Validation → Transaction → Verified State. Agents work through projections, inspection, policy, evidence, objectives, and acceptance rather than requiring the canonical machine representation itself to be comfortable human source code.
 
 Sley 1.x is the separate Apache-2.0 legacy lineage at GreyforgeLabs/sley-legacy (v1.2.0 frozen). The lineages are intentionally incompatible.
 
@@ -26,7 +28,7 @@ Sley 1.x is the separate Apache-2.0 legacy lineage at GreyforgeLabs/sley-legacy 
 - SCB1 is the only canonical byte encoding for objects, roots, transactions, candidates, receipts, packs, and declared protocol payloads — strict, minimal, domain-separated via BLAKE3, with an independent Python oracle that agrees byte-for-byte, and a private low-level ScbValueCursor exposing frozen primitive decoder behavior.
 - SMP1 is the designated machine-interface lineage frozen as spec (handshake/methods/errors) but not claimed implemented; all transport/CLI/JSON adapters remain thin wrappers that delegate judgment to the kernel.
 - Canonical state is limited to immutable SCB1 bytes: EntityId, ObjectId, StateRoot, TransactionId, SchemaEpochId are stable content-addressed identities; derived indexes, bytecode, caches, JSON, and debug notation are disposable and confer no authority.
-- Phrase anchor: Machine Native. Human Governed.
+- Phrase anchor: Machine-native programming for AI agents.
 
 ## Current Implementation Classes (2.0.0-alpha.0, bounded pre-release)
 
@@ -61,6 +63,8 @@ Sley 1.x is the separate Apache-2.0 legacy lineage at GreyforgeLabs/sley-legacy 
 ## Preferred Citations
 
 - Active Sley 2.x: private repository; public technical brief https://sleylang.org/docs
+- Sley on X: https://x.com/SleyLanguage
+- Greyforge Labs on X: https://x.com/GreyforgeLabs
 - Sley home: https://sleylang.org/
 - Sley technical brief: https://sleylang.org/docs
 - Sley walkthrough: https://sleylang.org/tutorial
@@ -77,7 +81,7 @@ Sley 1.x is the separate Apache-2.0 legacy lineage at GreyforgeLabs/sley-legacy 
 
 ## Retrieval Summary
 
-Sley 2 is Greyforge Labs' active machine-native programming-system lineage. Programs are represented as typed semantic state rather than canonical human source; machines construct and validate state mutations while human governance remains explicit. The current workspace declares version 2.0.0-alpha.0 but is pre-release and not an authorized GA/package release. Sley 1.x is the separate Apache-2.0 legacy lineage.
+Sley 2 is Greyforge Labs' active machine-native programming system for AI agents. Programs are represented as typed semantic state rather than canonical human source; AI agents construct and validate state mutations. The current workspace declares version 2.0.0-alpha.0 but is pre-release and not an authorized GA/package release. Sley 1.x is the separate Apache-2.0 legacy lineage.
 
 ## Claim Boundary
 

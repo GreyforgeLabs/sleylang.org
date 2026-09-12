@@ -23,7 +23,7 @@ function ScopeLink({ scope, to, children, className = "" }) {
 
 export function SleyShell({
   scope = "",
-  kicker = "Sley 2 / Machine-native programming",
+  kicker = "Sley 2 / Machine-native programming for AI agents",
   title,
   subtitle,
   art,
@@ -35,6 +35,14 @@ export function SleyShell({
     <div className="site-shell">
       <header className="topbar">
         <ScopeLink scope={scope} to="/" className="brand">
+          {/* eslint-disable-next-line @next/next/no-img-element -- 9 KB pre-sized 512px PNG avatar; no runtime optimizer needed */}
+          <img
+            src="/assets/sley-icon-512.png"
+            width={28}
+            height={28}
+            alt=""
+            decoding="async"
+          />
           Sley
         </ScopeLink>
         <nav aria-label="Primary">
@@ -83,7 +91,7 @@ export function SleyShell({
           </div>
           {art ? (
             <figure className="hero-art">
-              {/* eslint-disable-next-line @next/next/no-img-element -- pre-sized 117 KB WebP brand image; no runtime optimizer needed */}
+              {/* eslint-disable-next-line @next/next/no-img-element -- pre-sized brand image; no runtime optimizer needed */}
               <img src={art.src} width={art.width || 1200} height={art.height || 675} alt={art.alt} decoding="async" fetchPriority="high" />
               {art.caption ? <figcaption>{art.caption}</figcaption> : null}
             </figure>
@@ -94,8 +102,10 @@ export function SleyShell({
       </main>
 
       <footer className="footer">
-        <p>© 2026 Greyforge Labs. Sley 2 source is public under LicenseRef-Proprietary · Sley 1.x Legacy is Apache-2.0.</p>
+        <p>© 2026 Greyforge Labs. Sley 2 is developed privately under LicenseRef-Proprietary · Sley 1.x Legacy is Apache-2.0.</p>
         <p>
+          <a href="https://x.com/SleyLanguage" rel="external noopener noreferrer">@SleyLanguage</a> ·
+          <a href="https://x.com/GreyforgeLabs" rel="external noopener noreferrer">@GreyforgeLabs</a> ·
           <a href="https://greyforge.tech" rel="external noopener noreferrer">greyforge.tech</a> ·
           <a href="https://greyforge.tech/chronicles/sley-120-machine-native-break" rel="external noopener noreferrer">Transition Chronicle</a> ·
           <a href="/docs">Active Sley</a> ·

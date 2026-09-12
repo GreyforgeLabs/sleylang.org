@@ -15,18 +15,19 @@ export default function ReadmePage() {
       scope=""
       kicker="Sley README"
       title="Sley citation index"
-      subtitle="Canonical links for Sley 2 (active, machine-native, private pre-release) and Sley 1.x Legacy (frozen, Apache-2.0) - plus the walkthrough, technical brief, and evidence you can cite."
+      subtitle="Canonical links for Sley 2 (active, machine-native for AI agents, private pre-release) and Sley 1.x Legacy (frozen, Apache-2.0) - plus the walkthrough, technical brief, and evidence you can cite."
     >
       <article className="card" style={{ gridColumn: "1 / -1" }}>
         <p className="card-kicker">Canonical identity</p>
         <h2>Sley 2 is the canonical active Sley</h2>
         <p>
-          <strong>Sley</strong> at sleylang.org is the machine-native programming system from Greyforge Labs.
+          <strong>Sley</strong> at sleylang.org is the machine-native programming system for AI agents from Greyforge Labs.
           The active lineage is Sley 2, developed in a private Greyforge Labs repository - 2.0.0-alpha.0, LicenseRef-Proprietary, intentionally incompatible with the frozen{" "}
           <a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">GreyforgeLabs/sley-legacy</a> line (Sley 1.2.0, Apache-2.0).
         </p>
         <ul className="qa-list">
           <li><strong>Active:</strong> Sley 2 - private repository; public record at <a href="/docs">sleylang.org/docs</a> - SSMC1 · SCB1 · SMP1(designated) · proposal → validation → transaction</li>
+          <li><strong>Social:</strong> <a href="https://x.com/SleyLanguage" rel="external noopener noreferrer">@SleyLanguage</a> - Sley updates · <a href="https://x.com/GreyforgeLabs" rel="external noopener noreferrer">@GreyforgeLabs</a> - lab updates</li>
           <li><strong>Legacy:</strong> <a href="https://github.com/GreyforgeLabs/sley-legacy" rel="external noopener noreferrer">github.com/GreyforgeLabs/sley-legacy</a> - human-readable canonical source, self-hosted 1.x compiler, <a href="/legacy">legacy page</a></li>
           <li><strong>Machine facts:</strong> <a href="/llms.txt">sleylang.org/llms.txt</a> · <a href="/README.txt">README.txt</a></li>
           <li><strong>Docs:</strong> <a href="/docs">Sley 2 Technical Brief</a> · <a href="/tutorial">Architecture Walkthrough</a> · <a href="/faq">FAQ</a></li>

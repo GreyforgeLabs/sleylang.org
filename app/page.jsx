@@ -30,8 +30,8 @@ const architectureCards = [
     body: "Restricted O0 lowering and VM for the validated Boolean/terminator subset executes with exact fuel, value, and observation digests. Other opcodes remain fail-closed.",
   },
   {
-    title: "Human governance & evidence",
-    body: "Readable projections, diagnostics, QueryId-typed queries, evidence capsules, receipts, and deterministic error behavior - machines mutate, people govern.",
+    title: "Human inspection & evidence",
+    body: "Readable projections, diagnostics, QueryId-typed queries, evidence capsules, receipts, and deterministic error behavior - machines mutate verified state with deterministic evidence.",
   },
 ];
 
@@ -59,15 +59,16 @@ const boundaries = [
 ];
 
 export const metadata = {
-  title: "Sley 2 - Machine-native programming",
+  title: "Sley 2 - Machine-native programming for AI agents",
   description:
-    "Sley 2 is Greyforge Labs' active machine-native programming system. Machines mutate typed verified program state; humans govern through projections, policy, and evidence. 2.0.0-alpha.0 private pre-release (LicenseRef-Proprietary), intentionally incompatible with the Apache-2.0 Sley 1.x Legacy lineage.",
+    "Sley 2 is Greyforge Labs' active machine-native programming system for AI agents. Machines mutate typed verified program state through proposal → validation → transaction. 2.0.0-alpha.0 private pre-release (LicenseRef-Proprietary), intentionally incompatible with the Apache-2.0 Sley 1.x Legacy lineage.",
   alternates: {
     canonical: "/",
   },
   keywords: [
     "Sley",
     "Sley 2",
+    "machine-native programming for AI agents",
     "machine-native programming",
     "machine-native programming system",
     "typed semantic program state",
@@ -84,14 +85,16 @@ export default function HomePage() {
   return (
     <SleyShell
       scope=""
-      kicker="Sley 2 / Machine-native programming"
+      kicker="Sley 2 / Machine-native programming for AI agents"
       art={{
-        src: "/assets/sley-2-loom-graph-post.webp",
-        alt: "Sley 2.0 Loom Graph: a machined steel loom weaving a structural graph into etched lines",
-        caption: "The Sley 2.0 Loom Graph. Brand artwork, not compiler output.",
+        src: "/assets/sley-brand-logo-wide-1200.png",
+        width: 1200,
+        height: 400,
+        alt: "Sley — Machine-native programming for AI agents",
+        caption: "Sley brand mark — Machine-native programming for AI agents.",
       }}
-      title="Programming state for machines. Governance for people."
-      subtitle="Machines do not write source. They mutate verified program state. Sley 2 is Greyforge Labs' active, intentionally incompatible machine-native lineage - typed semantic state with proposal → validation → transaction and explicit human governance."
+      title="Machine-native programming for AI agents."
+      subtitle="Machines do not write source. They mutate verified program state. Sley 2 is Greyforge Labs' active, intentionally incompatible machine-native lineage for AI agents - typed semantic state with proposal → validation → transaction."
     >
       <article className="card" style={{ gridColumn: "1 / -1", borderColor: "rgba(34,211,238,0.28)" }}>
         <p className="card-kicker">Active lineage · pre-release engineering</p>
@@ -101,7 +104,7 @@ export default function HomePage() {
           The license declaration is <code>LicenseRef-Proprietary</code>; the source is private and not open source.
         </p>
         <p>
-          <strong>Machine Native. Human Governed.</strong> The canonical raw program representation is intentionally not required to be comfortable human source. Humans govern
+          <strong>Machine-native for AI agents.</strong> The canonical raw program representation is intentionally not required to be comfortable human source. Agents work
           through projections, inspection, policy roots, capability tokens, objectives, constraints, receipts, and acceptance - not by authoring canonical bytes.
         </p>
         <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", marginTop: "0.9rem" }}>
@@ -138,6 +141,20 @@ export default function HomePage() {
         <p>
           M0 is complete. M1 core (SCB1, identifiers, independent oracle, epochs, immutable store, deterministic roots, root/object packs) is complete. M2 is advancing - deterministic type, CFG, effects, restricted contracts, fingerprints, lowering, VM, adapters, and policy now have bounded implementations for the supported subset. Full-GA semantics, complete operation analysis, and release hardening remain incomplete. The exact work-package DAG is maintained in the private repository; the <a href="/docs">technical brief</a> tracks its milestone state.
         </p>
+      </article>
+
+      <article className="card" style={{ gridColumn: "1 / -1" }}>
+        <p className="card-kicker">Follow Sley</p>
+        <h2>Updates from the machine-native lineage</h2>
+        <div className="follow-card">
+          {/* eslint-disable-next-line @next/next/no-img-element -- 56px pre-sized PNG avatar; no runtime optimizer needed */}
+          <img src="/assets/sley-icon-512.png" width={56} height={56} alt="Sley profile avatar" decoding="async" />
+          <p style={{ margin: 0 }}>
+            <a href="https://x.com/SleyLanguage" rel="external noopener noreferrer">@SleyLanguage</a> - Sley updates ·{" "}
+            <a href="https://x.com/GreyforgeLabs" rel="external noopener noreferrer">@GreyforgeLabs</a> - lab updates ·{" "}
+            <a href="/docs">Sley 2 technical brief</a> - public record
+          </p>
+        </div>
       </article>
 
       {architectureCards.map((card) => (

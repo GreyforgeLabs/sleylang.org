@@ -38,7 +38,7 @@ export default function LegacyPage() {
       scope=""
       kicker="Sley 1.x Legacy / Apache-2.0"
       title="Sley 1.x Legacy"
-      subtitle="The completed human-readable line - frozen, self-hosted, and preserved. Sley 1.2.0 is the final 1.x release-candidate boundary. Active development now lives in the intentionally incompatible machine-native Sley 2.x lineage."
+      subtitle="The completed human-readable line - frozen, self-hosted, and preserved. Sley 1.2.0 is the final 1.x release-candidate boundary. Active development now lives in the intentionally incompatible machine-native Sley 2.x lineage for AI agents."
     >
       <script
         type="application/ld+json"
@@ -114,7 +114,7 @@ export default function LegacyPage() {
       <article className="card">
         <h2>When to use active Sley 2</h2>
         <ul className="qa-list">
-          <li>New work that needs machine-native typed state, deterministic roots, and proposal-validated transactions</li>
+          <li>New work that needs machine-native typed state for AI agents, deterministic roots, and proposal-validated transactions</li>
           <li>Lanes requiring explicit policy/capability and native branch ancestry over verified receipts</li>
           <li>Active pre-release engineering - developed privately, documented in the <a href="/docs">technical brief</a>; no GA or package is claimed</li>
         </ul>

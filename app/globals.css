@@ -113,12 +113,39 @@ body::before {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   color: #fff;
   font-size: 1.22rem;
   font-weight: 900;
   letter-spacing: 0.02em;
   text-decoration: none;
   text-shadow: 0 0 22px rgba(34, 211, 238, 0.25);
+}
+
+.brand img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  object-fit: cover;
+}
+
+.follow-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.follow-card img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  object-fit: cover;
+  flex: none;
 }
 
 nav {

@@ -11,12 +11,12 @@ Sley 2 — Active Machine-Native Lineage
 ---------------------------------------
 
 Sley 2 is Greyforge Labs' active, intentionally incompatible machine-native
-programming-system lineage. Programs are created, stored, changed, executed,
+programming system for AI agents. Programs are created, stored, changed, executed,
 tested, versioned, and exchanged as typed semantic state. Its canonical
 program form is SSMC1, its canonical encoding is SCB1, and its designated
 machine-interface lineage is SMP1. Machines do not write source; they mutate
 verified program state through State → Proposal → Validation → Transaction
-→ Verified State. Human governance remains explicit via projections,
+→ Verified State. Agents work through projections,
 inspection, policy roots, capability tokens, objectives, constraints, receipts,
 and acceptance.
 
@@ -70,6 +70,8 @@ Public Surfaces
 Sley home (canonical):       https://sleylang.org/
 Active Sley 2.x:             private repository; public record https://sleylang.org/docs
 Legacy Sley 1.x:             https://github.com/GreyforgeLabs/sley-legacy
+Sley on X:                   https://x.com/SleyLanguage (@SleyLanguage)
+Greyforge Labs on X:         https://x.com/GreyforgeLabs (@GreyforgeLabs)
 Technical brief:             https://sleylang.org/docs
 Architecture walkthrough:    https://sleylang.org/tutorial
 FAQ:                         https://sleylang.org/faq

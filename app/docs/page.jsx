@@ -3,7 +3,7 @@ import { SleyShell } from "../components/SleyShell";
 const briefJsonLd = {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  headline: "Sley 2 Technical Brief - Machine-native programming system",
+  headline: "Sley 2 Technical Brief - Machine-native programming for AI agents",
   description:
     "Typed machine-native program state: SSMC1 canonical form, SCB1 encoding, SMP1 designated interface; immutable objects, deterministic roots, proposal-validated transactions, restricted execution, explicit policy/capability, and native branch ancestry. Bounded pre-release 2.0.0-alpha.0 implementation status.",
   author: { "@type": "Organization", name: "Greyforge Labs", url: "https://greyforge.tech" },
@@ -27,7 +27,7 @@ export default function DocsPage() {
       scope=""
       kicker="Sley 2 Technical Brief"
       title="Sley 2 Technical Brief"
-      subtitle="Typed machine-native program state for machines, with human governance, deterministic identity, and proposal-validated transactions. Active pre-release 2.0.0-alpha.0 - no GA, no tag, no package is claimed."
+      subtitle="Typed machine-native program state for AI agents, with deterministic identity and proposal-validated transactions. Active pre-release 2.0.0-alpha.0 - no GA, no tag, no package is claimed."
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(briefJsonLd) }} />
 
@@ -36,11 +36,11 @@ export default function DocsPage() {
         <h2>Typed machine-native program state - not canonical human source</h2>
         <p>
           Sley 2 programs are created, stored, changed, executed, tested, versioned, and exchanged as <strong>typed semantic state</strong>. The canonical program form is <strong>SSMC1</strong>, the
-          canonical encoding is <strong>SCB1</strong>, and the designated machine-interface lineage is <strong>SMP1</strong> (architecturally frozen, not claimed implemented). Machines construct and validate state mutations; humans govern
+          canonical encoding is <strong>SCB1</strong>, and the designated machine-interface lineage is <strong>SMP1</strong> (architecturally frozen, not claimed implemented). AI agents construct and validate state mutations
           through projections, inspection, policy, evidence, objectives, and acceptance - without requiring the canonical machine representation itself to be comfortable human source code.
         </p>
         <p>
-          <strong>Thesis:</strong> Machines do not write source. They mutate verified program state. <em>Machine Native. Human Governed.</em>
+          <strong>Thesis:</strong> Machines do not write source. They mutate verified program state. <em>Machine-native for AI agents.</em>
         </p>
         <ul className="qa-list">
           <li>No human-readable canonical source, no source parser, no canonical text format, no conventional formatter, no conventional LSP, no Sley 1.x compatibility - intentionally.</li>
@@ -131,7 +131,7 @@ export default function DocsPage() {
       </article>
 
       <article className="card">
-        <h2>Human governance - projections, diagnostics, receipts, evidence</h2>
+        <h2>Agent inspection - projections, diagnostics, receipts, evidence</h2>
         <ul className="qa-list">
           <li><strong>Restricted queries:</strong> SLEYIDX1 snapshot + four typed queries over freshly derived snapshots, exact QueryId/response records, hard-fail on omission (S20-310). Nineteen root-backed classes remain blocked.</li>
           <li><strong>Evidence capsule:</strong> restricted complete-query capsule with raw-ID dictionaries and direct-edge tables, fixed no-omission/no-truncation/no-continuation (S20-320). Not the master ContextCapsule.</li>

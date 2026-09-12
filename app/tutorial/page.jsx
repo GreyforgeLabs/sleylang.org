@@ -32,8 +32,8 @@ export default function TutorialPage() {
     <SleyShell
       scope=""
       kicker="Sley 2 Architecture Walkthrough"
-      title="The machine-native lifecycle - step by step"
-      subtitle="How a verified state becomes a proposed change, then a validated transaction, then a new verified state. Restricted pre-release 2.0.0-alpha.0 - inspected, not installed."
+      title="Machine-native lifecycle for AI agents - step by step"
+      subtitle="How an AI agent turns a verified state into a proposed change, then a validated transaction, then a new verified state. Restricted pre-release 2.0.0-alpha.0 - inspected, not installed."
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(walkthroughJsonLd) }} />
 
@@ -52,7 +52,7 @@ export default function TutorialPage() {
       <article className="card" style={{ gridColumn: "1 / -1" }}>
         <p className="card-kicker">The governed lifecycle</p>
         <h2>State → Proposal → Validation → Transaction → Verified State</h2>
-        <p>Every Sley 2 change traverses this boundary - proposal before mutation, validation before commit, human governance before acceptance.</p>
+        <p>Every Sley 2 change traverses this boundary - proposal before mutation, validation before commit, evidence before acceptance.</p>
         <ol className="step-list">
           <li>
             <strong>Begin from a verified state root.</strong> Use an immutable deterministic <code>StateRoot</code> derived from SCB1 canonical bytes. Roots are ancestry-independent; bindings are order-independent; packing round-trips the exact root.
@@ -103,7 +103,7 @@ export default function TutorialPage() {
       </article>
 
       <article className="card" style={{ gridColumn: "1 / -1" }}>
-        <h2>Lifecycle diagram - machine acts, human governs</h2>
+          <h2>Lifecycle diagram - agent acts, evidence remains</h2>
         <div style={{ display: "grid", gap: "0.7rem" }}>
           <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap" }}>
             {[
@@ -129,7 +129,7 @@ export default function TutorialPage() {
             ))}
           </div>
           <p style={{ color: "var(--muted)", margin: 0 }}>
-            Bounded derived context and typed queries inform the proposal; policy roots and capability tokens gate validation; atomic commit + branch CAS publish the result; receipts and capsules provide the evidence people review.
+            Bounded derived context and typed queries inform the proposal; policy roots and capability tokens gate validation; atomic commit + branch CAS publish the result; receipts and capsules provide the evidence agents retain for acceptance.
           </p>
         </div>
       </article>

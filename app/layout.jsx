@@ -3,15 +3,15 @@ import "./globals.css";
 export const metadata = {
   metadataBase: new URL("https://sleylang.org"),
   title: {
-    default: "Sley 2 - Machine-native programming",
+    default: "Sley 2 - Machine-native programming for AI agents",
     template: "%s | Sley",
   },
   description:
-    "Sley 2 is Greyforge Labs' active machine-native programming system. Programs are typed semantic state (SSMC1/SCB1), mutated through proposal → validation → transaction. Source-visible pre-release 2.0.0-alpha.0. Sley 1.x is the separate Apache-2.0 legacy lineage.",
+    "Sley 2 is Greyforge Labs' active machine-native programming system for AI agents. Programs are typed semantic state (SSMC1/SCB1), mutated through proposal → validation → transaction. Private pre-release 2.0.0-alpha.0. Sley 1.x is the separate Apache-2.0 legacy lineage.",
   keywords: [
     "Sley",
     "Sley 2",
-    "machine-native programming",
+    "machine-native programming for AI agents",
     "machine-native programming language",
     "machine-native programming system",
     "typed semantic program state",
@@ -30,8 +30,8 @@ export const metadata = {
   publisher: "Greyforge Labs",
   category: "technology",
   icons: {
-    icon: "/assets/sley-loom-graph-profile.png",
-    apple: "/assets/sley-loom-graph-profile.png",
+    icon: "/assets/sley-icon-512.png",
+    apple: "/assets/sley-apple-touch-180.png",
   },
   robots: {
     index: true,
@@ -45,17 +45,17 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Sley 2 - Machine-native programming",
+    title: "Sley 2 - Machine-native programming for AI agents",
     description:
-      "Machines do not write source. They mutate verified program state. Sley 2 is the active machine-native programming system from Greyforge Labs (2.0.0-alpha.0 private pre-release).",
+      "Machines do not write source. They mutate verified program state. Sley 2 is the active machine-native programming system for AI agents from Greyforge Labs (2.0.0-alpha.0 private pre-release).",
     url: "https://sleylang.org/",
     siteName: "Sley",
     images: [
       {
-        url: "/assets/sley-2-loom-graph-post.png",
+        url: "/assets/sley-brand-logo-wide-1200.png",
         width: 1200,
-        height: 675,
-        alt: "Sley 2.0 Loom Graph: a machined steel loom weaving a structural graph into etched lines",
+        height: 400,
+        alt: "Sley — Machine-native programming for AI agents",
       },
     ],
     locale: "en_US",
@@ -63,10 +63,12 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sley 2 - Machine-native programming",
+    site: "@SleyLanguage",
+    creator: "@SleyLanguage",
+    title: "Sley 2 - Machine-native programming for AI agents",
     description:
-      "Programming state for machines. Governance for people. Sley 2 (2.0.0-alpha.0, LicenseRef-Proprietary, intentionally incompatible with 1.x) - typed semantic state, deterministic identity, proposal-validated transactions.",
-    images: ["/assets/sley-2-loom-graph-post.png"],
+      "Machine-native programming for AI agents. Sley 2 (2.0.0-alpha.0, LicenseRef-Proprietary, intentionally incompatible with 1.x) - typed semantic state, deterministic identity, proposal-validated transactions.",
+    images: ["/assets/sley-brand-logo-wide-1200.png"],
   },
   other: {
     citation_entity: "Sley",
@@ -102,9 +104,9 @@ const sleyJsonLd = {
     url: "https://greyforge.tech",
   },
   description:
-    "Sley 2 is Greyforge Labs' active machine-native programming system. Programs are typed semantic state (SSMC1 canonical form, SCB1 canonical encoding, SMP1 designated machine interface). Machines mutate verified state through proposal → validation → transaction. Source-visible pre-release 2.0.0-alpha.0 under LicenseRef-Proprietary; intentionally incompatible with the Apache-2.0 Sley 1.x Legacy lineage.",
+    "Sley 2 is Greyforge Labs' active machine-native programming system for AI agents. Programs are typed semantic state (SSMC1 canonical form, SCB1 canonical encoding, SMP1 designated machine interface). Machines mutate verified state through proposal → validation → transaction. Private pre-release 2.0.0-alpha.0 under LicenseRef-Proprietary; intentionally incompatible with the Apache-2.0 Sley 1.x Legacy lineage.",
   keywords: [
-    "machine-native programming",
+    "machine-native programming for AI agents",
     "typed semantic state",
     "SSMC1",
     "SCB1",
@@ -116,6 +118,8 @@ const sleyJsonLd = {
   ],
   isAccessibleForFree: true,
   sameAs: [
+    "https://x.com/SleyLanguage",
+    "https://x.com/GreyforgeLabs",
     "https://greyforge.tech/about",
     "https://github.com/GreyforgeLabs/sley-legacy",
     "https://sleylang.org/llms.txt",
